@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Innovación Comunitaria (CIC) - Caribe Colombiano</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins & Mulish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'azul-profundo': '#173C48',
+                        'azul-petroleo': '#1F4E5F',
+                        'azul-caribe': '#2E6E82',
+                        'coral-mango': '#E1673C',
+                        'curcuma': '#E7A93C',
+                        'crema': '#F6F1E7',
+                        'crema-suave': '#FAF7F2',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        mulish: ['Mulish', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-crema-suave text-azul-profundo font-mulish antialiased selection:bg-coral-mango selection:text-white">
+
+    <!-- Navegación con borde suave -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-azul-caribe/10 sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Logotipo Sello Geométrico con trazos redondeados -->
+                <svg class="w-10 h-10 transition-transform hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="20" fill="#173C48"/>
+                    <path d="M 50,5 A 45,45 0 0,1 86.6,27.5 L 68.3,38.1 A 23,23 0 0,0 50,27 Z" fill="#173C48"/>
+                    <path d="M 92.5,35 A 45,45 0 0,1 92.5,65 L 71.3,57.7 A 23,23 0 0,0 71.3,42.3 Z" fill="#E7A93C"/>
+                    <path d="M 86.6,72.5 A 45,45 0 0,1 50,95 L 50,73 A 23,23 0 0,0 68.3,61.9 Z" fill="#E1673C"/>
+                    <path d="M 43,94.5 A 45,45 0 0,1 8.5,68 L 29,59 A 23,23 0 0,0 43,72.5 Z" fill="#2E6E82"/>
+                    <path d="M 7.5,60 A 45,45 0 0,1 43,5.5 L 43,27.5 A 23,23 0 0,0 28.5,53 Z" fill="#1F4E5F"/>
+                </svg>
+                <div>
+                    <span class="font-poppins font-bold text-lg text-azul-profundo block leading-none">Centro de Innovación</span>
+                    <span class="font-poppins font-semibold text-xs text-azul-caribe tracking-wider uppercase">Comunitaria</span>
+                </div>
+            </div>
+            <a href="#proceso" class="bg-coral-mango/10 text-coral-mango hover:bg-coral-mango hover:text-white font-poppins font-semibold px-5 py-2.5 rounded-full border border-coral-mango/30 transition-all duration-300 text-sm">
+                Conocer el Proceso
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section Informativo -->
+    <section class="relative bg-crema py-20 lg:py-28 overflow-hidden">
+        <!-- Trazos orgánicos de fondo (SVG suave) -->
+        <svg class="absolute top-0 right-0 w-1/2 h-full text-azul-caribe/5 pointer-events-none" viewBox="0 0 400 400" fill="none">
+            <path d="M100,0 C250,50 350,200 400,400 L400,0 Z" fill="currentColor" />
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-white/80 border border-coral-mango/20 px-4 py-1.5 rounded-full shadow-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-coral-mango animate-pulse"></span>
+                        <span class="text-xs font-poppins font-semibold text-coral-mango tracking-wide uppercase">Innovación con raíz caribe</span>
+                    </div>
+                    
+                    <h1 class="font-poppins font-extrabold text-4xl sm:text-5xl lg:text-6xl text-azul-profundo leading-tight">
+                        Transformamos la subsistencia en autonomía económica.
+                    </h1>
+                    
+                    <p class="text-lg text-azul-petroleo leading-relaxed max-w-2xl">
+                        El <strong>Centro de Innovación Comunitaria (CIC)</strong> es una arquitectura territorial diseñada para formar y acompañar a las mujeres emprendedoras de la economía popular en el Caribe colombiano, brindándoles herramientas reales para liderar sus negocios.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="#que-es" class="bg-azul-profundo hover:bg-azul-petroleo text-white font-poppins font-semibold px-8 py-4 rounded-full shadow-lg shadow-azul-profundo/10 transition-all transform hover:-translate-y-0.5">
+                            ¿Qué es el CIC?
+                        </a>
+                        <a href="#proceso" class="bg-white hover:bg-crema-suave border border-azul-caribe/30 text-azul-profundo font-poppins font-semibold px-8 py-4 rounded-full transition-all">
+                            Ver las Etapas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta conceptual explicativa -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/90 backdrop-blur border border-azul-caribe/15 p-8 rounded-4xl shadow-xl shadow-azul-profundo/5 relative">
+                        <!-- Decoración de trazo suave -->
+                        <div class="absolute -top-3 -right-3 w-12 h-12 bg-curcuma/20 rounded-full blur-xl"></div>
+                        
+                        <div class="space-y-6">
+                            <div class="border-b border-crema-suave pb-4">
+                                <span class="text-xs font-bold text-coral-mango uppercase tracking-widest font-poppins">Concepto Clave</span>
+                                <h3 class="text-xl font-poppins font-bold text-azul-profundo mt-1">Una Red, No un Edificio</h3>
+                            </div>
+                            
+                            <p class="text-sm text-azul-petroleo leading-relaxed">
+                                El CIC no depende de una infraestructura centralizadaizada. Funciona como un <strong>sistema vivo</strong> donde la metodología llega directamente a los barrios y esquinas a través de unidades operativas llamadas satélites.
+                            </p>
+
+                            <div class="grid grid-cols-2 gap-4 pt-2">
+                                <div class="bg-crema/60 p-4 rounded-2xl border border-azul-caribe/10">
+                                    <span class="block font-poppins font-bold text-2xl text-azul-profundo">1 Hub</span>
+                                    <span class="text-xs text-azul-petroleo">Centro técnico de coordinación</span>
+                                </div>
+                                <div class="bg-crema/60 p-4 rounded-2xl border border-coral-mango/20">
+                                    <span class="block font-poppins font-bold text-2xl text-coral-mango">8 Satélites</span>
+                                    <span class="text-xs text-azul-petroleo">Unidades en territorio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Transición con trazo curvo orgánico -->
+    <div class="w-full overflow-hidden leading-none -mt-1">
+        <svg class="w-full h-12 text-crema fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#ffffff"></path>
+        </svg>
+    </div>
+
+    <!-- Sección Explicativa: ¿Qué es el Centro? -->
+    <section id="que-es" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="font-poppins font-bold text-3xl sm:text-4xl text-azul-profundo">Entendiendo el Centro de Innovación Comunitaria</h2>
+                <p class="text-azul-petroleo text-base leading-relaxed">
+                    Nacemos para cerrar la brecha entre los negocios de subsistencia e informalidad y la gestión empresarial con autonomía, adaptándonos al contexto cultural del Caribe.
+                </p>
+            </div>
+
+            <!-- Tres Pilares de Identidad -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta 1 -->
+                <div class="group p-8 rounded-3xl bg-crema-suave border border-azul-caribe/10 hover:border-coral-mango/40 transition-all duration-300 hover:shadow-lg hover:shadow-coral-mango/5">
+                    <div class="w-14 h-14 rounded-2xl bg-coral-mango/10 flex items-center justify-center text-coral-mango mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl text-azul-profundo mb-3">Reconocimiento: "Gerentas"</h3>
+                    <p class="text-sm text-azul-petroleo leading-relaxed">
+                        Cambiamos la etiqueta de "beneficiarias" por la de <strong>gerentas</strong>. Quien sostiene la economía del hogar lidera una unidad productiva real que merece trato técnico, respetuoso y sin paternalismos.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="group p-8 rounded-3xl bg-crema-suave border border-azul-caribe/10 hover:border-azul-caribe/40 transition-all duration-300 hover:shadow-lg hover:shadow-azul-caribe/5">
+                    <div class="w-14 h-14 rounded-2xl bg-azul-caribe/10 flex items-center justify-center text-azul-caribe mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11a2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl text-azul-profundo mb-3">Anclaje en Red Territorial</h3>
+                    <p class="text-sm text-azul-petroleo leading-relaxed">
+                        El CIC no aterriza desde afuera de forma improvisada. Se apalanca en la trayectoria histórica de la <strong>Red de Mujeres del Caribe</strong>, integrando el conocimiento local preexistente.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="group p-8 rounded-3xl bg-crema-suave border border-azul-caribe/10 hover:border-curcuma/40 transition-all duration-300 hover:shadow-lg hover:shadow-curcuma/5">
+                    <div class="w-14 h-14 rounded-2xl bg-curcuma/20 flex items-center justify-center text-azul-profundo mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl text-azul-profundo mb-3">Innovación Frugal</h3>
+                    <p class="text-sm text-azul-petroleo leading-relaxed">
+                        Aplicamos metodologías globales adaptadas a la realidad de la esquina y el mercado. Soluciones sencillas, de bajo costo y alto impacto diseñadas para entornos de recursos limitados.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Explicación Detallada del Proceso y la Ruta de Acompañamiento -->
+    <section id="proceso" class="py-20 bg-crema/50 relative overflow-hidden">
+        
+        <!-- Línea suave decorativa de fondo -->
+        <div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 border-t-2 border-dashed border-azul-caribe/20 -z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <span class="text-xs font-bold text-coral-mango tracking-widest uppercase font-poppins">Metodología en Pasos</span>
+                <h2 class="font-poppins font-bold text-3xl sm:text-4xl text-azul-profundo">¿Cómo funciona el proceso de formación?</h2>
+                <p class="text-azul-petroleo">
+                    Cada unidad productiva recorre un proceso integral de aproximadamente 16 horas divididas en dos rutas fundamentales que se cruzan: la pista del <strong>HACER</strong> y la pista del <strong>SER</strong>.
+                </p>
+            </div>
+
+            <!-- Pasos del Proceso (Línea de tiempo suave) -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Paso 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-azul-caribe/15 shadow-sm space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-azul-profundo text-white font-poppins font-bold flex items-center justify-center text-sm">
+                        01
+                    </div>
+                    <h4 class="font-poppins font-bold text-lg text-azul-profundo">Vinculación y Diagnóstico</h4>
+                    <p class="text-xs text-azul-petroleo leading-relaxed">
+                        Caracterización de la unidad productiva y lectura del entorno para entender las necesidades específicas de la gerenta y su comunidad.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-coral-mango/20 shadow-sm space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-coral-mango text-white font-poppins font-bold flex items-center justify-center text-sm">
+                        02
+                    </div>
+                    <h4 class="font-poppins font-bold text-lg text-azul-profundo">Pista HACER (6 Semanas)</h4>
+                    <p class="text-xs text-azul-petroleo leading-relaxed">
+                        Herramientas prácticas: Modelo de negocio (Canvas de la Esquina), finanzas frugales, flujo de caja y planes de inversión viables.
+                    </p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-curcuma/30 shadow-sm space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-curcuma text-azul-profundo font-poppins font-bold flex items-center justify-center text-sm">
+                        03
+                    </div>
+                    <h4 class="font-poppins font-bold text-lg text-azul-profundo">Pista SER (Transversal)</h4>
+                    <p class="text-xs text-azul-petroleo leading-relaxed">
+                        Talleres sobre liderazgo, reingeniería mental, toma de decisiones, confianza colectiva y prevención de violencias.
+                    </p>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="bg-white p-6 rounded-3xl border border-azul-caribe/20 shadow-sm space-y-4 relative">
+                    <div class="w-10 h-10 rounded-full bg-azul-caribe text-white font-poppins font-bold flex items-center justify-center text-sm">
+                        04
+                    </div>
+                    <h4 class="font-poppins font-bold text-lg text-azul-profundo">Conexión y Financiamiento</h4>
+                    <p class="text-xs text-azul-petroleo leading-relaxed">
+                        Vinculación a estrategias comerciales, redes comunitarias y esquemas de ahorro solidario (Bankomunales).
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Explicación detallada de las Pistas -->
+            <div class="mt-16 bg-white p-8 sm:p-12 rounded-4xl border border-azul-caribe/10 shadow-lg shadow-azul-profundo/5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold text-coral-mango uppercase font-poppins tracking-wider">Dos Pistas Interconectadas</span>
+                        <h3 class="font-poppins font-bold text-2xl text-azul-profundo">Resolver el negocio y fortalecer a la persona</h3>
+                        <p class="text-sm text-azul-petroleo leading-relaxed">
+                            No basta con enseñar finanzas si no se trabaja el liderazgo personal. Por eso, el ciclo de acompañamiento del CIC combina de forma paralela la adquisición de competencias técnicas con el fortalecimiento emocional de cada gerenta.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-crema-suave border border-azul-caribe/10">
+                            <span class="w-3 h-3 rounded-full bg-azul-caribe"></span>
+                            <div>
+                                <span class="font-poppins font-bold text-sm text-azul-profundo block">Pista HACER: 12 Horas</span>
+                                <span class="text-xs text-azul-petroleo">Acompañamiento especializado en la gestión del negocio.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-crema-suave border border-coral-mango/20">
+                            <span class="w-3 h-3 rounded-full bg-coral-mango"></span>
+                            <div>
+                                <span class="font-poppins font-bold text-sm text-azul-profundo block">Pista SER: 4 Talleres</span>
+                                <span class="text-xs text-azul-petroleo">Espacios de desarrollo personal y construcción de tejido social.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Los 5 Pilares Metodológicos del CIC -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="font-poppins font-bold text-3xl text-azul-profundo">Los 5 Pilares de Sostenibilidad</h2>
+                <p class="text-azul-petroleo text-sm">El soporte integral que garantiza el crecimiento continuo de cada proyecto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Pilar 1 -->
+                <div class="p-6 rounded-3xl bg-crema-suave border border-azul-caribe/10 text-center space-y-3">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-coral-mango/10 text-coral-mango flex items-center justify-center font-bold">
+                        1
+                    </div>
+                    <h4 class="font-poppins font-bold text-base text-azul-profundo">Acompañamiento Integral</h4>
+                    <p class="text-xs text-azul-petroleo">Asesoría cercana que profesionaliza la intuición comercial existente.</p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="p-6 rounded-3xl bg-crema-suave border border-azul-caribe/10 text-center space-y-3">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-azul-caribe/10 text-azul-caribe flex items-center justify-center font-bold">
+                        2
+                    </div>
+                    <h4 class="font-poppins font-bold text-base text-azul-profundo">Acceso a Mercados</h4>
+                    <p class="text-xs text-azul-petroleo">Articulación con cámaras de comercio, clústeres e instituciones.</p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="p-6 rounded-3xl bg-crema-suave border border-azul-caribe/10 text-center space-y-3">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-curcuma/20 text-azul-profundo flex items-center justify-center font-bold">
+                        3
+                    </div>
+                    <h4 class="font-poppins font-bold text-base text-azul-profundo">Acceso a Financiamiento</h4>
+                    <p class="text-xs text-azul-petroleo">Promoción de esquemas de crédito justo y bancarización.</p>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="p-6 rounded-3xl bg-crema-suave border border-azul-caribe/10 text-center space-y-3">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-azul-petroleo/10 text-azul-petroleo flex items-center justify-center font-bold">
+                        4
+                    </div>
+                    <h4 class="font-poppins font-bold text-base text-azul-profundo">Apropiación Ecosistémica</h4>
+                    <p class="text-xs text-azul-petroleo">Conexión con la oferta de apoyo al emprendimiento regional.</p>
+                </div>
+
+                <!-- Pilar 5 -->
+                <div class="p-6 rounded-3xl bg-coral-mango/10 border border-coral-mango/30 text-center space-y-3">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-coral-mango text-white flex items-center justify-center font-bold">
+                        5
+                    </div>
+                    <h4 class="font-poppins font-bold text-base text-azul-profundo">Desarrollo del Ser</h4>
+                    <p class="text-xs text-azul-petroleo font-semibold">Base transversal que sostiene a los demás pilares.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cobertura Territorial y Red de Apoyo -->
+    <section class="py-16 bg-azul-profundo text-white relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-poppins font-bold text-curcuma uppercase tracking-widest">Presencia Territorial</span>
+                    <h2 class="font-poppins font-bold text-3xl sm:text-4xl leading-tight">Despliegue operativo en 7 departamentos del Caribe</h2>
+                    <p class="text-crema/80 text-sm leading-relaxed">
+                        A través de 8 satélites en funcionamiento y un equipo de 24 dinamizadoras territoriales certificadas, el CIC garantiza una atención directa y estandarizada en diversos municipios y comunidades.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-azul-petroleo/50 border border-azul-caribe/30">
+                        <span class="font-poppins font-bold text-3xl text-curcuma block mb-1">7</span>
+                        <span class="text-xs text-crema/90">Departamentos del Caribe continental</span>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-azul-petroleo/50 border border-azul-caribe/30">
+                        <span class="font-poppins font-bold text-3xl text-curcuma block mb-1">8</span>
+                        <span class="text-xs text-crema/90">Satélites territoriales activos</span>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-azul-petroleo/50 border border-azul-caribe/30">
+                        <span class="font-poppins font-bold text-3xl text-curcuma block mb-1">24</span>
+                        <span class="text-xs text-crema/90">Dinamizadoras comunitarias</span>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-azul-petroleo/50 border border-azul-caribe/30">
+                        <span class="font-poppins font-bold text-3xl text-curcuma block mb-1">200</span>
+                        <span class="text-xs text-crema/90">Unidades productivas acompañadas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Institucional Informativo -->
+    <footer class="bg-white text-azul-profundo py-12 border-t border-azul-caribe/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <h4 class="font-poppins font-bold text-lg text-azul-profundo">Centro de Innovación Comunitaria (CIC)</h4>
+                    <p class="text-xs text-azul-petroleo mt-1">Caribe Colombiano · Modelo de acompañamiento territorial</p>
+                </div>
+                <div class="text-xs text-azul-petroleo space-y-1">
+                    <p><strong>Marco Institucional:</strong> Convenio 432 · Fondo de Igualdad</p>
+                    <p><strong>Ejecuta:</strong> APRODEFA en articulación con la Red de Mujeres del Caribe</p>
+                    <p><strong>Acompaña y Diseña:</strong> Emprende Ahora</p>
+                </div>
+            </div>
+            <div class="border-t border-crema-suave pt-6 text-center text-xs text-azul-petroleo/60">
+                Modelo metodológico y de marca adaptado para la economía popular femenina del Caribe.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
