@@ -1,0 +1,8 @@
+# Datos personales del equipo y las emprendedoras: nunca en este repositorio público
+*.xlsx
+*.xls
+*.csv
+privado*/
+directorio_equipo_cic.sql
+.env
+supabase/.temp/
