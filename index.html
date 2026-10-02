@@ -514,11 +514,11 @@
                         <div class="roles-tabs" role="tablist" aria-labelledby="quien-eres">
                             <button type="button" class="rol-tab" role="tab" id="rol-emprendedora" aria-controls="panel-emprendedora" aria-selected="true"><b>Soy emprendedora</b><small>Sigue tu ruta semana a semana</small></button>
                             <button type="button" class="rol-tab" role="tab" id="rol-dinamizadora" aria-controls="panel-dinamizadora" aria-selected="false" tabindex="-1"><b>Soy dinamizadora</b><small>Curso de gestión y guías</small></button>
-                            <button type="button" class="rol-tab" role="tab" id="rol-aliada" aria-controls="panel-aliada" aria-selected="false" tabindex="-1"><b>Soy aliada</b><small>Conoce el modelo y súmate</small></button>
+                            <button type="button" class="rol-tab" role="tab" id="rol-secretaria" aria-controls="panel-secretaria" aria-selected="false" tabindex="-1"><b>Soy secretaria</b><small>Secretaría Técnica del CIC</small></button>
                         </div>
                         <div class="rol-panel" role="tabpanel" id="panel-emprendedora" aria-labelledby="rol-emprendedora">
                             <ol class="pasos">
-                                <li>Crea tu cuenta con tu cédula o entra con el enlace que te envía tu dinamizadora.</li>
+                                <li>Crea tu cuenta con tu cédula, tu correo y una contraseña.</li>
                                 <li>Toca «Continuar» y abre la semana que te toca de la ruta HACER.</li>
                                 <li>Usa la plantilla de la semana en tu negocio, con tu dinamizadora.</li>
                                 <li>Consulta tus logros y recibe tu constancia al cerrar la ruta.</li>
@@ -527,6 +527,7 @@
                                 <button type="button" class="btn btn-primario btn-pequeno" data-abrir="registro">Crear mi cuenta</button>
                                 <a class="btn btn-borde btn-pequeno" href="#ruta-hacer">Ver la ruta HACER</a>
                             </div>
+                            <p class="texto-suave" style="font-size:.88rem;margin-top:.8rem">¿Ya tienes cuenta? Toca «Ingresar» arriba a la derecha y elige «Emprendedora».</p>
                         </div>
                         <div class="rol-panel" role="tabpanel" id="panel-dinamizadora" aria-labelledby="rol-dinamizadora" hidden>
                             <ol class="pasos">
@@ -540,16 +541,16 @@
                                 <a class="btn btn-borde btn-pequeno" href="#ruta-gestion">Ver el curso de gestión</a>
                             </div>
                         </div>
-                        <div class="rol-panel" role="tabpanel" id="panel-aliada" aria-labelledby="rol-aliada" hidden>
+                        <div class="rol-panel" role="tabpanel" id="panel-secretaria" aria-labelledby="rol-secretaria" hidden>
                             <ol class="pasos">
-                                <li>Entiende el modelo del CIC y su formación en cascada.</li>
-                                <li>Descarga o comparte una plantilla de la biblioteca.</li>
-                                <li>Conoce los 8 satélites y los 13 municipios.</li>
-                                <li>Escríbenos para sumarte o verifica una constancia.</li>
+                                <li>Entra con tu cédula; la primera vez tu contraseña también es tu cédula.</li>
+                                <li>Aprueba el curso de gestión del CIC.</li>
+                                <li>Sigue el avance de las emprendedoras y del equipo por departamento.</li>
+                                <li>Restablece la contraseña de quien la olvide.</li>
                             </ol>
                             <div class="botones">
-                                <a class="btn btn-primario btn-pequeno" href="#sobre-cic">Conocer el modelo</a>
-                                <a class="btn btn-borde btn-pequeno" href="#territorio">Ver el territorio</a>
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="ingresar" data-perfil="secretaria">Ingresar</button>
+                                <a class="btn btn-borde btn-pequeno" href="#ruta-gestion">Ver el curso de gestión</a>
                             </div>
                         </div>
                     </div>
@@ -1103,15 +1104,18 @@
             <h2 id="acceso-titulo" style="font-size:1.9rem;margin-top:.7rem">Ingresa al CIC</h2>
             <p class="texto-suave" style="font-size:.9rem;margin-top:.2rem">Tu usuario es tu número de cédula.</p>
 
+            <!-- Primero la persona dice quién es; el formulario aparece después -->
             <fieldset style="border:0;padding:0;margin:1.2rem 0 0">
-                <legend style="font-weight:700;font-size:.9rem;margin-bottom:.5rem">¿Cómo haces parte del CIC?</legend>
+                <legend style="font-weight:700;font-size:.9rem;margin-bottom:.5rem">¿Quién eres?</legend>
                 <div class="perfiles">
-                    <label class="perfil"><input type="radio" name="perfil" value="secretaria"><span style="--c:var(--agua)">Secretaría Técnica</span></label>
+                    <label class="perfil"><input type="radio" name="perfil" value="secretaria"><span style="--c:var(--agua)">Secretaria</span></label>
                     <label class="perfil"><input type="radio" name="perfil" value="dinamizadora"><span style="--c:var(--menta)">Dinamizadora</span></label>
-                    <label class="perfil"><input type="radio" name="perfil" value="emprendedora" checked><span style="--c:var(--durazno)">Emprendedora</span></label>
+                    <label class="perfil"><input type="radio" name="perfil" value="emprendedora"><span style="--c:var(--durazno)">Emprendedora</span></label>
                 </div>
             </fieldset>
+            <p id="elige-perfil" class="nota" style="background:#fff;border:1px dashed var(--linea)">Elige si eres secretaria, dinamizadora o emprendedora para continuar.</p>
 
+            <div id="acceso-cuerpo" hidden>
             <div id="pestanas-acceso" class="conmutador" role="tablist" aria-label="Ingresar o crear cuenta">
                 <button type="button" role="tab" id="pestana-ingresar" aria-controls="form-ingresar" aria-selected="true">Ingresar</button>
                 <button type="button" role="tab" id="pestana-registro" aria-controls="form-registro" aria-selected="false">Crear cuenta</button>
@@ -1159,6 +1163,7 @@
                 <label class="casilla"><input type="checkbox" name="acepto" required><span>Autorizo al CIC y a la Red de Mujeres del Caribe a tratar mis datos para mi formación y acompañamiento, según la Ley 1581 de 2012 y la <a class="enlace" href="#politica-datos" data-cerrar>política de datos</a>.</span></label>
                 <button type="submit" class="btn btn-primario ancho">Crear mi cuenta</button>
             </form>
+            </div>
         </div>
     </dialog>
 
@@ -1332,7 +1337,7 @@
         // ---------- Diálogo de ingreso y registro ----------
         const dialogo = $('#acceso');
         const msj = $('#acceso-mensaje');
-        const rolElegido = () => ($('input[name="perfil"]:checked') || {}).value || 'emprendedora';
+        const rolElegido = () => ($('input[name="perfil"]:checked') || {}).value || '';
         function mensaje(texto, tipo = 'error') {
             msj.hidden = !texto;
             msj.textContent = texto || '';
@@ -1347,20 +1352,26 @@
             $('#acceso-titulo').textContent = esRegistro ? 'Crea tu cuenta' : 'Ingresa al CIC';
             mensaje('');
         }
+        // Mientras no elija quién es, solo ve la pregunta. Crear cuenta es solo para emprendedoras.
         function actualizarPerfil() {
-            const esEquipo = rolElegido() !== 'emprendedora';
-            $('#pestanas-acceso').hidden = esEquipo;
+            const rol = rolElegido();
+            $('#elige-perfil').hidden = !!rol;
+            $('#acceso-cuerpo').hidden = !rol;
+            const esEquipo = rol === 'secretaria' || rol === 'dinamizadora';
+            $('#pestanas-acceso').hidden = rol !== 'emprendedora';
             $('#pista-equipo').hidden = !esEquipo;
-            if (esEquipo) modo('ingresar');
+            if (rol !== 'emprendedora') modo('ingresar');
             mensaje('');
         }
         function abrir(m, rol) {
-            const elegido = $(`input[name="perfil"][value="${m === 'registro' ? 'emprendedora' : (rol || rolElegido())}"]`);
-            if (elegido) elegido.checked = true;
+            // «Crear mi cuenta» abre como emprendedora; «Ingresar» de un perfil abre con ese perfil;
+            // «Ingresar» general abre sin perfil para que la persona diga quién es.
+            const valor = m === 'registro' ? 'emprendedora' : (rol || '');
+            $$('input[name="perfil"]').forEach((r) => { r.checked = r.value === valor; });
             actualizarPerfil();
             modo(m);
             if (!dialogo.open) dialogo.showModal();
-            setTimeout(() => (m === 'registro' ? $('#re-nombre') : $('#in-cedula')).focus(), 50);
+            setTimeout(() => (!valor ? $('input[name="perfil"]') : m === 'registro' ? $('#re-nombre') : $('#in-cedula')).focus(), 50);
         }
         $$('[data-abrir]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.abrir, b.dataset.perfil)));
         $('#acceso-cerrar').addEventListener('click', () => dialogo.close());
@@ -1402,6 +1413,7 @@
             const cedula = soloDigitos(f.cedula.value);
             const clave = f.clave.value;
             const rol = rolElegido();
+            if (!rol) return mensaje('Elige si eres secretaria, dinamizadora o emprendedora.');
             if (cedula.length < 5) return mensaje('Escribe tu número de cédula, solo números.');
             if (!clave) return mensaje('Escribe tu contraseña.');
             ocupado(f, async () => {
