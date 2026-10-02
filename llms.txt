@@ -1,0 +1,9 @@
+# Centro de Innovación Comunitaria (CIC)
+
+> Formación y acompañamiento para la autonomía económica de las mujeres emprendedoras del Caribe colombiano, en red con la Red de Mujeres del Caribe. Una Secretaría Técnica, 8 satélites y 24 dinamizadoras acompañan a 200 emprendedoras en 13 municipios de 7 departamentos.
+
+## Páginas clave
+- [Rutas de aprendizaje](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#rutas): Ruta HACER (12 h), Ruta SER (16 h) y Gestión del CIC (≈ 2 h).
+- [Biblioteca de recursos](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#recursos): plantillas gratuitas de finanzas, ventas, formalización y marketing digital.
+- [Sobre el CIC](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#sobre-cic): modelo en cascada y cinco pilares.
+- [Centro de ayuda](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#ayuda): ingreso, constancias y contacto.
