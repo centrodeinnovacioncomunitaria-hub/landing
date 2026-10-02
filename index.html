@@ -1,89 +1,459 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro de Innovación Comunitaria (CIC) · Emprender es florecer</title>
-    <meta name="description" content="El Centro de Innovación Comunitaria forma y acompaña a mujeres emprendedoras del Caribe colombiano, en red con la Red de Mujeres del Caribe.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CIC · Aprende y haz crecer tu negocio en el Caribe</title>
+    <meta name="description" content="Rutas de aprendizaje, plantillas gratuitas y acompañamiento para mujeres emprendedoras del Caribe colombiano, en red con la Red de Mujeres del Caribe.">
+    <link rel="canonical" href="https://centrodeinnovacioncomunitaria-hub.github.io/landing/">
     <meta name="theme-color" content="#2E4A3E">
-    <meta property="og:title" content="Centro de Innovación Comunitaria (CIC)">
-    <meta property="og:description" content="Formación, acompañamiento y seguimiento para que tu negocio crezca, en tu territorio y con tu red.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Centro de Innovación Comunitaria (CIC)">
+    <meta property="og:title" content="Aprende, organiza y haz crecer tu negocio · CIC">
+    <meta property="og:description" content="Formación, acompañamiento y seguimiento para mujeres emprendedoras del Caribe colombiano.">
+    <meta property="og:url" content="https://centrodeinnovacioncomunitaria-hub.github.io/landing/">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='12 12 96 96'%3E%3Cpath d='M60,104 C30,100 14,78 18,44 C44,50 58,70 60,104 Z' fill='%239ED0B7'/%3E%3Cpath d='M60,104 C90,100 106,78 102,44 C76,50 62,70 60,104 Z' fill='%23F2B592'/%3E%3Ccircle cx='60' cy='30' r='12' fill='%23EE9884'/%3E%3C/svg%3E">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tipografías de la marca Florecer: Quicksand (títulos, logo y cifras) y Nunito Sans (textos, botones y formularios) -->
+    <!-- Marca Florecer: Quicksand (títulos, logo y cifras) y Nunito Sans (textos, botones y formularios) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://blogger.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
 
-    <script>
-        // Paleta del manual de marca v3 · Florecer: pasteles para la suavidad y un verde bosque que ancla.
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'bosque': '#2E4A3E',        // textos y trazo firme (9,1:1 sobre crema)
-                        'musgo': '#4F6B5E',         // textos secundarios
-                        'coralp': '#B04A36',        // coral profundo: botones y acciones (5,4:1 con blanco)
-                        'coralp-osc': '#963D2C',
-                        'menta': '#9ED0B7',         // crecimiento, esperanza
-                        'durazno': '#F2B592',       // calidez, cercanía
-                        'coral': '#EE9884',         // energía, acción
-                        'mantequilla': '#F4E1A1',   // luz, optimismo
-                        'agua': '#99CFC8',
-                        'lavanda': '#BDB2E4',
-                        'crema': '#FFF6EE',
-                        'crema-2': '#FBEEE2',
-                    },
-                    fontFamily: {
-                        titulo: ['Quicksand', 'ui-rounded', 'system-ui', 'sans-serif'],
-                        texto: ['"Nunito Sans"', 'system-ui', 'sans-serif'],
-                    },
-                    borderRadius: {
-                        '4xl': '2.5rem',
-                    }
-                }
-            }
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#cic",
+          "name": "Centro de Innovación Comunitaria (CIC)",
+          "url": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/",
+          "description": "Modelo de acompañamiento territorial para la autonomía económica de las mujeres emprendedoras del Caribe colombiano, en red con la Red de Mujeres del Caribe.",
+          "slogan": "Emprender es florecer",
+          "areaServed": ["Atlántico", "Bolívar", "Cesar", "Córdoba", "La Guajira", "Magdalena", "Sucre"],
+          "email": "centrodeinnovacioncomunitaria@gmail.com"
+        },
+        {
+          "@type": "Course",
+          "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#ruta-gestion",
+          "name": "Gestión del CIC",
+          "description": "Curso virtual de 5 módulos para dinamizadoras y Secretaría Técnica sobre cómo funciona un centro de innovación comunitaria.",
+          "provider": { "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#cic" },
+          "inLanguage": "es-CO",
+          "timeRequired": "PT2H",
+          "isAccessibleForFree": true,
+          "educationalCredentialAwarded": "Constancia de participación"
+        },
+        {
+          "@type": "Course",
+          "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#ruta-hacer",
+          "name": "Ruta HACER",
+          "description": "Seis semanas de acompañamiento individual para ordenar costos, precios y ventas del negocio.",
+          "provider": { "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#cic" },
+          "inLanguage": "es-CO",
+          "timeRequired": "PT12H",
+          "isAccessibleForFree": true,
+          "educationalCredentialAwarded": "Constancia de participación"
+        },
+        {
+          "@type": "Course",
+          "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#ruta-ser",
+          "name": "Ruta SER",
+          "description": "Cuatro talleres grupales de confianza, decisiones, liderazgo y ahorro colectivo para la mujer que sostiene el negocio.",
+          "provider": { "@id": "https://centrodeinnovacioncomunitaria-hub.github.io/landing/#cic" },
+          "inLanguage": "es-CO",
+          "timeRequired": "PT16H",
+          "isAccessibleForFree": true,
+          "educationalCredentialAwarded": "Constancia de participación"
         }
+      ]
+    }
     </script>
+
     <style>
-        [hidden] { display: none !important; }
-        /* Forma propia de la marca: la hoja. Se usa para fotos y tarjetas destacadas. */
-        .hoja { border-radius: 46% 1.5rem 46% 1.5rem / 46% 1.5rem 46% 1.5rem; }
-        .hoja-inv { border-radius: 1.5rem 46% 1.5rem 46% / 1.5rem 46% 1.5rem 46%; }
-        /* Patrón de hojas que nace del isotipo */
-        .patron-hojas {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath d='M18 30c-7-6-8-15-2-22 7 6 8 15 2 22z' fill='%239ED0B7' fill-opacity='.55'/%3E%3Cpath d='M52 66c-7-6-8-15-2-22 7 6 8 15 2 22z' fill='%23F2B592' fill-opacity='.55' transform='rotate(28 52 55)'/%3E%3C/svg%3E");
-            background-size: 72px 72px;
+        :root {
+            /* Paleta del manual de marca v3 · Florecer: pasteles para la suavidad y un verde bosque que ancla */
+            --bosque: #2E4A3E;      /* textos y trazo firme: 9,1:1 sobre crema */
+            --musgo: #4F6B5E;       /* textos secundarios */
+            --coralp: #B04A36;      /* coral profundo: botones y acciones, 5,4:1 con blanco */
+            --coralp-osc: #963D2C;
+            --menta: #9ED0B7;       /* crecimiento, esperanza */
+            --durazno: #F2B592;     /* calidez, cercanía */
+            --coral: #EE9884;       /* energía, acción */
+            --mantequilla: #F4E1A1; /* luz, optimismo */
+            --agua: #99CFC8;
+            --lavanda: #BDB2E4;
+            --crema: #FFF6EE;
+            --crema-2: #FBEEE2;
+            --linea: rgba(46, 74, 62, .13);
+            --sombra: 0 22px 44px -24px rgba(46, 74, 62, .35);
+            --titulo: 'Quicksand', ui-rounded, system-ui, sans-serif;
+            --texto: 'Nunito Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
         }
-        /* El trazo firme: línea continua y ondulada que acompaña títulos */
-        .trazo { display: block; width: 9.5rem; height: 1rem; margin-top: .6rem; }
-        .trazo-centro { margin-left: auto; margin-right: auto; }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; -webkit-text-size-adjust: 100%; }
+        body { margin: 0; background: var(--crema); color: var(--bosque); font: 400 1rem/1.6 var(--texto); -webkit-font-smoothing: antialiased; }
+        img, svg { display: block; max-width: 100%; }
+        [hidden] { display: none !important; }
+        h1, h2, h3, h4 { font-family: var(--titulo); font-weight: 700; line-height: 1.12; margin: 0; letter-spacing: -.01em; }
+        p { margin: 0; }
+        a { color: inherit; }
+        button, input, select { font: inherit; color: inherit; }
+        :focus-visible { outline: 3px solid var(--coralp); outline-offset: 2px; }
+        ::selection { background: var(--menta); color: var(--bosque); }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+        .saltar { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: #fff; padding: .6rem 1rem; border-radius: 999px; font-weight: 700; }
+        .saltar:focus { top: 1rem; }
+        .contenedor { width: min(1200px, 100% - 2.5rem); margin-inline: auto; }
+        .texto-suave { color: var(--musgo); }
+
+        /* Botones */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; min-height: 2.9rem; padding: .7rem 1.4rem; border-radius: 999px; border: 1.5px solid transparent; font-weight: 700; font-size: .95rem; text-decoration: none; cursor: pointer; transition: background-color .2s, transform .2s, border-color .2s; }
+        .btn:hover { transform: translateY(-1px); }
+        .btn-primario { background: var(--coralp); color: #fff; box-shadow: 0 10px 22px -12px rgba(176, 74, 54, .7); }
+        .btn-primario:hover { background: var(--coralp-osc); }
+        .btn-borde { background: #fff; border-color: rgba(46, 74, 62, .25); }
+        .btn-borde:hover { background: var(--crema-2); }
+        .btn-bosque { background: var(--bosque); color: #fff; }
+        .btn-claro { background: #fff; color: var(--bosque); }
+        .btn-pequeno { min-height: 2.5rem; padding: .5rem 1.1rem; font-size: .875rem; }
+        .btn:disabled { opacity: .6; cursor: default; transform: none; }
+        .enlace { font-weight: 700; color: var(--coralp); text-decoration: underline; text-underline-offset: 4px; }
+
+        /* Elementos de marca */
+        .eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--coralp); }
+        .trazo { width: 9.5rem; height: 1rem; margin-top: .7rem; color: var(--bosque); }
+        .centrado .trazo { margin-inline: auto; }
+        .hoja { border-radius: 46% 1.5rem 46% 1.5rem / 46% 1.5rem 46% 1.5rem; overflow: hidden; }
+        .hoja-inv { border-radius: 1.5rem 46% 1.5rem 46% / 1.5rem 46% 1.5rem 46%; overflow: hidden; }
         .foto-duo { width: 100%; height: 100%; object-fit: cover; }
-        .aparece { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
-        .aparece.visible { opacity: 1; transform: none; }
+        .patron-hojas { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath d='M18 30c-7-6-8-15-2-22 7 6 8 15 2 22z' fill='%239ED0B7' fill-opacity='.55'/%3E%3Cpath d='M52 66c-7-6-8-15-2-22 7 6 8 15 2 22z' fill='%23F2B592' fill-opacity='.55' transform='rotate(28 52 55)'/%3E%3C/svg%3E"); background-size: 72px 72px; }
+        .tarjeta { background: #fff; border: 1px solid var(--linea); border-radius: 1.5rem; padding: 1.6rem; }
+        .chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: .3rem .7rem; border-radius: 999px; background: var(--crema-2); }
+        .numero { width: 2.75rem; height: 2.75rem; border-radius: 50%; display: grid; place-items: center; font-family: var(--titulo); font-weight: 700; flex-shrink: 0; }
+        .bg-menta { background: var(--menta); } .bg-durazno { background: var(--durazno); } .bg-coral { background: var(--coral); }
+        .bg-mantequilla { background: var(--mantequilla); } .bg-agua { background: var(--agua); } .bg-lavanda { background: var(--lavanda); }
+
+        /* Encabezado */
+        .cabecera { position: sticky; top: 0; z-index: 50; background: rgba(255, 246, 238, .9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--linea); }
+        .cabecera .contenedor { height: 4.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .logo svg { width: 2.6rem; height: 2.6rem; }
+        .logo-palabra { font-family: var(--titulo); font-weight: 700; font-size: 1.9rem; line-height: .9; letter-spacing: -.02em; display: block; }
+        .logo-sub { font-family: var(--titulo); font-weight: 600; font-size: .7rem; color: var(--musgo); display: block; }
+        .nav { display: flex; gap: 1.8rem; font-weight: 700; font-size: .95rem; }
+        .nav a { text-decoration: none; color: var(--musgo); padding: .4rem 0; }
+        .nav a:hover { color: var(--bosque); }
+        .acciones { display: flex; align-items: center; gap: .5rem; }
+        .menu-btn { display: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1.5px solid var(--linea); background: #fff; cursor: pointer; }
+        .usuaria { display: none; align-items: center; gap: .6rem; }
+        .usuaria.activa { display: flex; }
+        .usuaria-datos { text-align: right; line-height: 1.2; }
+        .usuaria-datos b { display: block; font-size: .9rem; }
+        .usuaria-datos small { color: var(--musgo); }
+        .inicial { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--menta); display: grid; place-items: center; font-family: var(--titulo); font-weight: 700; }
+        .salir { background: none; border: 0; color: var(--coralp); font-weight: 700; cursor: pointer; padding: .5rem; }
+        @media (max-width: 960px) {
+            .menu-btn { display: inline-grid; place-items: center; }
+            .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--crema); border-bottom: 1px solid var(--linea); padding: .5rem 1.25rem 1rem; }
+            .nav.abierta { display: flex; }
+            .nav a { padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+            .logo-sub { display: none; }
+            .usuaria-datos { display: none; }
+        }
+
+        /* Secciones */
+        .seccion { padding: 5rem 0; }
+        .seccion-blanca { background: #fff; }
+        .seccion-crema2 { background: var(--crema-2); }
+        .cabeza { max-width: 46rem; margin-bottom: 2.75rem; }
+        .cabeza h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); margin-top: .5rem; }
+        .cabeza p { margin-top: 1rem; color: var(--musgo); font-size: 1.05rem; }
+        .centrado { text-align: center; margin-inline: auto; }
+        .rejilla { display: grid; gap: 1.5rem; }
+        .r2 { grid-template-columns: repeat(2, 1fr); } .r3 { grid-template-columns: repeat(3, 1fr); } .r4 { grid-template-columns: repeat(4, 1fr); } .r5 { grid-template-columns: repeat(5, 1fr); }
+        @media (max-width: 1024px) { .r4, .r5 { grid-template-columns: repeat(2, 1fr); } .r3 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 680px) { .r2, .r3, .r4, .r5 { grid-template-columns: 1fr; } .r4.movil-2 { grid-template-columns: repeat(2, 1fr); gap: .75rem; } .seccion { padding: 3.75rem 0; } }
+        .js .aparece { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+        .js .aparece.visible { opacity: 1; transform: none; }
+
+        /* Héroe con entrada por rol */
+        .heroe { position: relative; overflow: hidden; padding: 3.5rem 0 4.5rem; }
+        .heroe .contenedor { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3.5rem; align-items: center; }
+        .heroe h1 { font-size: clamp(2.5rem, 6vw, 4.4rem); line-height: 1.02; margin-top: .9rem; }
+        .heroe h1 em { font-style: normal; color: var(--coralp); }
+        .heroe-texto { font-size: 1.1rem; color: var(--musgo); margin-top: 1.2rem; max-width: 38rem; }
+        .roles { margin-top: 2rem; background: #fff; border: 1px solid var(--linea); border-radius: 1.75rem; padding: 1.25rem; box-shadow: var(--sombra); }
+        .roles-titulo { font-family: var(--titulo); font-weight: 700; font-size: 1.15rem; margin-bottom: .8rem; }
+        .roles-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+        .rol-tab { text-align: left; border: 1.5px solid var(--linea); background: var(--crema); border-radius: 1.1rem; padding: .75rem .85rem; cursor: pointer; line-height: 1.25; }
+        .rol-tab b { display: block; font-size: .95rem; }
+        .rol-tab small { color: var(--musgo); font-size: .8rem; }
+        .rol-tab[aria-selected="true"] { border-color: var(--bosque); background: #fff; box-shadow: 0 0 0 3px rgba(158, 208, 183, .6); }
+        .rol-panel { padding: 1.1rem .25rem .25rem; }
+        .pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; counter-reset: paso; }
+        .pasos li { display: flex; gap: .75rem; align-items: flex-start; counter-increment: paso; }
+        .pasos li::before { content: counter(paso); width: 1.65rem; height: 1.65rem; border-radius: 50%; background: var(--crema-2); display: grid; place-items: center; font: 700 .8rem var(--titulo); flex-shrink: 0; margin-top: .1rem; }
+        .botones { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.1rem; }
+        .heroe-foto { position: relative; padding-bottom: 1.5rem; }
+        .heroe-foto .hoja { aspect-ratio: 4 / 5; background: var(--menta); box-shadow: var(--sombra); }
+        .heroe-dato { position: absolute; left: -1rem; bottom: 0; background: #fff; border-radius: 1.4rem; box-shadow: var(--sombra); padding: .9rem 1.2rem; display: flex; gap: 1.1rem; align-items: center; }
+        .heroe-dato b { display: block; font: 700 1.5rem var(--titulo); }
+        .heroe-dato small { color: var(--musgo); font-size: .78rem; }
+        .heroe-dato i { width: 1px; height: 2.5rem; background: var(--linea); }
+        .heroe-patron { position: absolute; inset: 0 0 0 55%; opacity: .45; pointer-events: none; }
+        @media (max-width: 900px) {
+            .heroe .contenedor { grid-template-columns: 1fr; gap: 2.5rem; }
+            .heroe-foto { max-width: 26rem; margin-inline: auto; width: 100%; }
+            .heroe-dato { left: 0; }
+            .heroe-patron { display: none; }
+        }
+        @media (max-width: 520px) { .roles-tabs { grid-template-columns: 1fr; } }
+
+        /* Rutas */
+        .ruta { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--linea); border-radius: 1.75rem; overflow: hidden; scroll-margin-top: 6rem; }
+        .ruta-cab { padding: 1.5rem 1.6rem 1.3rem; }
+        .ruta-cab h3 { font-size: 1.75rem; margin-top: .6rem; }
+        .ruta-cab p { margin-top: .5rem; }
+        .ruta-cuerpo { padding: 1.4rem 1.6rem 1.6rem; display: flex; flex-direction: column; gap: 1.1rem; flex: 1; }
+        .ficha { display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; margin: 0; font-size: .92rem; }
+        .ficha dt { color: var(--musgo); }
+        .ficha dd { margin: 0; font-weight: 700; }
+        .lista-check { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; font-size: .92rem; }
+        .lista-check li { display: flex; gap: .55rem; }
+        .lista-check li::before { content: ''; width: .55rem; height: .9rem; border: solid var(--bosque); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg) translateY(-.15rem); flex-shrink: 0; margin: .25rem .2rem 0 .1rem; }
+        details.desplegable { border-top: 1px solid var(--linea); padding-top: .9rem; }
+        details.desplegable summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+        details.desplegable summary::-webkit-details-marker { display: none; }
+        details.desplegable summary::after { content: '+'; font: 700 1.3rem/1 var(--titulo); color: var(--coralp); }
+        details.desplegable[open] summary::after { content: '–'; }
+        .temario { margin: .9rem 0 0; padding: 0; list-style: none; display: grid; gap: .7rem; font-size: .9rem; }
+        .temario b { display: block; }
+        .temario span { color: var(--musgo); }
+        .ruta-pie { margin-top: auto; display: flex; flex-wrap: wrap; gap: .6rem; }
+        .ventajas { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; justify-content: center; margin-top: 2rem; color: var(--musgo); font-weight: 600; font-size: .92rem; }
+        .ventajas span::before { content: '●'; color: var(--menta); margin-right: .45rem; }
+
+        /* Biblioteca */
+        .filtros { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-bottom: 1rem; }
+        .filtro { border: 1.5px solid var(--linea); background: #fff; border-radius: 999px; padding: .5rem .95rem; font-weight: 700; font-size: .875rem; cursor: pointer; min-height: 2.6rem; }
+        .filtro small { color: var(--musgo); font-weight: 600; margin-left: .2rem; }
+        .filtro[aria-pressed="true"] { background: var(--bosque); color: #fff; border-color: var(--bosque); }
+        .filtro[aria-pressed="true"] small { color: rgba(255, 255, 255, .8); }
+        .buscador { max-width: 26rem; margin-bottom: 1.75rem; }
+        .recurso { display: flex; flex-direction: column; gap: .8rem; }
+        .recurso h3 { font-size: 1.2rem; }
+        .recurso p { color: var(--musgo); font-size: .93rem; }
+        .recurso ol { margin: .7rem 0 0; padding-left: 1.2rem; display: grid; gap: .35rem; font-size: .9rem; }
+        .recurso-pie { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: .6rem; flex-wrap: wrap; font-size: .85rem; padding-top: .4rem; }
+        .recurso-pie a { font-weight: 700; color: var(--coralp); }
+        .pronto { color: var(--musgo); font-weight: 600; }
+        .calculadora { display: grid; gap: .5rem; margin-top: .9rem; background: var(--crema); border-radius: 1rem; padding: 1rem; }
+        .calculadora label { font-size: .85rem; font-weight: 700; }
+        .resultado { margin-top: .4rem; padding: .8rem 1rem; border-radius: .9rem; background: var(--menta); font-size: .92rem; }
+        .resultado b { font: 700 1.6rem var(--titulo); display: block; }
+        .vacio { text-align: center; padding: 2rem; color: var(--musgo); }
+
+        /* Sobre el CIC */
+        .sobre { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+        .sobre p + p { margin-top: 1rem; }
+        .cita { margin-top: 1.6rem; border-left: 4px solid var(--coralp); padding: .3rem 0 .3rem 1.1rem; font: 600 1.15rem/1.45 var(--titulo); }
+        .video { position: relative; aspect-ratio: 4 / 3; background: var(--bosque); }
+        .video img { opacity: .55; }
+        .video-capa { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; color: #fff; padding: 1.5rem; }
+        .video-boton { width: 4.2rem; height: 4.2rem; border-radius: 50%; background: rgba(255, 255, 255, .92); display: grid; place-items: center; margin: 0 auto .8rem; }
+        .video-boton::after { content: ''; border-left: 1.1rem solid var(--coralp); border-top: .7rem solid transparent; border-bottom: .7rem solid transparent; margin-left: .3rem; }
+        .cascada { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: .75rem; margin-top: 3.5rem; }
+        .cascada .tarjeta b { font: 700 2.6rem var(--titulo); display: block; line-height: 1; }
+        .cascada .tarjeta h3 { font-size: 1.15rem; margin: .5rem 0 .4rem; }
+        .cascada .tarjeta p { color: var(--musgo); font-size: .92rem; }
+        .flecha { align-self: center; font: 700 1.6rem var(--titulo); color: var(--coralp); }
+        @media (max-width: 900px) { .sobre { grid-template-columns: 1fr; } .cascada { grid-template-columns: 1fr; } .flecha { transform: rotate(90deg); justify-self: center; } }
+        .distintas article h3 { font-size: 1.2rem; margin: 1rem 0 .5rem; }
+        .distintas article p { color: var(--musgo); font-size: .93rem; }
+        .icono { width: 3.2rem; height: 3.2rem; border-radius: 1rem; display: grid; place-items: center; }
+        .icono svg { width: 1.6rem; height: 1.6rem; }
+        .etapas li { list-style: none; }
+        .etapas { padding: 0; margin: 0; }
+        .etapas h3 { font-size: 1.1rem; margin: .9rem 0 .4rem; }
+        .etapas p { color: var(--musgo); font-size: .9rem; }
+        .pilar { text-align: center; }
+        .pilar .numero { margin: 0 auto .8rem; width: 3rem; height: 3rem; }
+        .pilar h3 { font-size: 1.05rem; margin-bottom: .4rem; }
+        .pilar p { color: var(--musgo); font-size: .88rem; }
+        .pilar-base { background: rgba(189, 178, 228, .35); border-color: var(--lavanda); }
+        .subtitulo { font-size: clamp(1.4rem, 3vw, 1.8rem); margin: 4rem 0 1.5rem; }
+        .historias figure { margin: 0; }
+        .historias .hoja, .historias .hoja-inv { aspect-ratio: 4 / 5; }
+        .historias figcaption { margin-top: .9rem; }
+        .historias figcaption b { font: 700 1.1rem var(--titulo); display: block; }
+        .historias figcaption span { color: var(--musgo); font-size: .92rem; }
+        @media (min-width: 681px) { .historias figure:nth-child(2) { margin-top: 2.5rem; } }
+
+        /* Territorio */
+        .territorio { background: var(--bosque); color: #fff; position: relative; overflow: hidden; }
+        .territorio .patron-hojas { position: absolute; inset: 0; opacity: .12; }
+        .territorio .contenedor { position: relative; }
+        .territorio .eyebrow { color: var(--mantequilla); }
+        .territorio .cabeza p { color: rgba(255, 255, 255, .85); }
+        .cifra { padding: 1.4rem; border-radius: 1.25rem; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); }
+        .cifra b { font: 700 2.6rem/1 var(--titulo); display: block; margin-bottom: .4rem; }
+        .cifra span { font-size: .92rem; color: rgba(255, 255, 255, .9); }
+        .satelites { margin-top: 2rem; }
+        .satelite { padding: 1.1rem 1.2rem; border-radius: 1.1rem; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); }
+        .satelite small { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--menta); font-weight: 700; }
+        .satelite b { display: block; font: 700 1.05rem var(--titulo); margin-top: .25rem; }
+
+        /* Aliados */
+        .aliado h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+        .aliado p { color: var(--musgo); font-size: .92rem; }
+        .aliado .chip { margin-bottom: .9rem; }
+
+        /* Ayuda */
+        .ayuda { display: grid; grid-template-columns: 1.3fr .9fr; gap: 2rem; align-items: start; }
+        .preguntas details { background: #fff; border: 1px solid var(--linea); border-radius: 1.1rem; padding: 1rem 1.2rem; }
+        .preguntas details + details { margin-top: .6rem; }
+        .preguntas summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+        .preguntas summary::-webkit-details-marker { display: none; }
+        .preguntas summary::after { content: '+'; font: 700 1.3rem/1 var(--titulo); color: var(--coralp); }
+        .preguntas details[open] summary::after { content: '–'; }
+        .preguntas details p { margin-top: .7rem; color: var(--musgo); }
+        .lateral { display: grid; gap: 1rem; }
+        .lateral h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+        .lateral p { color: var(--musgo); font-size: .93rem; }
+        @media (max-width: 900px) { .ayuda { grid-template-columns: 1fr; } }
+
+        /* Formularios */
+        .campo { width: 100%; border: 1.5px solid rgba(46, 74, 62, .25); border-radius: .9rem; padding: .7rem .9rem; background: #fff; font-size: 1rem; min-height: 2.9rem; }
+        .campo:focus { outline: none; border-color: var(--bosque); box-shadow: 0 0 0 3px rgba(158, 208, 183, .7); }
+        .etiqueta { display: block; font-weight: 700; font-size: .875rem; margin: .9rem 0 .35rem; }
+        .ayuda-campo { display: block; font-size: .8rem; color: var(--musgo); margin-top: .3rem; }
+        .dos-campos { display: grid; grid-template-columns: 1fr 1fr; gap: 0 .8rem; }
+        @media (max-width: 520px) { .dos-campos { grid-template-columns: 1fr; } }
+        .mensaje { margin-top: 1rem; border-radius: 1rem; padding: .8rem 1rem; font-size: .9rem; font-weight: 600; }
+        .mensaje.error { background: rgba(238, 152, 132, .3); border: 1px solid var(--coral); }
+        .mensaje.ok { background: rgba(158, 208, 183, .4); border: 1px solid var(--menta); }
+        .casilla { display: flex; gap: .7rem; align-items: flex-start; font-size: .88rem; margin-top: 1rem; }
+        .casilla input { width: 1.25rem; height: 1.25rem; accent-color: var(--bosque); flex-shrink: 0; margin-top: .15rem; }
+
+        /* Política y pie */
+        .politica { max-width: 52rem; }
+        .politica h3 { font-size: 1.05rem; margin: 1.3rem 0 .4rem; }
+        .politica p, .politica li { color: var(--musgo); font-size: .93rem; }
+        .politica ul { padding-left: 1.2rem; margin: .4rem 0 0; }
+        .pie { background: #fff; border-top: 1px solid var(--linea); padding: 3.5rem 0 2rem; }
+        .pie-rejilla { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2rem; }
+        .pie h2 { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--coralp); margin-bottom: .8rem; font-family: var(--texto); }
+        .pie ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+        .pie ul a { text-decoration: none; color: var(--musgo); font-weight: 600; font-size: .93rem; }
+        .pie ul a:hover { color: var(--bosque); text-decoration: underline; }
+        .pie-legal { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--linea); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; font-size: .85rem; color: var(--musgo); }
+        @media (max-width: 900px) { .pie-rejilla { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 520px) { .pie-rejilla { grid-template-columns: 1fr; } }
+
+        /* Diálogo de ingreso */
+        dialog { width: min(34rem, 100vw - 1.5rem); max-height: calc(100vh - 1.5rem); border: 0; border-radius: 2rem; padding: 0; background: var(--crema); color: var(--bosque); box-shadow: 0 30px 60px -20px rgba(46, 74, 62, .5); }
         dialog::backdrop { background: rgba(46, 74, 62, .55); backdrop-filter: blur(3px); }
         dialog[open] { animation: abre .25s ease; }
         @keyframes abre { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
-        .perfil input:checked + span { border-color: #2E4A3E; background: #fff; box-shadow: 0 0 0 3px rgba(158, 208, 183, .6); }
-        .perfil input:focus-visible + span { outline: 3px solid #B04A36; outline-offset: 2px; }
-        .pestana[aria-selected="true"] { background: #2E4A3E; color: #fff; border-color: #2E4A3E; }
-        :focus-visible { outline: 3px solid #B04A36; outline-offset: 2px; }
-        .campo { width: 100%; border: 1.5px solid rgba(46, 74, 62, .25); border-radius: .9rem; padding: .7rem .9rem; background: #fff; color: #2E4A3E; font-size: 1rem; }
-        .campo:focus { outline: none; border-color: #2E4A3E; box-shadow: 0 0 0 3px rgba(158, 208, 183, .7); }
-        .etiqueta { display: block; font-weight: 700; font-size: .875rem; margin: .9rem 0 .35rem; }
+        .dialogo { position: relative; padding: 1.4rem; }
+        @media (min-width: 560px) { .dialogo { padding: 2rem; } }
+        .cerrar { position: absolute; top: 1rem; right: 1rem; width: 2.6rem; height: 2.6rem; border-radius: 50%; border: 0; background: none; font-size: 1.6rem; cursor: pointer; }
+        .cerrar:hover { background: rgba(46, 74, 62, .08); }
+        .perfiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem; }
+        .perfil input { position: absolute; opacity: 0; pointer-events: none; }
+        .perfil span { display: block; height: 100%; border: 2px solid var(--linea); border-radius: 1rem; background: rgba(255, 255, 255, .6); padding: .75rem .3rem; text-align: center; cursor: pointer; font-weight: 700; font-size: .8rem; line-height: 1.2; }
+        .perfil span::before { content: ''; display: block; width: 1.9rem; height: 1.9rem; border-radius: 50%; margin: 0 auto .45rem; background: var(--c); }
+        .perfil input:checked + span { border-color: var(--bosque); background: #fff; box-shadow: 0 0 0 3px rgba(158, 208, 183, .6); }
+        .perfil input:focus-visible + span { outline: 3px solid var(--coralp); outline-offset: 2px; }
+        @media (min-width: 560px) { .perfil span { font-size: .9rem; } }
+        .conmutador { display: grid; grid-template-columns: 1fr 1fr; gap: .25rem; background: #fff; border: 1px solid var(--linea); border-radius: 999px; padding: .25rem; margin-top: 1.1rem; }
+        .conmutador button { border: 0; background: none; border-radius: 999px; padding: .55rem; font-weight: 700; font-size: .9rem; cursor: pointer; }
+        .conmutador button[aria-selected="true"] { background: var(--bosque); color: #fff; }
+        .nota { margin-top: 1rem; font-size: .88rem; border-radius: 1rem; padding: .75rem 1rem; }
+        .clave { position: relative; }
+        .clave .campo { padding-right: 5.5rem; }
+        .ver { position: absolute; right: .4rem; top: 50%; transform: translateY(-50%); border: 0; background: none; color: var(--coralp); font-weight: 700; font-size: .85rem; padding: .5rem .7rem; cursor: pointer; }
+        .ancho { width: 100%; margin-top: 1.4rem; }
+        .texto-boton { display: block; margin: .8rem auto 0; background: none; border: 0; color: var(--musgo); font-weight: 700; font-size: .88rem; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+
+        /* Plataforma (después de ingresar) */
+        .plataforma-cab { position: relative; overflow: hidden; background: var(--crema-2); padding: 2.5rem 0; }
+        .plataforma-cab .patron-hojas { position: absolute; inset: 0 0 0 35%; opacity: .4; }
+        .plataforma-cab .contenedor { position: relative; }
+        .plataforma-cab h1 { font-size: clamp(2.1rem, 5vw, 3rem); margin-top: .5rem; }
+        .plataforma-cab h1:focus { outline: none; }
+        .aviso-demo { display: inline-block; background: var(--mantequilla); border-radius: 999px; padding: .4rem 1rem; font-size: .85rem; font-weight: 600; margin-bottom: 1.1rem; }
+        .aviso-clave { margin-top: 1.4rem; background: #fff; border-left: 4px solid var(--coralp); border-radius: 1rem; padding: 1rem 1.2rem; display: flex; flex-wrap: wrap; gap: .8rem 1.2rem; align-items: center; max-width: 48rem; }
+        .aviso-clave p { flex: 1 1 18rem; font-size: .92rem; }
+        .continuar { margin-top: 1.4rem; background: var(--bosque); color: #fff; border-radius: 1.4rem; padding: 1.2rem 1.4rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; max-width: 48rem; }
+        .continuar small { color: var(--menta); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .72rem; }
+        .continuar b { display: block; font: 700 1.15rem var(--titulo); margin-top: .2rem; }
+        .pestanas { display: flex; gap: .5rem; overflow-x: auto; padding: 1.4rem 0 .4rem; }
+        .pestana { flex-shrink: 0; border: 1.5px solid var(--linea); background: #fff; border-radius: 999px; padding: .6rem 1.2rem; font-weight: 700; font-size: .9rem; cursor: pointer; }
+        .pestana[aria-selected="true"] { background: var(--bosque); color: #fff; border-color: var(--bosque); }
+        .vista { padding: 1.5rem 0 4rem; }
+        .vista h2 { font-size: clamp(1.6rem, 3.5vw, 2rem); }
+        .vista-intro { color: var(--musgo); margin: .4rem 0 1.6rem; }
+        .curso { background: #fff; border: 1px solid var(--linea); border-radius: 1.5rem; overflow: hidden; }
+        .curso-cab { padding: 1.3rem 1.4rem 1.1rem; }
+        .curso-cab h3 { font-size: 1.45rem; margin-top: .3rem; }
+        .curso-cuerpo { padding: 1.2rem 1.4rem 1.4rem; }
+        .barra { display: flex; align-items: center; gap: .7rem; margin-top: .9rem; font-weight: 700; font-size: .9rem; }
+        .barra-fondo { flex: 1; height: .6rem; border-radius: 999px; background: var(--crema-2); overflow: hidden; }
+        .barra-fondo span { display: block; height: 100%; background: var(--bosque); border-radius: 999px; transition: width .4s; }
+        .modulos { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .2rem; }
+        .modulos label { display: flex; gap: .7rem; padding: .65rem .6rem; border-radius: .9rem; cursor: pointer; }
+        .modulos label:hover { background: var(--crema); }
+        .modulos input { width: 1.25rem; height: 1.25rem; accent-color: var(--bosque); flex-shrink: 0; margin-top: .15rem; }
+        .modulos b { display: block; font-size: .92rem; }
+        .modulos span span { color: var(--musgo); font-size: .88rem; }
+        .modulos .siguiente { background: rgba(158, 208, 183, .3); }
+        .logros { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+        .logro { display: flex; align-items: center; gap: .7rem; background: #fff; border: 1px solid var(--linea); border-radius: 999px; padding: .5rem 1rem .5rem .5rem; font-weight: 700; font-size: .9rem; }
+        .logro svg { width: 2.2rem; height: 2.2rem; }
+        .logro.pendiente { opacity: .55; }
+        .kpi b { font: 700 2rem var(--titulo); display: block; }
+        .kpi span { color: var(--musgo); font-size: .88rem; }
+        .barras { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+        .barras li { display: grid; grid-template-columns: 6.5rem 1fr 2rem; gap: .7rem; align-items: center; font-size: .9rem; }
+        .barras .barra-fondo span { background: var(--menta); }
+        .barras b { text-align: right; }
+        .tabla-caja { background: #fff; border: 1px solid var(--linea); border-radius: 1.5rem; overflow-x: auto; }
+        table { width: 100%; min-width: 44rem; border-collapse: collapse; text-align: left; }
+        th { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--musgo); padding: 1rem .9rem; }
+        td { border-top: 1px solid var(--linea); padding: .8rem .9rem; font-size: .9rem; vertical-align: top; }
+        th:first-child, td:first-child { padding-left: 1.3rem; }
+        td b { display: block; }
+        td small { color: var(--musgo); }
+        .boton-texto { background: none; border: 0; padding: 0; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+        .controles { display: flex; flex-wrap: wrap; gap: .8rem; align-items: flex-end; margin: 2rem 0 1.2rem; }
+        .controles > div { flex: 1 1 14rem; max-width: 26rem; }
+        .datos { margin: 0; }
+        .datos div { display: grid; grid-template-columns: 7.5rem 1fr; gap: .8rem; padding: .7rem 0; border-top: 1px solid var(--linea); }
+        .datos dt { color: var(--musgo); font-size: .9rem; }
+        .datos dd { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
+        .etapa-actual { background: var(--coralp); color: #fff; }
+        .etapa-pendiente { background: var(--crema-2); color: var(--musgo); }
+        .lado-bosque { background: var(--bosque); color: #fff; border-radius: 1.5rem; padding: 1.6rem; position: relative; overflow: hidden; }
+        .lado-bosque .patron-hojas { position: absolute; inset: 0; opacity: .12; }
+        .lado-bosque > div { position: relative; display: grid; gap: .7rem; }
+        .aviso { position: fixed; left: 50%; bottom: 1.25rem; transform: translateX(-50%); z-index: 80; background: var(--bosque); color: #fff; padding: .8rem 1.3rem; border-radius: 999px; font-weight: 600; font-size: .9rem; box-shadow: var(--sombra); max-width: calc(100vw - 2rem); text-align: center; }
+
         @media (prefers-reduced-motion: reduce) {
             html { scroll-behavior: auto; }
-            .aparece { opacity: 1; transform: none; transition: none; }
+            .js .aparece { opacity: 1; transform: none; transition: none; }
             dialog[open] { animation: none; }
+            .btn:hover { transform: none; }
         }
     </style>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
-<body class="bg-crema text-bosque font-texto antialiased selection:bg-menta selection:text-bosque">
+<body>
 
-    <!-- Filtros de duotono (tratamiento de fotos del manual) y símbolos de la marca -->
+    <!-- Duotono para unificar fotos de distinta calidad (tratamiento de fotos del manual) y símbolos de la marca -->
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
         <filter id="duo-verde" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues=".18 .66"/><feFuncG type="table" tableValues=".29 .85"/><feFuncB type="table" tableValues=".24 .75"/></feComponentTransfer></filter>
         <filter id="duo-durazno" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues=".45 .98"/><feFuncG type="table" tableValues=".24 .84"/><feFuncB type="table" tableValues=".17 .72"/></feComponentTransfer></filter>
@@ -94,503 +464,810 @@
         <symbol id="trazo" viewBox="0 0 152 16"><path d="M3 11 C 30 2, 52 2, 76 9 S 124 15, 149 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
     </svg>
 
-    <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] bg-white px-4 py-2 rounded-full font-bold">Saltar al contenido</a>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-    <!-- Navegación: logo a la izquierda, Ingresar arriba a la derecha -->
-    <header class="bg-crema/85 backdrop-blur-md border-b border-bosque/10 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
-            <a href="#inicio" id="logo" class="flex items-center gap-2.5 shrink-0" aria-label="CIC · Centro de Innovación Comunitaria, inicio">
-                <svg class="w-10 h-10" aria-hidden="true"><use href="#isotipo"/></svg>
-                <span class="leading-none">
-                    <span class="block font-titulo font-bold text-[1.9rem] text-bosque tracking-tight -mb-0.5">cic</span>
-                    <span class="hidden sm:block font-titulo font-semibold text-[.72rem] text-musgo">Centro de Innovación Comunitaria</span>
-                </span>
+    <!-- Navegación: 4 secciones que hablan de aprender + Ingresar arriba a la derecha -->
+    <header class="cabecera">
+        <div class="contenedor">
+            <a href="#inicio" id="logo" class="logo" aria-label="CIC · Centro de Innovación Comunitaria, inicio">
+                <svg aria-hidden="true"><use href="#isotipo"/></svg>
+                <span><span class="logo-palabra">cic</span><span class="logo-sub">Centro de Innovación Comunitaria</span></span>
             </a>
-            <nav id="nav-publica" aria-label="Secciones" class="hidden lg:flex items-center gap-7 text-sm font-semibold text-musgo">
-                <a href="#que-es" class="hover:text-bosque">El centro</a>
-                <a href="#proceso" class="hover:text-bosque">Cómo funciona</a>
-                <a href="#historias" class="hover:text-bosque">Historias</a>
-                <a href="#pilares" class="hover:text-bosque">Pilares</a>
-                <a href="#territorio" class="hover:text-bosque">Territorio</a>
+            <nav id="nav-publica" class="nav" aria-label="Principal">
+                <a href="#rutas">Rutas</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#sobre-cic">Sobre el CIC</a>
+                <a href="#ayuda">Ayuda</a>
             </nav>
-            <div class="flex items-center gap-2">
-                <button type="button" id="btn-ingresar" data-abrir="ingresar" class="bg-coralp hover:bg-coralp-osc text-white font-bold px-5 py-2.5 rounded-full text-sm shadow-md shadow-coralp/20 transition-colors">
-                    Ingresar <span aria-hidden="true">›</span>
+            <div class="acciones">
+                <button type="button" id="btn-ingresar" class="btn btn-primario btn-pequeno" data-abrir="ingresar">Ingresar <span aria-hidden="true">›</span></button>
+                <button type="button" id="menu-btn" class="menu-btn" aria-controls="nav-publica" aria-expanded="false" aria-label="Abrir menú">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </button>
-                <div id="chip-usuaria" class="hidden items-center gap-2">
-                    <span class="hidden sm:flex flex-col items-end leading-tight">
-                        <span id="chip-nombre" class="font-bold text-sm"></span>
-                        <span id="chip-rol" class="text-xs text-musgo"></span>
-                    </span>
-                    <span id="chip-inicial" class="w-10 h-10 rounded-full bg-menta text-bosque font-titulo font-bold grid place-items-center" aria-hidden="true"></span>
-                    <button type="button" id="btn-salir" class="text-sm font-bold text-coralp hover:underline px-2 py-2">Salir</button>
+                <div id="usuaria" class="usuaria">
+                    <span class="usuaria-datos"><b id="usuaria-nombre"></b><small id="usuaria-rol"></small></span>
+                    <span id="usuaria-inicial" class="inicial" aria-hidden="true"></span>
+                    <button type="button" id="btn-salir" class="salir">Salir</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- =========================================================
-         PARTE INFORMATIVA (pública)
-         ========================================================= -->
+    <!-- =====================================================================
+         1 · PORTAL PÚBLICO
+         ===================================================================== -->
     <main id="publico">
         <span id="contenido"></span>
 
-        <!-- Hero -->
-        <section id="inicio" class="relative overflow-hidden py-14 lg:py-24">
-            <div class="absolute inset-y-0 right-0 w-1/2 patron-hojas opacity-40 pointer-events-none hidden lg:block" aria-hidden="true"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <div class="lg:col-span-7 space-y-6">
-                        <p class="text-xs font-bold text-coralp tracking-[.18em] uppercase">Mujeres del Caribe que emprenden</p>
-                        <h1 class="font-titulo font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
-                            Emprender es <span class="text-coralp">florecer.</span>
-                        </h1>
-                        <svg class="trazo text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                        <p class="text-lg text-musgo leading-relaxed max-w-2xl">
-                            Transformamos la subsistencia en autonomía económica. El <strong class="text-bosque">Centro de Innovación Comunitaria (CIC)</strong> forma y acompaña a las mujeres emprendedoras de la economía popular del Caribe colombiano, para que su negocio crezca en su territorio y con su red.
-                        </p>
-                        <div class="pt-2 flex flex-wrap gap-3">
-                            <a href="#que-es" class="bg-coralp hover:bg-coralp-osc text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-coralp/20 transition-transform hover:-translate-y-0.5">
-                                Conoce el centro
-                            </a>
-                            <button type="button" data-abrir="registro" class="bg-white hover:bg-crema-2 border border-bosque/25 font-bold px-7 py-3.5 rounded-full transition-colors">
-                                Soy emprendedora: crear cuenta
-                            </button>
+        <!-- Héroe: propuesta + entrada por rol (patrones P2 y P3 del benchmarking) -->
+        <section id="inicio" class="heroe" aria-labelledby="titulo-inicio">
+            <div class="heroe-patron patron-hojas" aria-hidden="true"></div>
+            <div class="contenedor">
+                <div>
+                    <p class="eyebrow">Emprender es florecer</p>
+                    <h1 id="titulo-inicio">Aprende, organiza y haz crecer <em>tu negocio.</em></h1>
+                    <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                    <p class="heroe-texto">La plataforma del Centro de Innovación Comunitaria: rutas de aprendizaje, plantillas y acompañamiento para mujeres emprendedoras del Caribe colombiano, en red con la Red de Mujeres del Caribe.</p>
+
+                    <div class="roles">
+                        <p class="roles-titulo" id="quien-eres">¿Quién eres?</p>
+                        <div class="roles-tabs" role="tablist" aria-labelledby="quien-eres">
+                            <button type="button" class="rol-tab" role="tab" id="rol-emprendedora" aria-controls="panel-emprendedora" aria-selected="true"><b>Soy emprendedora</b><small>Sigue tu ruta semana a semana</small></button>
+                            <button type="button" class="rol-tab" role="tab" id="rol-dinamizadora" aria-controls="panel-dinamizadora" aria-selected="false" tabindex="-1"><b>Soy dinamizadora</b><small>Curso de gestión y guías</small></button>
+                            <button type="button" class="rol-tab" role="tab" id="rol-aliada" aria-controls="panel-aliada" aria-selected="false" tabindex="-1"><b>Soy aliada</b><small>Conoce el modelo y súmate</small></button>
+                        </div>
+                        <div class="rol-panel" role="tabpanel" id="panel-emprendedora" aria-labelledby="rol-emprendedora">
+                            <ol class="pasos">
+                                <li>Crea tu cuenta con tu cédula o entra con el enlace que te envía tu dinamizadora.</li>
+                                <li>Toca «Continuar» y abre la semana que te toca de la ruta HACER.</li>
+                                <li>Usa la plantilla de la semana en tu negocio, con tu dinamizadora.</li>
+                                <li>Consulta tus logros y recibe tu constancia al cerrar la ruta.</li>
+                            </ol>
+                            <div class="botones">
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="registro">Crear mi cuenta</button>
+                                <a class="btn btn-borde btn-pequeno" href="#ruta-hacer">Ver la ruta HACER</a>
+                            </div>
+                        </div>
+                        <div class="rol-panel" role="tabpanel" id="panel-dinamizadora" aria-labelledby="rol-dinamizadora" hidden>
+                            <ol class="pasos">
+                                <li>Entra con tu cédula; la primera vez tu contraseña también es tu cédula.</li>
+                                <li>Aprueba los 5 módulos del curso de gestión del CIC.</li>
+                                <li>Antes de cada semana revisa la guía de la ruta que acompañas.</li>
+                                <li>Haz seguimiento a las emprendedoras de tu departamento.</li>
+                            </ol>
+                            <div class="botones">
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="ingresar" data-perfil="dinamizadora">Ingresar</button>
+                                <a class="btn btn-borde btn-pequeno" href="#ruta-gestion">Ver el curso de gestión</a>
+                            </div>
+                        </div>
+                        <div class="rol-panel" role="tabpanel" id="panel-aliada" aria-labelledby="rol-aliada" hidden>
+                            <ol class="pasos">
+                                <li>Entiende el modelo del CIC y su formación en cascada.</li>
+                                <li>Descarga o comparte una plantilla de la biblioteca.</li>
+                                <li>Conoce los 8 satélites y los 13 municipios.</li>
+                                <li>Escríbenos para sumarte o verifica una constancia.</li>
+                            </ol>
+                            <div class="botones">
+                                <a class="btn btn-primario btn-pequeno" href="#sobre-cic">Conocer el modelo</a>
+                                <a class="btn btn-borde btn-pequeno" href="#territorio">Ver el territorio</a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="lg:col-span-5 relative pb-6">
-                        <div class="hoja overflow-hidden aspect-[4/5] bg-menta shadow-2xl shadow-bosque/15 max-w-md mx-auto">
-                            <img class="foto-duo" style="filter:url(#duo-verde)" referrerpolicy="no-referrer" width="800" height="1000" fetchpriority="high"
-                                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicEkPOKCm_sE-jU7pciFF2BYTM6QwPMDneMMFKks7sapmv17WIn0rzCAw_O-QWl62bQCkdrrB9Vboed1-2YI24qd3sS_cV5OhRVkEnccxOJZpaBHiG-j52MkSkLGb7h19tBVGtq3_w2p4/s1600/IMG_6584.JPG"
-                                 alt="Mujeres de la Red de Mujeres del Caribe reunidas en un taller">
-                        </div>
-                        <div class="absolute bottom-0 left-0 sm:-left-4 bg-white rounded-3xl shadow-xl shadow-bosque/10 px-5 py-4 flex items-center gap-4">
-                            <div><span class="block font-titulo font-bold text-2xl">1 hub</span><span class="text-xs text-musgo">coordinación técnica</span></div>
-                            <span class="w-px h-10 bg-bosque/15" aria-hidden="true"></span>
-                            <div><span class="block font-titulo font-bold text-2xl text-coralp">8 satélites</span><span class="text-xs text-musgo">en el territorio</span></div>
-                        </div>
+                <div class="heroe-foto">
+                    <div class="hoja">
+                        <img class="foto-duo" style="filter:url(#duo-verde)" referrerpolicy="no-referrer" width="800" height="1000" fetchpriority="high"
+                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicEkPOKCm_sE-jU7pciFF2BYTM6QwPMDneMMFKks7sapmv17WIn0rzCAw_O-QWl62bQCkdrrB9Vboed1-2YI24qd3sS_cV5OhRVkEnccxOJZpaBHiG-j52MkSkLGb7h19tBVGtq3_w2p4/s800/IMG_6584.JPG"
+                             alt="Mujeres de la Red de Mujeres del Caribe reunidas en un taller">
+                    </div>
+                    <div class="heroe-dato">
+                        <div><b>200</b><small>emprendedoras</small></div><i aria-hidden="true"></i>
+                        <div><b style="color:var(--coralp)">8</b><small>satélites</small></div><i aria-hidden="true"></i>
+                        <div><b>7</b><small>departamentos</small></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Transición con trazo curvo orgánico -->
-        <div class="w-full overflow-hidden leading-none" aria-hidden="true">
-            <svg class="w-full h-12 block" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#ffffff"></path>
-            </svg>
-        </div>
-
-        <!-- ¿Qué es el centro? -->
-        <section id="que-es" class="py-16 lg:py-20 bg-white relative">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16 aparece">
-                    <div class="lg:col-span-7 space-y-4">
-                        <p class="text-xs font-bold text-coralp tracking-[.18em] uppercase">Qué es el centro</p>
-                        <h2 class="font-titulo font-bold text-3xl sm:text-4xl">Entendiendo el Centro de Innovación Comunitaria</h2>
-                        <svg class="trazo text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                        <p class="text-musgo leading-relaxed">
-                            Nacemos para cerrar la brecha entre los negocios de subsistencia e informalidad y la gestión empresarial con autonomía, adaptándonos al contexto cultural del Caribe.
-                        </p>
-                    </div>
-                    <div class="lg:col-span-5">
-                        <div class="bg-crema p-7 sm:p-8 rounded-4xl border border-bosque/10 relative overflow-hidden">
-                            <div class="absolute -top-6 -right-6 w-24 h-24 bg-mantequilla/70 rounded-full blur-2xl" aria-hidden="true"></div>
-                            <p class="text-xs font-bold text-coralp uppercase tracking-[.16em]">Concepto clave</p>
-                            <h3 class="font-titulo text-2xl font-bold mt-1 mb-3">Una red, no un edificio</h3>
-                            <p class="text-sm text-musgo leading-relaxed">
-                                El CIC no depende de una infraestructura centralizada. Funciona como un <strong class="text-bosque">sistema vivo</strong> donde la metodología llega directamente a los barrios y esquinas a través de unidades operativas llamadas satélites.
-                            </p>
-                        </div>
-                    </div>
+        <!-- Catálogo de rutas: cada ruta con su ficha (qué, para quién, duración, qué obtienes) -->
+        <section id="rutas" class="seccion seccion-blanca" aria-labelledby="titulo-rutas">
+            <div class="contenedor">
+                <div class="cabeza aparece">
+                    <p class="eyebrow">Rutas de aprendizaje</p>
+                    <h2 id="titulo-rutas">Tres caminos, un mismo propósito.</h2>
+                    <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                    <p>Cada ruta explica antes de ingresar cuánto dura, para quién es y qué obtienes. Todas terminan con una constancia de participación.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <article class="group p-8 rounded-3xl bg-crema border border-bosque/10 hover:border-menta transition-all duration-300 hover:shadow-lg hover:shadow-menta/20 aparece">
-                        <div class="w-14 h-14 rounded-2xl bg-menta/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                <div class="rejilla r3">
+                    <article id="ruta-hacer" class="ruta aparece">
+                        <div class="ruta-cab bg-durazno">
+                            <span class="chip" style="background:rgba(255,255,255,.55)">Emprendedoras · 12 horas</span>
+                            <h3>Ruta HACER</h3>
+                            <p>Seis semanas de acompañamiento individual, en tu propio negocio, para ordenar costos, precios y ventas.</p>
                         </div>
-                        <h3 class="font-titulo font-bold text-xl mb-3">Reconocimiento: «gerentas»</h3>
-                        <p class="text-sm text-musgo leading-relaxed">
-                            Cambiamos la etiqueta de «beneficiarias» por la de <strong class="text-bosque">gerentas</strong>. Quien sostiene la economía del hogar lidera una unidad productiva real que merece trato técnico, respetuoso y sin paternalismos.
-                        </p>
+                        <div class="ruta-cuerpo">
+                            <dl class="ficha">
+                                <dt>Duración</dt><dd>12 horas · 6 semanas · 2 h por semana</dd>
+                                <dt>Para quién</dt><dd>Emprendedoras</dd>
+                                <dt>Modalidad</dt><dd>Presencial, con guías en la plataforma</dd>
+                            </dl>
+                            <div>
+                                <p style="font-weight:700;margin-bottom:.5rem">Qué obtienes</p>
+                                <ul class="lista-check">
+                                    <li>Calcular lo que te cuesta producir y fijar tu precio con criterio</li>
+                                    <li>Conocer tu punto de equilibrio</li>
+                                    <li>Separar el dinero del hogar y el del negocio</li>
+                                    <li>Un plan comercial y un plan de inversión</li>
+                                </ul>
+                            </div>
+                            <details class="desplegable">
+                                <summary>Ver temario · 6 semanas</summary>
+                                <ol class="temario">
+                                    <li><b>1 · Radiografía del negocio y registro diario</b><span>Partes de lo que ya sabes y empiezas a anotar lo que entra y lo que sale.</span></li>
+                                    <li><b>2 · Canvas de la Esquina y nueva fuente de ingreso</b><span>Describes tu negocio en una hoja y defines un cambio pequeño para probar.</span></li>
+                                    <li><b>3 · Lectura de tendencias</b><span>Miras el mercado más allá de tu cuadra y ajustas lo que ofreces.</span></li>
+                                    <li><b>4 · Nuevo precio y punto de equilibrio</b><span>Separas los dos bolsillos y fijas un precio que sí cubre lo que gastas.</span></li>
+                                    <li><b>5 · Plan comercial y Mi CRM</b><span>Meta de ventas y al menos cinco clientes potenciales.</span></li>
+                                    <li><b>6 · Plan de inversión</b><span>Con tu flujo de caja y estado de resultados formulas tu plan de inversión.</span></li>
+                                </ol>
+                            </details>
+                            <div class="ruta-pie">
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="registro">Crear mi cuenta</button>
+                                <a class="btn btn-borde btn-pequeno" href="#recursos" data-filtrar="HACER">Sus plantillas</a>
+                            </div>
+                        </div>
                     </article>
-                    <article class="group p-8 rounded-3xl bg-crema border border-bosque/10 hover:border-durazno transition-all duration-300 hover:shadow-lg hover:shadow-durazno/20 aparece">
-                        <div class="w-14 h-14 rounded-2xl bg-durazno/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11a2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+
+                    <article id="ruta-ser" class="ruta aparece">
+                        <div class="ruta-cab bg-lavanda">
+                            <span class="chip" style="background:rgba(255,255,255,.55)">Emprendedoras en grupo · 16 horas</span>
+                            <h3>Ruta SER</h3>
+                            <p>Cuatro talleres grupales para fortalecer a la persona que sostiene el negocio.</p>
                         </div>
-                        <h3 class="font-titulo font-bold text-xl mb-3">Anclaje en red territorial</h3>
-                        <p class="text-sm text-musgo leading-relaxed">
-                            El CIC no aterriza desde afuera de forma improvisada. Se apalanca en la trayectoria histórica de la <strong class="text-bosque">Red de Mujeres del Caribe</strong>, integrando el conocimiento local preexistente.
-                        </p>
+                        <div class="ruta-cuerpo">
+                            <dl class="ficha">
+                                <dt>Duración</dt><dd>16 horas · 4 talleres de 4 horas</dd>
+                                <dt>Para quién</dt><dd>Emprendedoras en grupo</dd>
+                                <dt>Modalidad</dt><dd>2 presenciales y 2 virtuales</dd>
+                            </dl>
+                            <div>
+                                <p style="font-weight:700;margin-bottom:.5rem">Qué obtienes</p>
+                                <ul class="lista-check">
+                                    <li>Reconocerte como gerenta de tu negocio</li>
+                                    <li>Manejar el miedo y decidir con información</li>
+                                    <li>Liderar y comunicarte con asertividad</li>
+                                    <li>Acuerdos para ahorrar y crecer en grupo</li>
+                                </ul>
+                            </div>
+                            <details class="desplegable">
+                                <summary>Ver temario · 4 talleres</summary>
+                                <ol class="temario">
+                                    <li><b>SER 1 · Confianza para presentar mi negocio</b><span>Presencial. Árbol de vida, mapa de sueños y tarjeta de «gerenta».</span></li>
+                                    <li><b>SER 2 · Decidir sin miedo</b><span>Virtual. Una decisión analizada con su primer paso.</span></li>
+                                    <li><b>SER 3 · Liderazgo y derechos</b><span>Presencial. Rutas de atención, espacios de participación y compromiso de liderazgo.</span></li>
+                                    <li><b>SER 4 · Ahorrar y crecer juntas</b><span>Virtual. Resolución de conflictos y acuerdos de corresponsabilidad del grupo.</span></li>
+                                </ol>
+                            </details>
+                            <div class="ruta-pie">
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="registro">Crear mi cuenta</button>
+                                <a class="btn btn-borde btn-pequeno" href="#recursos" data-filtrar="Ser">Sus plantillas</a>
+                            </div>
+                        </div>
                     </article>
-                    <article class="group p-8 rounded-3xl bg-crema border border-bosque/10 hover:border-mantequilla transition-all duration-300 hover:shadow-lg hover:shadow-mantequilla/30 aparece">
-                        <div class="w-14 h-14 rounded-2xl bg-mantequilla/70 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+
+                    <article id="ruta-gestion" class="ruta aparece">
+                        <div class="ruta-cab bg-agua">
+                            <span class="chip" style="background:rgba(255,255,255,.55)">Equipo del CIC · ≈ 2 horas</span>
+                            <h3>Gestión del CIC</h3>
+                            <p>Curso virtual de 5 módulos para entender cómo funciona el centro. Es el curso que todas las dinamizadoras deben hacer.</p>
                         </div>
-                        <h3 class="font-titulo font-bold text-xl mb-3">Innovación frugal</h3>
-                        <p class="text-sm text-musgo leading-relaxed">
-                            Aplicamos metodologías globales adaptadas a la realidad de la esquina y el mercado. Soluciones sencillas, de bajo costo y alto impacto, diseñadas para entornos de recursos limitados.
-                        </p>
+                        <div class="ruta-cuerpo">
+                            <dl class="ficha">
+                                <dt>Duración</dt><dd>≈ 2 horas · 5 módulos</dd>
+                                <dt>Para quién</dt><dd>Dinamizadoras y Secretaría Técnica</dd>
+                                <dt>Modalidad</dt><dd>100 % virtual, a tu ritmo</dd>
+                            </dl>
+                            <div>
+                                <p style="font-weight:700;margin-bottom:.5rem">Qué obtienes</p>
+                                <ul class="lista-check">
+                                    <li>Qué significa gestionar un centro de innovación comunitario</li>
+                                    <li>Leer el ecosistema emprendedor de tu territorio</li>
+                                    <li>Tu rol, a quién reportas y cuándo</li>
+                                    <li>Constancia al aprobar los 5 módulos con al menos 70 %</li>
+                                </ul>
+                            </div>
+                            <details class="desplegable">
+                                <summary>Ver temario · 5 módulos</summary>
+                                <ol class="temario">
+                                    <li><b>1 · Introducción a la gestión de centros de innovación</b><span>20 min. Qué hace diferente a un CIC para la autonomía económica de la mujer.</span></li>
+                                    <li><b>2 · El ecosistema emprendedor y el papel del CIC</b><span>25 min. Los seis dominios del ecosistema y un mapa de actores de tu territorio.</span></li>
+                                    <li><b>3 · Cómo opera el centro</b><span>25 min. Secretaría Técnica, satélites, reportes semanales y gobernanza con la Red.</span></li>
+                                    <li><b>4 · La información del centro</b><span>15 min. Ficha de la unidad productiva, evidencias, listas de chequeo y bitácoras.</span></li>
+                                    <li><b>5 · Los pilares en acción</b><span>35 min. Acompañamiento, financiamiento y mercados, con un caso de referencia.</span></li>
+                                </ol>
+                            </details>
+                            <div class="ruta-pie">
+                                <button type="button" class="btn btn-primario btn-pequeno" data-abrir="ingresar" data-perfil="dinamizadora">Ingresar</button>
+                            </div>
+                        </div>
                     </article>
                 </div>
+
+                <p class="ventajas"><span>Pensadas para el celular</span><span>Plantillas para usar sin datos</span><span>Con el acompañamiento de tu dinamizadora</span></p>
             </div>
         </section>
 
-        <!-- Cómo funciona -->
-        <section id="proceso" class="py-20 bg-crema relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-                <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 aparece">
-                    <p class="text-xs font-bold text-coralp tracking-[.18em] uppercase">Cómo funciona</p>
-                    <h2 class="font-titulo font-bold text-3xl sm:text-4xl">¿Cómo funciona el proceso de formación?</h2>
-                    <svg class="trazo trazo-centro text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                    <p class="text-musgo">
-                        Cada unidad productiva recorre un proceso integral en dos rutas que se cruzan: la ruta del <strong class="text-bosque">HACER</strong>, de 12 horas, y la ruta del <strong class="text-bosque">SER</strong>, de 4 talleres.
-                    </p>
+        <!-- Biblioteca de recursos: caja de herramientas pública, con filtros y búsqueda -->
+        <section id="recursos" class="seccion" aria-labelledby="titulo-recursos">
+            <div class="contenedor">
+                <div class="cabeza aparece">
+                    <p class="eyebrow">Biblioteca de recursos</p>
+                    <h2 id="titulo-recursos">Plantillas para tu negocio.</h2>
+                    <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                    <p>Las herramientas de las rutas, gratuitas y explicadas paso a paso. Filtra por tema o busca lo que necesitas.</p>
                 </div>
 
-                <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <li class="bg-white p-6 rounded-3xl border border-bosque/10 shadow-sm space-y-3 aparece">
-                        <span class="w-11 h-11 rounded-full bg-menta font-titulo font-bold flex items-center justify-center">01</span>
-                        <h3 class="font-titulo font-bold text-lg">Vinculación y diagnóstico</h3>
-                        <p class="text-sm text-musgo leading-relaxed">Caracterización de la unidad productiva y lectura del entorno para entender las necesidades de la gerenta y su comunidad.</p>
-                    </li>
-                    <li class="bg-white p-6 rounded-3xl border border-bosque/10 shadow-sm space-y-3 aparece">
-                        <span class="w-11 h-11 rounded-full bg-durazno font-titulo font-bold flex items-center justify-center">02</span>
-                        <h3 class="font-titulo font-bold text-lg">Ruta HACER · 6 semanas</h3>
-                        <p class="text-sm text-musgo leading-relaxed">Herramientas prácticas: modelo de negocio (Canvas de la Esquina), finanzas frugales, flujo de caja y planes de inversión viables.</p>
-                    </li>
-                    <li class="bg-white p-6 rounded-3xl border border-bosque/10 shadow-sm space-y-3 aparece">
-                        <span class="w-11 h-11 rounded-full bg-lavanda font-titulo font-bold flex items-center justify-center">03</span>
-                        <h3 class="font-titulo font-bold text-lg">Ruta SER · transversal</h3>
-                        <p class="text-sm text-musgo leading-relaxed">Talleres sobre liderazgo, toma de decisiones, confianza colectiva y prevención de violencias.</p>
-                    </li>
-                    <li class="bg-white p-6 rounded-3xl border border-bosque/10 shadow-sm space-y-3 aparece">
-                        <span class="w-11 h-11 rounded-full bg-mantequilla font-titulo font-bold flex items-center justify-center">04</span>
-                        <h3 class="font-titulo font-bold text-lg">Conexión y financiamiento</h3>
-                        <p class="text-sm text-musgo leading-relaxed">Vinculación a estrategias comerciales, redes comunitarias y esquemas de ahorro solidario (Bankomunales).</p>
-                    </li>
+                <div class="filtros" role="group" aria-label="Filtrar plantillas por tema">
+                    <button type="button" class="filtro" data-cat="" aria-pressed="true">Todos <small></small></button>
+                    <button type="button" class="filtro" data-cat="Finanzas" aria-pressed="false">Finanzas <small></small></button>
+                    <button type="button" class="filtro" data-cat="Ventas" aria-pressed="false">Ventas <small></small></button>
+                    <button type="button" class="filtro" data-cat="Administración" aria-pressed="false">Administración <small></small></button>
+                    <button type="button" class="filtro" data-cat="Formalización" aria-pressed="false">Formalización <small></small></button>
+                    <button type="button" class="filtro" data-cat="Marketing digital" aria-pressed="false">Marketing digital <small></small></button>
+                    <button type="button" class="filtro" data-cat="Ser" aria-pressed="false">Ser <small></small></button>
+                </div>
+                <div class="buscador">
+                    <label class="sr-only" for="buscar-recurso">Buscar una plantilla</label>
+                    <input id="buscar-recurso" class="campo" type="search" placeholder="Buscar: precio, ventas, RUT…">
+                </div>
+
+                <div id="lista-recursos" class="rejilla r3">
+                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
+                        <span class="chip bg-menta">Finanzas</span>
+                        <h3>Diario de empatía financiera y productiva</h3>
+                        <p>Para mirar tu negocio sin juzgarlo: cómo vendes, cómo gastas y qué te preocupa de los números.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Responde las preguntas con tu dinamizadora, en tu lugar de trabajo.</li><li>Anota lo que vendes en un día normal y lo que gastas para producirlo.</li><li>Marca lo que más te preocupa: será el punto de partida de la ruta.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 1</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Administración" data-ruta="HACER">
+                        <span class="chip bg-agua">Administración</span>
+                        <h3>Registro diario de ventas y gastos</h3>
+                        <p>Anota cada día lo que entra y lo que sale de tu negocio para saber cuánto vendes y cuánto gastas de verdad.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Cada noche, escribe las ventas del día y los gastos del negocio.</li><li>No mezcles gastos de la casa: esos van en el otro bolsillo.</li><li>Al final de la semana, suma y compara con la semana anterior.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 1</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
+                        <span class="chip bg-durazno">Ventas</span>
+                        <h3>Canvas de la Esquina</h3>
+                        <p>Describe tu negocio en una sola hoja y encuentra nuevas fuentes de ingreso.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Escribe quiénes te compran y por qué te eligen.</li><li>Anota qué ofreces, cómo lo vendes y cuánto te cuesta.</li><li>Plantea una nueva fuente de ingreso y un cambio pequeño para probar esta semana.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 2</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
+                        <span class="chip bg-durazno">Ventas</span>
+                        <h3>Matriz de tendencias</h3>
+                        <p>Lee lo que está pasando en tu mercado más allá de tu cuadra para ajustar lo que ofreces.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Observa qué se vende más en tu zona y en redes.</li><li>Anota qué cambia: precios, gustos, nuevos competidores.</li><li>Decide qué ajustas en tu producto a partir de lo que viste.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 3</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
+                        <span class="chip bg-menta">Finanzas</span>
+                        <h3>Ejercicio de los dos bolsillos</h3>
+                        <p>Separa el dinero del hogar y el del negocio para saber si tu negocio realmente gana.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Haz la lista de lo que el negocio le presta a la casa sin registrarlo.</li><li>Asígnate un pago fijo por tu trabajo.</li><li>Desde hoy, cada peso va a su bolsillo: hogar o negocio.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 4</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" id="punto-equilibrio" data-cat="Finanzas" data-ruta="HACER">
+                        <span class="chip bg-mantequilla">Finanzas · interactiva</span>
+                        <h3>Calculadora de punto de equilibrio</h3>
+                        <p>Calcula cuántas unidades necesitas vender al mes para cubrir tus costos.</p>
+                        <form class="calculadora" id="calculadora" novalidate>
+                            <label for="pe-fijos">Costos fijos del mes ($)</label>
+                            <input class="campo" id="pe-fijos" inputmode="numeric" value="400000">
+                            <label for="pe-precio">Precio de venta por unidad ($)</label>
+                            <input class="campo" id="pe-precio" inputmode="numeric" value="5000">
+                            <label for="pe-costo">Costo de producir una unidad ($)</label>
+                            <input class="campo" id="pe-costo" inputmode="numeric" value="3000">
+                            <p class="resultado" id="pe-resultado" aria-live="polite"></p>
+                        </form>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 4</a></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
+                        <span class="chip bg-durazno">Ventas</span>
+                        <h3>Plan comercial de una página</h3>
+                        <p>Tu meta de ventas y las acciones para lograrla, en una sola hoja.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Define tu meta de ventas del mes.</li><li>Escribe tres acciones concretas para llegar a clientes nuevos.</li><li>Pon fecha a cada acción y revisa el avance con tu dinamizadora.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 5</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
+                        <span class="chip bg-durazno">Ventas</span>
+                        <h3>Mi CRM: lista de clientes</h3>
+                        <p>Una lista sencilla de clientes potenciales para vender más allá de tu círculo cercano.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Anota al menos cinco clientes potenciales fuera de tu círculo.</li><li>Registra cuándo los contactas y qué te respondieron.</li><li>Programa el siguiente contacto con cada uno.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 5</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
+                        <span class="chip bg-menta">Finanzas</span>
+                        <h3>Plan de inversión simplificado</h3>
+                        <p>Qué necesita tu negocio para crecer, cuánto cuesta y cómo lo vas a financiar.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Lista lo que necesitas comprar o mejorar.</li><li>Estima cuánto cuesta y cuánto más venderías con eso.</li><li>Define de dónde saldrá el dinero: ahorro, grupo solidario u otra fuente.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 6</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
+                        <span class="chip bg-menta">Finanzas</span>
+                        <h3>Flujo de caja y estado de resultados</h3>
+                        <p>Para profundizar la gestión financiera más allá del punto de equilibrio.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Registra entradas y salidas de dinero mes a mes.</li><li>Arma tu estado de pérdidas y ganancias.</li><li>Mira cuánto queda después de cada tipo de costo.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-hacer">Ruta HACER · Semana 6</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Marketing digital">
+                        <span class="chip bg-coral">Marketing digital</span>
+                        <h3>Guía de marketing digital básico</h3>
+                        <p>WhatsApp Business, catálogo digital y redes sociales para vender más.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Configura tu perfil de WhatsApp Business con horario y ubicación.</li><li>Arma un catálogo con fotos claras y precios.</li><li>Publica con constancia y responde rápido.</li></ol></details>
+                        <div class="recurso-pie"><span>Caja de herramientas</span><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Formalización">
+                        <span class="chip bg-agua">Formalización</span>
+                        <h3>Guía de formalización paso a paso</h3>
+                        <p>RUT, registro mercantil, facturación y requisitos sanitarios, en el orden en que te conviene.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Empieza por el RUT: es gratuito.</li><li>Evalúa cuándo te conviene el registro mercantil.</li><li>Revisa los requisitos de facturación y sanitarios de tu actividad.</li></ol></details>
+                        <div class="recurso-pie"><span>Caja de herramientas</span><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                    <article class="tarjeta recurso" data-cat="Ser" data-ruta="SER">
+                        <span class="chip bg-lavanda">Ser</span>
+                        <h3>Árbol de vida y mapa de sueños</h3>
+                        <p>Para reconocer tus raíces, tus fortalezas y hacia dónde quieres llevar tu vida y tu negocio.</p>
+                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Dibuja tus raíces: de dónde vienes y qué te sostiene.</li><li>En el tronco, escribe tus fortalezas.</li><li>En las ramas, lo que sueñas para ti y tu negocio en un año.</li></ol></details>
+                        <div class="recurso-pie"><a href="#ruta-ser">Ruta SER · Taller 1</a><span class="pronto">PDF en preparación</span></div>
+                    </article>
+                </div>
+                <p id="sin-recursos" class="vacio" hidden>No encontramos plantillas con esa búsqueda. Prueba con otra palabra o elige «Todos».</p>
+            </div>
+        </section>
+
+        <!-- Sobre el CIC: modelo, proceso en cascada, video, pilares e historias -->
+        <section id="sobre-cic" class="seccion seccion-blanca" aria-labelledby="titulo-sobre">
+            <div class="contenedor">
+                <div class="sobre">
+                    <div class="aparece">
+                        <p class="eyebrow">Sobre el CIC</p>
+                        <h2 id="titulo-sobre" style="font-size:clamp(1.9rem,4vw,2.7rem);margin-top:.5rem">No instalamos máquinas: instalamos capacidades.</h2>
+                        <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                        <p style="margin-top:1.2rem">El <strong>Centro de Innovación Comunitaria (CIC)</strong> es un modelo de acompañamiento territorial que se apoya en la <strong>Red de Mujeres del Caribe</strong>, con más de 30 años de trayectoria, para que la subsistencia se convierta en autonomía económica.</p>
+                        <p class="texto-suave">No es una sede física: es una red, con una Secretaría Técnica y ocho satélites que operan en espacios de organizaciones aliadas y llegan a los barrios, las esquinas y los mercados.</p>
+                        <p class="cita">Cuando una mujer gerencia su negocio, crece su familia, su organización y su comunidad.</p>
+                    </div>
+                    <div class="hoja-inv video aparece">
+                        <img class="foto-duo" style="filter:url(#duo-verde)" loading="lazy" referrerpolicy="no-referrer" width="640" height="480"
+                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkaFUGQ0lPFM6brzHzL_IpVWq1-TNBT09i9fsvGLFzL9xLCLwIwXAvQrNSRSFfO0YGUrww76EF6ipz-koMBblKLzogX8BmWFiyR5SAm5yjcVIxCCxAXAslyDUhedAtzoGcDtzMJ2Xzapk/s640/IMG_6604.JPG"
+                             alt="">
+                        <div class="video-capa">
+                            <div>
+                                <span class="video-boton" aria-hidden="true"></span>
+                                <b style="font:700 1.25rem var(--titulo)">Video institucional</b>
+                                <p style="opacity:.9;margin-top:.3rem">Muy pronto: el video está en producción.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subtitulo aparece">El proceso: formación en cascada</h3>
+                <div class="cascada" style="margin-top:0">
+                    <div class="tarjeta aparece"><b>5</b><h3>Secretaría Técnica</h3><p>Recibe el modelo completo y lo traduce a la realidad de cada satélite.</p></div>
+                    <span class="flecha" aria-hidden="true">→</span>
+                    <div class="tarjeta aparece"><b style="color:var(--coralp)">24</b><h3>Dinamizadoras en 8 satélites</h3><p>Hacen el curso de gestión y acompañan a cada emprendedora en su territorio.</p></div>
+                    <span class="flecha" aria-hidden="true">→</span>
+                    <div class="tarjeta aparece"><b>200</b><h3>Emprendedoras</h3><p>Viven la ruta HACER-SER: 28 horas de acompañamiento individual y talleres.</p></div>
+                </div>
+
+                <h3 class="subtitulo aparece">Cómo acompañamos a cada emprendedora</h3>
+                <ol class="rejilla r4 etapas">
+                    <li class="tarjeta aparece"><span class="numero bg-menta">01</span><h3>Vinculación y diagnóstico</h3><p>Caracterización del negocio y lectura del entorno para entender las necesidades de la gerenta y su comunidad.</p></li>
+                    <li class="tarjeta aparece"><span class="numero bg-durazno">02</span><h3>Ruta HACER · 6 semanas</h3><p>Modelo de negocio, finanzas frugales, precio, flujo de caja y plan de inversión.</p></li>
+                    <li class="tarjeta aparece"><span class="numero bg-lavanda">03</span><h3>Ruta SER · transversal</h3><p>Liderazgo, toma de decisiones, confianza colectiva y prevención de violencias.</p></li>
+                    <li class="tarjeta aparece"><span class="numero bg-mantequilla">04</span><h3>Conexión y financiamiento</h3><p>Estrategias comerciales, redes comunitarias y esquemas de ahorro solidario.</p></li>
                 </ol>
 
-                <div class="mt-14 bg-white p-8 sm:p-12 rounded-4xl border border-bosque/10 shadow-lg shadow-bosque/5 aparece">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="space-y-3">
-                            <p class="text-xs font-bold text-coralp uppercase tracking-[.16em]">Dos rutas conectadas</p>
-                            <h3 class="font-titulo font-bold text-2xl">Resolver el negocio y fortalecer a la persona</h3>
-                            <p class="text-sm text-musgo leading-relaxed">
-                                No basta con enseñar finanzas si no se trabaja el liderazgo personal. Por eso el acompañamiento del CIC combina las competencias técnicas con el fortalecimiento personal de cada gerenta.
-                            </p>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-crema border border-bosque/10">
-                                <span class="w-3.5 h-3.5 rounded-full bg-durazno shrink-0" aria-hidden="true"></span>
-                                <div><span class="font-bold text-sm block">Ruta HACER: 12 horas</span><span class="text-sm text-musgo">Acompañamiento individual en la gestión del negocio.</span></div>
-                            </div>
-                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-crema border border-bosque/10">
-                                <span class="w-3.5 h-3.5 rounded-full bg-lavanda shrink-0" aria-hidden="true"></span>
-                                <div><span class="font-bold text-sm block">Ruta SER: 4 talleres</span><span class="text-sm text-musgo">Desarrollo personal y construcción de tejido social.</span></div>
-                            </div>
-                        </div>
-                    </div>
+                <h3 class="subtitulo aparece">Qué nos hace distintas</h3>
+                <div class="rejilla r3 distintas">
+                    <article class="tarjeta aparece" style="background:var(--crema)">
+                        <span class="icono bg-menta"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg></span>
+                        <h3>Somos «gerentas»</h3>
+                        <p>Cambiamos la etiqueta de «beneficiarias» por la de gerentas: quien sostiene la economía del hogar lidera una unidad productiva real que merece trato técnico, respetuoso y sin paternalismos.</p>
+                    </article>
+                    <article class="tarjeta aparece" style="background:var(--crema)">
+                        <span class="icono bg-durazno"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h1.5a2.5 2.5 0 002.5-2.5V11a2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg></span>
+                        <h3>Con raíz en el territorio</h3>
+                        <p>El CIC no aterriza desde afuera: se apoya en la trayectoria de la Red de Mujeres del Caribe y en el conocimiento que ya existe en cada comunidad.</p>
+                    </article>
+                    <article class="tarjeta aparece" style="background:var(--crema)">
+                        <span class="icono bg-mantequilla"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+                        <h3>Innovación frugal</h3>
+                        <p>Metodologías adaptadas a la realidad de la esquina y el mercado: soluciones sencillas, de bajo costo y alto impacto.</p>
+                    </article>
                 </div>
-            </div>
-        </section>
 
-        <!-- Historias: fotos de las mujeres -->
-        <section id="historias" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-                <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 aparece">
-                    <div class="space-y-3 max-w-2xl">
-                        <p class="text-xs font-bold text-coralp tracking-[.18em] uppercase">Historias</p>
-                        <h2 class="font-titulo font-bold text-3xl sm:text-4xl">Tu negocio también florece.</h2>
-                        <svg class="trazo text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                    </div>
-                    <p class="text-musgo max-w-md">Mujeres de la Red de Mujeres del Caribe que ya se forman, se acompañan y hacen crecer su negocio desde su territorio.</p>
+                <h3 class="subtitulo aparece">Cuatro pilares y una base transversal</h3>
+                <div class="rejilla r5">
+                    <div class="tarjeta pilar aparece"><span class="numero bg-menta">1</span><h3>Acompañamiento integral</h3><p>Autoestima, modelo de negocio y gestión financiera.</p></div>
+                    <div class="tarjeta pilar aparece"><span class="numero bg-coral">2</span><h3>Acceso a mercados</h3><p>Vincular los negocios con ecosistemas que les abran mercados.</p></div>
+                    <div class="tarjeta pilar aparece"><span class="numero bg-mantequilla">3</span><h3>Acceso a financiamiento</h3><p>Educación financiera y microfinanciamiento comunitario.</p></div>
+                    <div class="tarjeta pilar aparece"><span class="numero bg-agua">4</span><h3>Apropiación del ecosistema</h3><p>Que cada satélite lea y active las dimensiones de su ecosistema.</p></div>
+                    <div class="tarjeta pilar pilar-base aparece"><span class="numero" style="background:var(--bosque);color:#fff">5</span><h3>Desarrollo del ser</h3><p style="color:var(--bosque);font-weight:600">Base que sostiene a los demás pilares.</p></div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+                <h3 class="subtitulo aparece">Tu negocio también florece</h3>
+                <div class="rejilla r3 historias">
                     <figure class="aparece">
-                        <div class="hoja overflow-hidden aspect-[4/5] bg-menta">
-                            <img class="foto-duo" style="filter:url(#duo-verde)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800"
-                                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkaFUGQ0lPFM6brzHzL_IpVWq1-TNBT09i9fsvGLFzL9xLCLwIwXAvQrNSRSFfO0YGUrww76EF6ipz-koMBblKLzogX8BmWFiyR5SAm5yjcVIxCCxAXAslyDUhedAtzoGcDtzMJ2Xzapk/s1600/IMG_6604.JPG"
-                                 alt="Una facilitadora habla ante un grupo de mujeres">
-                        </div>
-                        <figcaption class="mt-4"><span class="font-titulo font-bold text-lg block">Aprendemos juntas</span><span class="text-sm text-musgo">La formación llega en cascada: cada mujer que aprende, comparte.</span></figcaption>
-                    </figure>
-                    <figure class="aparece sm:mt-10">
-                        <div class="hoja-inv overflow-hidden aspect-[4/5] bg-durazno">
-                            <img class="foto-duo" style="filter:url(#duo-durazno)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800"
-                                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ6XmgMPuMbbJRwkFLRYZPOKWcJGlk5gcSWAM9IGCDVm27Zy3I3IAiUwh9HF5Z-RUJk15hNWiCijwvXpVXB51lFmUI0EoAPs87PPfiLCHjtMEtemSH2jjJpho54M0t1cnNAAzT5C0qebk/s1600/IMG_6578.JPG"
-                                 alt="Mujeres atentas durante un encuentro de la Red">
-                        </div>
-                        <figcaption class="mt-4"><span class="font-titulo font-bold text-lg block">Con raíz en el territorio</span><span class="text-sm text-musgo">Ocho satélites acercan el centro a los barrios y veredas.</span></figcaption>
+                        <div class="hoja bg-menta"><img class="foto-duo" style="filter:url(#duo-verde)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkaFUGQ0lPFM6brzHzL_IpVWq1-TNBT09i9fsvGLFzL9xLCLwIwXAvQrNSRSFfO0YGUrww76EF6ipz-koMBblKLzogX8BmWFiyR5SAm5yjcVIxCCxAXAslyDUhedAtzoGcDtzMJ2Xzapk/s640/IMG_6604.JPG" alt="Una facilitadora habla ante un grupo de mujeres"></div>
+                        <figcaption><b>Aprendemos juntas</b><span>La formación llega en cascada: cada mujer que aprende, comparte.</span></figcaption>
                     </figure>
                     <figure class="aparece">
-                        <div class="hoja overflow-hidden aspect-[4/5] bg-coral">
-                            <img class="foto-duo" style="filter:url(#duo-coral)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800"
-                                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnlDPWIXl4bQVqs74nRqDFAzFGXWFCXTPt3sufw3YsOl0hgW36kFEL6xA7w77UPSlcg5uB-P3bYXrSdZugbnzhbLOXxE9JwKIDIGS8LMBof2JiftJH_sC7GpVCMHYwPjVDHZiIHVb60XQ/s1600/IMG_6618.JPG"
-                                 alt="Grupo de mujeres de la Red de Mujeres del Caribe">
-                        </div>
-                        <figcaption class="mt-4"><span class="font-titulo font-bold text-lg block">Lideramos</span><span class="text-sm text-musgo">Gerentas que deciden con información y se apoyan en red.</span></figcaption>
+                        <div class="hoja-inv bg-durazno"><img class="foto-duo" style="filter:url(#duo-durazno)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ6XmgMPuMbbJRwkFLRYZPOKWcJGlk5gcSWAM9IGCDVm27Zy3I3IAiUwh9HF5Z-RUJk15hNWiCijwvXpVXB51lFmUI0EoAPs87PPfiLCHjtMEtemSH2jjJpho54M0t1cnNAAzT5C0qebk/s640/IMG_6578.JPG" alt="Mujeres atentas durante un encuentro de la Red"></div>
+                        <figcaption><b>Con raíz en el territorio</b><span>Ocho satélites acercan el centro a los barrios y veredas.</span></figcaption>
+                    </figure>
+                    <figure class="aparece">
+                        <div class="hoja bg-coral"><img class="foto-duo" style="filter:url(#duo-coral)" loading="lazy" referrerpolicy="no-referrer" width="640" height="800" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnlDPWIXl4bQVqs74nRqDFAzFGXWFCXTPt3sufw3YsOl0hgW36kFEL6xA7w77UPSlcg5uB-P3bYXrSdZugbnzhbLOXxE9JwKIDIGS8LMBof2JiftJH_sC7GpVCMHYwPjVDHZiIHVb60XQ/s640/IMG_6618.JPG" alt="Grupo de mujeres de la Red de Mujeres del Caribe"></div>
+                        <figcaption><b>Lideramos</b><span>Gerentas que deciden con información y se apoyan en red.</span></figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <!-- Los 5 pilares -->
-        <section id="pilares" class="py-20 bg-crema">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-                <div class="text-center max-w-2xl mx-auto mb-14 space-y-3 aparece">
-                    <p class="text-xs font-bold text-coralp tracking-[.18em] uppercase">El modelo</p>
-                    <h2 class="font-titulo font-bold text-3xl sm:text-4xl">Los 5 pilares de sostenibilidad</h2>
-                    <svg class="trazo trazo-centro text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                    <p class="text-musgo">El soporte integral que garantiza el crecimiento continuo de cada proyecto.</p>
+        <!-- Impacto y territorio -->
+        <section id="territorio" class="seccion territorio" aria-labelledby="titulo-territorio">
+            <div class="patron-hojas" aria-hidden="true"></div>
+            <div class="contenedor">
+                <div class="cabeza aparece">
+                    <p class="eyebrow">Impacto y territorio</p>
+                    <h2 id="titulo-territorio">Una red que ya existe, puesta a trabajar.</h2>
+                    <p>De La Guajira a Córdoba, cada satélite tiene tres dinamizadoras y se articula con un nodo departamental de la Red. El territorio real del CIC es la esquina, la sede comunitaria y el mercado.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
-                    <div class="p-6 rounded-3xl bg-white border border-bosque/10 text-center space-y-3 aparece">
-                        <span class="w-12 h-12 mx-auto rounded-full bg-menta font-titulo font-bold flex items-center justify-center">1</span>
-                        <h3 class="font-titulo font-bold">Acompañamiento integral</h3>
-                        <p class="text-sm text-musgo">Asesoría cercana que profesionaliza la intuición comercial existente.</p>
+                <div class="rejilla r4 movil-2">
+                    <div class="cifra aparece"><b style="color:var(--coral)">200</b><span>emprendedoras en la ruta HACER-SER</span></div>
+                    <div class="cifra aparece"><b style="color:var(--durazno)">24</b><span>dinamizadoras territoriales</span></div>
+                    <div class="cifra aparece"><b style="color:var(--menta)">8</b><span>satélites en red</span></div>
+                    <div class="cifra aparece"><b style="color:var(--mantequilla)">13</b><span>municipios en 7 departamentos</span></div>
+                </div>
+                <h3 class="sr-only">Satélites del CIC</h3>
+                <ul class="rejilla r4 movil-2 satelites" style="list-style:none;padding:0">
+                    <li class="satelite aparece"><small>La Guajira</small><b>Riohacha · Albania</b></li>
+                    <li class="satelite aparece"><small>Magdalena</small><b>Santa Marta</b></li>
+                    <li class="satelite aparece"><small>Cesar</small><b>Valledupar</b></li>
+                    <li class="satelite aparece"><small>Cesar</small><b>Pueblo Bello</b></li>
+                    <li class="satelite aparece"><small>Atlántico</small><b>Baranoa · Campo de la Cruz</b></li>
+                    <li class="satelite aparece"><small>Bolívar</small><b>Cartagena · María la Baja</b></li>
+                    <li class="satelite aparece"><small>Sucre</small><b>Sincelejo · Tolú</b></li>
+                    <li class="satelite aparece"><small>Córdoba</small><b>Montería · Tierralta</b></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aliados -->
+        <section id="aliados" class="seccion seccion-crema2" aria-labelledby="titulo-aliados">
+            <div class="contenedor">
+                <div class="cabeza aparece">
+                    <p class="eyebrow">Aliados</p>
+                    <h2 id="titulo-aliados">Una red que no empieza de cero.</h2>
+                    <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                    <p>El CIC se ejecuta en el marco del Convenio 432, dentro del Fondo de Igualdad.</p>
+                </div>
+                <div class="rejilla r4">
+                    <article class="tarjeta aliado aparece"><span class="chip bg-menta">Base comunitaria</span><h3>Red de Mujeres del Caribe</h3><p>Más de 30 años de trayectoria y nodos en siete departamentos: el CIC se apoya en su gobernanza territorial.</p></article>
+                    <article class="tarjeta aliado aparece"><span class="chip bg-durazno">Ejecuta</span><h3>APRODEFA</h3><p>Implementa el modelo en articulación con la Red de Mujeres del Caribe.</p></article>
+                    <article class="tarjeta aliado aparece"><span class="chip bg-mantequilla">Financia</span><h3>Fondo de Igualdad</h3><p>El proyecto hace parte del Convenio 432 del Fondo de Igualdad.</p></article>
+                    <article class="tarjeta aliado aparece"><span class="chip bg-lavanda">Acompaña y diseña</span><h3>Emprende Ahora</h3><p>Diseña el modelo metodológico y forma al equipo territorial.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centro de ayuda: preguntas, ingreso, verificación y contacto, sin necesidad de sesión -->
+        <section id="ayuda" class="seccion" aria-labelledby="titulo-ayuda">
+            <div class="contenedor">
+                <div class="cabeza aparece">
+                    <p class="eyebrow">Centro de ayuda</p>
+                    <h2 id="titulo-ayuda">¿En qué te ayudamos?</h2>
+                    <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                    <p>Respuestas rápidas para entrar, estudiar desde el celular y obtener tu constancia.</p>
+                </div>
+                <div class="ayuda">
+                    <div class="preguntas">
+                        <details><summary>¿Qué es el Centro de Innovación Comunitaria?</summary><p>Un modelo de acompañamiento para la autonomía económica de las mujeres del Caribe colombiano, que funciona en red con la Red de Mujeres del Caribe: una Secretaría Técnica, 8 satélites y 24 dinamizadoras acompañan a 200 emprendedoras en su negocio y en su desarrollo personal.</p></details>
+                        <details><summary>¿Quién puede ingresar a la plataforma?</summary><p>Las emprendedoras, las dinamizadoras y la Secretaría Técnica. El equipo del CIC entra con su cédula (la primera vez, la contraseña también es la cédula). Las emprendedoras crean su cuenta en «Crear cuenta» y después entran con su cédula y su contraseña.</p></details>
+                        <details><summary>¿Cómo recupero mi contraseña?</summary><p>Pídele a tu dinamizadora o a la Secretaría Técnica que la restablezca. Volverá a ser tu número de cédula y te llegará un correo de aviso; al entrar, elige una nueva.</p></details>
+                        <details><summary>¿Puedo estudiar desde el celular y sin datos?</summary><p>Sí. La plataforma está pensada para el celular, con contenidos cortos y plantillas que puedes usar sin conexión una vez descargadas.</p></details>
+                        <details><summary>¿Qué recibo al terminar?</summary><p>Una constancia de participación. Las dinamizadoras deben aprobar los 5 módulos del curso de gestión con al menos 70 %; las emprendedoras completan las 6 semanas de la ruta HACER, al menos 3 de los 4 talleres SER y su portafolio de evidencias.</p></details>
+                        <details><summary>¿En qué municipios está el CIC?</summary><p>En 13 municipios de 7 departamentos: Baranoa y Campo de la Cruz (Atlántico), Cartagena y María la Baja (Bolívar), Sincelejo y Tolú (Sucre), Montería y Tierralta (Córdoba), Santa Marta (Magdalena), Valledupar y Pueblo Bello (Cesar), y Riohacha y Albania (La Guajira).</p></details>
+                        <details><summary>¿Qué aprenden las emprendedoras?</summary><p>Costos y finanzas básicas, comercialización, administración y planeación en la ruta HACER, y habilidades socioemocionales, liderazgo y derechos en la ruta SER: 28 horas de formación directa.</p></details>
+                        <details><summary>¿Cómo se protegen mis datos?</summary><p>Solo pedimos lo necesario, con tu autorización previa, expresa e informada, según la Ley 1581 de 2012. Puedes conocer, actualizar o pedir la supresión de tus datos en cualquier momento. Lee la <a class="enlace" href="#politica-datos">política de tratamiento de datos</a>.</p></details>
                     </div>
-                    <div class="p-6 rounded-3xl bg-white border border-bosque/10 text-center space-y-3 aparece">
-                        <span class="w-12 h-12 mx-auto rounded-full bg-coral font-titulo font-bold flex items-center justify-center">2</span>
-                        <h3 class="font-titulo font-bold">Acceso a mercados</h3>
-                        <p class="text-sm text-musgo">Articulación con cámaras de comercio, clústeres e instituciones.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-white border border-bosque/10 text-center space-y-3 aparece">
-                        <span class="w-12 h-12 mx-auto rounded-full bg-mantequilla font-titulo font-bold flex items-center justify-center">3</span>
-                        <h3 class="font-titulo font-bold">Acceso a financiamiento</h3>
-                        <p class="text-sm text-musgo">Promoción de esquemas de crédito justo y bancarización.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-white border border-bosque/10 text-center space-y-3 aparece">
-                        <span class="w-12 h-12 mx-auto rounded-full bg-agua font-titulo font-bold flex items-center justify-center">4</span>
-                        <h3 class="font-titulo font-bold">Apropiación del ecosistema</h3>
-                        <p class="text-sm text-musgo">Conexión con la oferta de apoyo al emprendimiento regional.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-lavanda/40 border border-lavanda text-center space-y-3 aparece">
-                        <span class="w-12 h-12 mx-auto rounded-full bg-bosque text-white font-titulo font-bold flex items-center justify-center">5</span>
-                        <h3 class="font-titulo font-bold">Desarrollo del ser</h3>
-                        <p class="text-sm text-bosque font-semibold">Base transversal que sostiene a los demás pilares.</p>
+                    <div class="lateral">
+                        <div class="tarjeta aparece">
+                            <h3>Ingresar en 3 pasos</h3>
+                            <ol class="pasos" style="margin:.6rem 0 1rem">
+                                <li>Toca «Ingresar» arriba a la derecha.</li>
+                                <li>Elige tu perfil: Secretaría Técnica, Dinamizadora o Emprendedora.</li>
+                                <li>Escribe tu cédula y tu contraseña.</li>
+                            </ol>
+                            <button type="button" class="btn btn-primario btn-pequeno" data-abrir="ingresar">Ingresar con mi cédula</button>
+                        </div>
+                        <form class="tarjeta aparece" id="form-verificar" novalidate>
+                            <h3 id="verificar">Verificar una constancia</h3>
+                            <p>Escribe el código que aparece en la constancia.</p>
+                            <label class="etiqueta" for="codigo-constancia">Código de la constancia</label>
+                            <input class="campo" id="codigo-constancia" placeholder="CIC-2026-0000" autocomplete="off">
+                            <button type="submit" class="btn btn-borde btn-pequeno" style="margin-top:.8rem">Verificar</button>
+                            <p id="verificar-resultado" class="mensaje ok" role="status" hidden></p>
+                        </form>
+                        <div class="tarjeta aparece">
+                            <h3>Habla con una persona</h3>
+                            <p>Tu dinamizadora es tu primer contacto. También puedes escribirle al equipo del CIC: <a class="enlace" href="mailto:centrodeinnovacioncomunitaria@gmail.com">centrodeinnovacioncomunitaria@gmail.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Cobertura territorial -->
-        <section id="territorio" class="py-16 lg:py-20 bg-bosque text-white relative overflow-hidden">
-            <div class="absolute inset-0 patron-hojas opacity-[.12] pointer-events-none" aria-hidden="true"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-5">
-                        <p class="text-xs font-bold text-mantequilla uppercase tracking-[.18em]">Presencia territorial</p>
-                        <h2 class="font-titulo font-bold text-3xl sm:text-4xl leading-tight">Presentes en 7 departamentos del Caribe</h2>
-                        <p class="text-white/85 leading-relaxed">
-                            Con 8 satélites y un equipo de 24 dinamizadoras territoriales, el CIC acompaña de forma directa y con el mismo método en municipios y comunidades de Atlántico, Bolívar, Cesar, Córdoba, La Guajira, Magdalena y Sucre.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="p-6 rounded-2xl bg-white/10 border border-white/15"><span class="font-titulo font-bold text-4xl text-mantequilla block mb-1">7</span><span class="text-sm text-white/90">Departamentos del Caribe continental</span></div>
-                        <div class="p-6 rounded-2xl bg-white/10 border border-white/15"><span class="font-titulo font-bold text-4xl text-menta block mb-1">8</span><span class="text-sm text-white/90">Satélites territoriales</span></div>
-                        <div class="p-6 rounded-2xl bg-white/10 border border-white/15"><span class="font-titulo font-bold text-4xl text-durazno block mb-1">24</span><span class="text-sm text-white/90">Dinamizadoras comunitarias</span></div>
-                        <div class="p-6 rounded-2xl bg-white/10 border border-white/15"><span class="font-titulo font-bold text-4xl text-coral block mb-1">200</span><span class="text-sm text-white/90">Unidades productivas previstas</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Llamado a ingresar -->
-        <section class="py-16 bg-crema">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12">
-                <div class="bg-white rounded-4xl border border-bosque/10 p-8 sm:p-10 grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-6 items-center aparece">
-                    <svg class="w-16 h-16" aria-hidden="true"><use href="#isotipo"/></svg>
-                    <div>
-                        <h2 class="font-titulo font-bold text-2xl">Tu plataforma del CIC</h2>
-                        <p class="text-musgo mt-1">Cursos y seguimiento para emprendedoras, dinamizadoras y la Secretaría Técnica. Entras con tu cédula.</p>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <button type="button" data-abrir="ingresar" class="bg-coralp hover:bg-coralp-osc text-white font-bold px-6 py-3 rounded-full">Ingresar</button>
-                        <button type="button" data-abrir="registro" class="border border-bosque/25 hover:bg-crema font-bold px-6 py-3 rounded-full">Crear cuenta</button>
-                    </div>
-                </div>
+        <!-- Política de tratamiento de datos (borrador para revisión jurídica) -->
+        <section id="politica-datos" class="seccion seccion-blanca" aria-labelledby="titulo-politica">
+            <div class="contenedor">
+                <details class="politica desplegable" style="border:0;padding:0">
+                    <summary><span><span class="eyebrow" style="display:block">Legal · borrador para revisión jurídica</span><span id="titulo-politica" style="font:700 1.5rem var(--titulo)">Política de tratamiento de datos personales</span></span></summary>
+                    <p style="margin-top:1rem">Conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013.</p>
+                    <h3>1. Responsable del tratamiento</h3>
+                    <p>[Entidad responsable, NIT, dirección y correo de contacto: por definir con el equipo del proyecto.]</p>
+                    <h3>2. Datos que recogemos</h3>
+                    <ul><li>Identificación y contacto: nombre, número de cédula, correo, celular, departamento y municipio, para crear tu cuenta.</li><li>Datos de formación: avance, resultados, evidencias y asistencia.</li></ul>
+                    <h3>3. Para qué los usamos</h3>
+                    <ul><li>Darte acceso a la plataforma y a tu ruta de formación.</li><li>Hacer seguimiento a tu proceso y expedir tu constancia.</li><li>Avisarte por correo cuando cambie tu contraseña.</li><li>Generar reportes agregados del proyecto, sin identificarte.</li></ul>
+                    <h3>4. Tus derechos</h3>
+                    <p>Puedes conocer, actualizar, rectificar y pedir la supresión de tus datos, revocar la autorización y solicitar prueba de ella, escribiendo a centrodeinnovacioncomunitaria@gmail.com.</p>
+                    <h3>5. Seguridad</h3>
+                    <p>Solo el personal autorizado accede a los datos de identificación: cada dinamizadora ve las emprendedoras de su departamento y la Secretaría Técnica, el conjunto.</p>
+                </details>
             </div>
         </section>
     </main>
 
-    <!-- =========================================================
-         PLATAFORMA (después de ingresar): Cursos · Seguimiento · Mi cuenta
-         ========================================================= -->
+    <!-- =====================================================================
+         2 · CAMPUS Y 3 · GESTIÓN (después de ingresar)
+         ===================================================================== -->
     <main id="plataforma" hidden>
-        <section class="relative overflow-hidden bg-crema-2">
-            <div class="absolute inset-y-0 right-0 w-2/3 patron-hojas opacity-40 pointer-events-none" aria-hidden="true"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-10 relative">
-                <div id="aviso-demo" hidden class="mb-5 inline-flex items-center gap-2 bg-mantequilla text-bosque text-sm font-semibold px-4 py-2 rounded-full">
-                    Modo demostración: el servidor aún no está conectado; nada se guarda ni se envía.
-                </div>
-                <p id="bienvenida-rol" class="text-xs font-bold text-coralp tracking-[.18em] uppercase"></p>
-                <h1 id="bienvenida-titulo" class="font-titulo font-bold text-4xl sm:text-5xl mt-2 outline-none" tabindex="-1"></h1>
-                <svg class="trazo text-bosque" aria-hidden="true"><use href="#trazo"/></svg>
-                <p id="bienvenida-texto" class="text-musgo mt-3 max-w-2xl"></p>
-                <div id="aviso-clave" hidden class="mt-6 bg-white border-l-4 border-coralp rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center gap-3 max-w-3xl shadow-sm">
-                    <p class="text-sm flex-1"><strong>Tu contraseña todavía es tu número de cédula.</strong> Cámbiala por una que solo tú conozcas; te enviaremos un correo de confirmación.</p>
-                    <button type="button" data-ir="cuenta" class="bg-bosque text-white font-bold text-sm px-5 py-2.5 rounded-full shrink-0">Cambiar contraseña</button>
+        <section class="plataforma-cab">
+            <div class="patron-hojas" aria-hidden="true"></div>
+            <div class="contenedor">
+                <p id="aviso-demo" class="aviso-demo" hidden>Modo demostración: el servidor aún no está conectado; nada se guarda ni se envía.</p>
+                <p id="bienvenida-rol" class="eyebrow"></p>
+                <h1 id="bienvenida-titulo" tabindex="-1"></h1>
+                <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
+                <p id="bienvenida-texto" class="texto-suave" style="margin-top:.8rem;max-width:42rem"></p>
+                <div id="continuar" class="continuar" hidden></div>
+                <div id="aviso-clave" class="aviso-clave" hidden>
+                    <p><strong>Tu contraseña todavía es tu número de cédula.</strong> Cámbiala por una que solo tú conozcas; te enviaremos un correo de confirmación.</p>
+                    <button type="button" class="btn btn-bosque btn-pequeno" data-ir="cuenta">Cambiar contraseña</button>
                 </div>
             </div>
         </section>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-            <div role="tablist" id="pestanas-plataforma" aria-label="Secciones de la plataforma" class="flex gap-2 overflow-x-auto py-5 -mb-2">
-                <button role="tab" id="tab-cursos" aria-controls="vista-cursos" data-vista="cursos" class="pestana shrink-0 px-5 py-2.5 rounded-full font-bold text-sm border border-bosque/15 bg-white">Cursos</button>
-                <button role="tab" id="tab-seguimiento" aria-controls="vista-seguimiento" data-vista="seguimiento" class="pestana shrink-0 px-5 py-2.5 rounded-full font-bold text-sm border border-bosque/15 bg-white">Seguimiento</button>
-                <button role="tab" id="tab-cuenta" aria-controls="vista-cuenta" data-vista="cuenta" class="pestana shrink-0 px-5 py-2.5 rounded-full font-bold text-sm border border-bosque/15 bg-white">Mi cuenta</button>
+        <div class="contenedor">
+            <div class="pestanas" role="tablist" id="pestanas-plataforma" aria-label="Secciones de la plataforma">
+                <button type="button" class="pestana" role="tab" id="tab-cursos" aria-controls="vista-cursos" data-vista="cursos">Mis rutas</button>
+                <button type="button" class="pestana" role="tab" id="tab-seguimiento" aria-controls="vista-seguimiento" data-vista="seguimiento">Seguimiento</button>
+                <button type="button" class="pestana" role="tab" id="tab-cuenta" aria-controls="vista-cuenta" data-vista="cuenta">Mi cuenta</button>
             </div>
-
-            <section id="vista-cursos" role="tabpanel" aria-labelledby="tab-cursos" class="py-6"></section>
-            <section id="vista-seguimiento" role="tabpanel" aria-labelledby="tab-seguimiento" class="py-6" hidden></section>
-            <section id="vista-cuenta" role="tabpanel" aria-labelledby="tab-cuenta" class="py-6" hidden></section>
+            <section id="vista-cursos" class="vista" role="tabpanel" aria-labelledby="tab-cursos"></section>
+            <section id="vista-seguimiento" class="vista" role="tabpanel" aria-labelledby="tab-seguimiento" hidden></section>
+            <section id="vista-cuenta" class="vista" role="tabpanel" aria-labelledby="tab-cuenta" hidden></section>
         </div>
     </main>
 
-    <!-- Footer institucional -->
-    <footer class="bg-white py-12 border-t border-bosque/10 mt-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-8">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                <div class="flex items-center gap-3">
-                    <svg class="w-11 h-11 shrink-0" aria-hidden="true"><use href="#isotipo"/></svg>
-                    <div>
-                        <p class="font-titulo font-bold text-lg">Centro de Innovación Comunitaria (CIC)</p>
-                        <p class="text-sm text-musgo">Caribe colombiano · Modelo de acompañamiento territorial</p>
-                    </div>
+    <footer class="pie">
+        <div class="contenedor">
+            <div class="pie-rejilla">
+                <div>
+                    <a href="#inicio" class="logo" aria-label="CIC, volver al inicio">
+                        <svg aria-hidden="true"><use href="#isotipo"/></svg>
+                        <span><span class="logo-palabra">cic</span><span class="logo-sub" style="display:block">Centro de Innovación Comunitaria</span></span>
+                    </a>
+                    <p class="texto-suave" style="margin-top:1rem;font-size:.93rem">Formación y acompañamiento para la autonomía económica de las mujeres emprendedoras del Caribe, en red con la Red de Mujeres del Caribe.</p>
                 </div>
-                <div class="text-sm text-musgo space-y-1">
-                    <p><strong class="text-bosque">Marco institucional:</strong> Convenio 432 · Fondo de Igualdad</p>
-                    <p><strong class="text-bosque">Ejecuta:</strong> APRODEFA en articulación con la Red de Mujeres del Caribe</p>
-                    <p><strong class="text-bosque">Acompaña y diseña:</strong> Emprende Ahora</p>
+                <div>
+                    <h2>Aprende</h2>
+                    <ul><li><a href="#rutas">Rutas de aprendizaje</a></li><li><a href="#ruta-gestion">Gestión del CIC</a></li><li><a href="#ruta-hacer">Ruta HACER</a></li><li><a href="#ruta-ser">Ruta SER</a></li><li><a href="#recursos">Biblioteca de recursos</a></li></ul>
+                </div>
+                <div>
+                    <h2>El CIC</h2>
+                    <ul><li><a href="#sobre-cic">Qué es el CIC</a></li><li><a href="#territorio">Territorio</a></li><li><a href="#aliados">Aliados</a></li></ul>
+                </div>
+                <div>
+                    <h2>Ayuda</h2>
+                    <ul><li><a href="#ayuda">Centro de ayuda</a></li><li><a href="#verificar">Verificar constancia</a></li><li><a href="#politica-datos">Política de datos</a></li></ul>
                 </div>
             </div>
-            <div class="border-t border-bosque/10 pt-6 text-center text-sm text-musgo">
-                Emprender es florecer · Innovación con raíz caribe
+            <div class="pie-legal">
+                <span>© 2026 Centro de Innovación Comunitaria · Convenio 432 · Fondo de Igualdad</span>
+                <span>Emprender es florecer · Innovación con raíz caribe</span>
             </div>
         </div>
     </footer>
 
-    <!-- =========================================================
+    <!-- =====================================================================
          INGRESO Y REGISTRO
-         ========================================================= -->
-    <dialog id="acceso" aria-labelledby="acceso-titulo" class="w-[min(34rem,calc(100vw-1.5rem))] max-h-[calc(100vh-1.5rem)] rounded-4xl p-0 bg-crema text-bosque shadow-2xl">
-        <div class="relative p-5 sm:p-8">
-            <button type="button" id="acceso-cerrar" class="absolute top-4 right-4 w-10 h-10 rounded-full hover:bg-bosque/10 text-2xl leading-none" aria-label="Cerrar">×</button>
-            <svg class="w-11 h-11" aria-hidden="true"><use href="#isotipo"/></svg>
-            <h2 id="acceso-titulo" class="font-titulo font-bold text-3xl mt-3">Ingresa al CIC</h2>
-            <p class="text-musgo text-sm mt-1">Tu usuario es tu número de cédula.</p>
+         ===================================================================== -->
+    <dialog id="acceso" aria-labelledby="acceso-titulo">
+        <div class="dialogo">
+            <button type="button" id="acceso-cerrar" class="cerrar" aria-label="Cerrar">×</button>
+            <svg width="44" height="44" aria-hidden="true"><use href="#isotipo"/></svg>
+            <h2 id="acceso-titulo" style="font-size:1.9rem;margin-top:.7rem">Ingresa al CIC</h2>
+            <p class="texto-suave" style="font-size:.9rem;margin-top:.2rem">Tu usuario es tu número de cédula.</p>
 
-            <fieldset class="mt-5">
-                <legend class="font-bold text-sm mb-2">¿Cómo haces parte del CIC?</legend>
-                <div class="grid grid-cols-3 gap-2">
-                    <label class="perfil cursor-pointer">
-                        <input class="sr-only" type="radio" name="perfil" value="secretaria">
-                        <span class="block h-full rounded-2xl border-2 border-bosque/15 bg-white/60 px-1 py-3 sm:p-3 text-center transition">
-                            <span class="block w-8 h-8 mx-auto rounded-full bg-agua mb-1.5" aria-hidden="true"></span>
-                            <span class="block font-bold text-[.74rem] sm:text-sm leading-tight">Secretaría Técnica</span>
-                        </span>
-                    </label>
-                    <label class="perfil cursor-pointer">
-                        <input class="sr-only" type="radio" name="perfil" value="dinamizadora">
-                        <span class="block h-full rounded-2xl border-2 border-bosque/15 bg-white/60 px-1 py-3 sm:p-3 text-center transition">
-                            <span class="block w-8 h-8 mx-auto rounded-full bg-menta mb-1.5" aria-hidden="true"></span>
-                            <span class="block font-bold text-[.74rem] sm:text-sm leading-tight">Dinamizadora</span>
-                        </span>
-                    </label>
-                    <label class="perfil cursor-pointer">
-                        <input class="sr-only" type="radio" name="perfil" value="emprendedora" checked>
-                        <span class="block h-full rounded-2xl border-2 border-bosque/15 bg-white/60 px-1 py-3 sm:p-3 text-center transition">
-                            <span class="block w-8 h-8 mx-auto rounded-full bg-durazno mb-1.5" aria-hidden="true"></span>
-                            <span class="block font-bold text-[.74rem] sm:text-sm leading-tight">Emprendedora</span>
-                        </span>
-                    </label>
+            <fieldset style="border:0;padding:0;margin:1.2rem 0 0">
+                <legend style="font-weight:700;font-size:.9rem;margin-bottom:.5rem">¿Cómo haces parte del CIC?</legend>
+                <div class="perfiles">
+                    <label class="perfil"><input type="radio" name="perfil" value="secretaria"><span style="--c:var(--agua)">Secretaría Técnica</span></label>
+                    <label class="perfil"><input type="radio" name="perfil" value="dinamizadora"><span style="--c:var(--menta)">Dinamizadora</span></label>
+                    <label class="perfil"><input type="radio" name="perfil" value="emprendedora" checked><span style="--c:var(--durazno)">Emprendedora</span></label>
                 </div>
             </fieldset>
 
-            <div id="pestanas-acceso" role="tablist" aria-label="Ingresar o crear cuenta" class="mt-5 grid grid-cols-2 gap-1 bg-white rounded-full p-1 border border-bosque/10">
-                <button type="button" role="tab" id="pestana-ingresar" aria-controls="form-ingresar" aria-selected="true" class="pestana rounded-full py-2 text-sm font-bold">Ingresar</button>
-                <button type="button" role="tab" id="pestana-registro" aria-controls="form-registro" aria-selected="false" class="pestana rounded-full py-2 text-sm font-bold">Crear cuenta</button>
+            <div id="pestanas-acceso" class="conmutador" role="tablist" aria-label="Ingresar o crear cuenta">
+                <button type="button" role="tab" id="pestana-ingresar" aria-controls="form-ingresar" aria-selected="true">Ingresar</button>
+                <button type="button" role="tab" id="pestana-registro" aria-controls="form-registro" aria-selected="false">Crear cuenta</button>
             </div>
 
-            <div id="acceso-mensaje" role="alert" class="hidden mt-4 rounded-2xl px-4 py-3 text-sm font-semibold"></div>
+            <p id="acceso-mensaje" class="mensaje error" role="alert" hidden></p>
 
-            <!-- Ingresar (los tres perfiles) -->
-            <form id="form-ingresar" role="tabpanel" aria-labelledby="pestana-ingresar" novalidate class="mt-1">
-                <p id="pista-equipo" hidden class="mt-4 text-sm bg-menta/40 rounded-2xl px-4 py-3">
-                    <strong>¿Primera vez?</strong> Tu contraseña es tu número de cédula. Al entrar podrás cambiarla.
-                </p>
+            <form id="form-ingresar" role="tabpanel" aria-labelledby="pestana-ingresar" novalidate>
+                <p id="pista-equipo" class="nota bg-menta" style="background:rgba(158,208,183,.4)" hidden><strong>¿Primera vez?</strong> Tu contraseña es tu número de cédula. Al entrar podrás cambiarla.</p>
                 <label class="etiqueta" for="in-cedula">Número de cédula</label>
                 <input class="campo" id="in-cedula" name="cedula" inputmode="numeric" autocomplete="username" maxlength="15" placeholder="Solo números, sin puntos" required>
                 <label class="etiqueta" for="in-clave">Contraseña</label>
-                <div class="relative">
-                    <input class="campo pr-24" id="in-clave" name="clave" type="password" autocomplete="current-password" required>
-                    <button type="button" class="ver-clave absolute right-2 top-1/2 -translate-y-1/2 text-sm font-bold text-coralp px-3 py-1.5" aria-controls="in-clave" aria-pressed="false">Ver</button>
+                <div class="clave">
+                    <input class="campo" id="in-clave" name="clave" type="password" autocomplete="current-password" required>
+                    <button type="button" class="ver" aria-controls="in-clave" aria-pressed="false">Ver</button>
                 </div>
-                <button type="submit" class="mt-6 w-full bg-coralp hover:bg-coralp-osc text-white font-bold py-3.5 rounded-full transition-colors disabled:opacity-60">Ingresar</button>
-                <button type="button" id="olvide" class="mt-3 w-full text-sm font-bold text-musgo hover:text-bosque underline-offset-4 hover:underline">¿Olvidaste tu contraseña?</button>
+                <button type="submit" class="btn btn-primario ancho">Ingresar</button>
+                <button type="button" id="olvide" class="texto-boton">¿Olvidaste tu contraseña?</button>
             </form>
 
-            <!-- Crear cuenta (solo emprendedoras) -->
-            <form id="form-registro" role="tabpanel" aria-labelledby="pestana-registro" novalidate hidden class="mt-1">
-                <p class="mt-4 text-sm bg-durazno/40 rounded-2xl px-4 py-3">Crea tu cuenta de emprendedora. Después entrarás con tu cédula y la contraseña que elijas.</p>
+            <form id="form-registro" role="tabpanel" aria-labelledby="pestana-registro" novalidate hidden>
+                <p class="nota" style="background:rgba(242,181,146,.4)">Crea tu cuenta de emprendedora. Después entrarás con tu cédula y la contraseña que elijas.</p>
                 <label class="etiqueta" for="re-nombre">Nombre completo</label>
                 <input class="campo" id="re-nombre" name="nombre" autocomplete="name" maxlength="90" required>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3">
-                    <div>
-                        <label class="etiqueta" for="re-cedula">Número de cédula</label>
-                        <input class="campo" id="re-cedula" name="cedula" inputmode="numeric" autocomplete="username" maxlength="15" placeholder="Solo números" required>
-                    </div>
-                    <div>
-                        <label class="etiqueta" for="re-celular">Celular o WhatsApp</label>
-                        <input class="campo" id="re-celular" name="celular" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required>
-                    </div>
+                <div class="dos-campos">
+                    <div><label class="etiqueta" for="re-cedula">Número de cédula</label><input class="campo" id="re-cedula" name="cedula" inputmode="numeric" autocomplete="username" maxlength="15" placeholder="Solo números" required></div>
+                    <div><label class="etiqueta" for="re-celular">Celular o WhatsApp</label><input class="campo" id="re-celular" name="celular" type="tel" autocomplete="tel" maxlength="20" required></div>
                 </div>
                 <label class="etiqueta" for="re-correo">Correo electrónico</label>
                 <input class="campo" id="re-correo" name="correo" type="email" autocomplete="email" maxlength="120" required aria-describedby="re-correo-ayuda">
-                <small id="re-correo-ayuda" class="text-xs text-musgo">Aquí te avisaremos si cambia tu contraseña.</small>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3">
-                    <div>
-                        <label class="etiqueta" for="re-departamento">Departamento</label>
+                <small id="re-correo-ayuda" class="ayuda-campo">Aquí te avisaremos si cambia tu contraseña.</small>
+                <div class="dos-campos">
+                    <div><label class="etiqueta" for="re-departamento">Departamento</label>
                         <select class="campo" id="re-departamento" name="departamento" required>
-                            <option value="">Elige…</option>
-                            <option>Atlántico</option><option>Bolívar</option><option>Cesar</option><option>Córdoba</option><option>La Guajira</option><option>Magdalena</option><option>Sucre</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="etiqueta" for="re-municipio">Municipio</label>
-                        <input class="campo" id="re-municipio" name="municipio" autocomplete="address-level2" maxlength="60" required>
-                    </div>
+                            <option value="">Elige…</option><option>Atlántico</option><option>Bolívar</option><option>Cesar</option><option>Córdoba</option><option>La Guajira</option><option>Magdalena</option><option>Sucre</option>
+                        </select></div>
+                    <div><label class="etiqueta" for="re-municipio">Municipio</label><input class="campo" id="re-municipio" name="municipio" autocomplete="address-level2" maxlength="60" required></div>
                 </div>
-                <label class="etiqueta" for="re-negocio">Nombre de tu negocio <span class="font-normal text-musgo">(opcional)</span></label>
+                <label class="etiqueta" for="re-negocio">Nombre de tu negocio <span style="font-weight:400" class="texto-suave">(opcional)</span></label>
                 <input class="campo" id="re-negocio" name="negocio" maxlength="90">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-3">
-                    <div>
-                        <label class="etiqueta" for="re-clave">Contraseña</label>
-                        <input class="campo" id="re-clave" name="clave" type="password" autocomplete="new-password" minlength="8" required placeholder="Mínimo 8 caracteres">
-                    </div>
-                    <div>
-                        <label class="etiqueta" for="re-clave2">Repite la contraseña</label>
-                        <input class="campo" id="re-clave2" name="clave2" type="password" autocomplete="new-password" minlength="8" required>
-                    </div>
+                <div class="dos-campos">
+                    <div><label class="etiqueta" for="re-clave">Contraseña</label><input class="campo" id="re-clave" name="clave" type="password" autocomplete="new-password" minlength="8" required placeholder="Mínimo 8 caracteres"></div>
+                    <div><label class="etiqueta" for="re-clave2">Repite la contraseña</label><input class="campo" id="re-clave2" name="clave2" type="password" autocomplete="new-password" minlength="8" required></div>
                 </div>
-                <label class="mt-4 flex gap-3 items-start text-sm">
-                    <input type="checkbox" name="acepto" class="mt-1 w-5 h-5 accent-[#2E4A3E] shrink-0" required>
-                    <span>Autorizo al CIC y a la Red de Mujeres del Caribe a tratar mis datos para mi formación y acompañamiento, según la Ley 1581 de 2012. Puedo consultarlos, corregirlos o pedir que se eliminen.</span>
-                </label>
-                <button type="submit" class="mt-6 w-full bg-coralp hover:bg-coralp-osc text-white font-bold py-3.5 rounded-full transition-colors disabled:opacity-60">Crear mi cuenta</button>
+                <label class="casilla"><input type="checkbox" name="acepto" required><span>Autorizo al CIC y a la Red de Mujeres del Caribe a tratar mis datos para mi formación y acompañamiento, según la Ley 1581 de 2012 y la <a class="enlace" href="#politica-datos" data-cerrar>política de datos</a>.</span></label>
+                <button type="submit" class="btn btn-primario ancho">Crear mi cuenta</button>
             </form>
         </div>
     </dialog>
 
-    <div id="aviso" role="status" aria-live="polite" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-[70] hidden bg-bosque text-white text-sm font-semibold px-5 py-3 rounded-full shadow-xl max-w-[calc(100vw-2rem)] text-center"></div>
+    <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
 
     <script src="./config.js"></script>
     <script>
     (() => {
         'use strict';
+        const $ = (s, r = document) => r.querySelector(s);
+        const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+        const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        const soloDigitos = (v) => String(v ?? '').replace(/\D/g, '');
+        const primerNombre = (n) => String(n || '').trim().split(/\s+/)[0] || '';
+        const guardar = (almacen, k, v) => { try { v == null ? almacen.removeItem(k) : almacen.setItem(k, JSON.stringify(v)); } catch (e) { /* sin almacenamiento */ } };
+        const leer = (almacen, k) => { try { return JSON.parse(almacen.getItem(k)); } catch (e) { return null; } };
+        const pesos = (n) => '$' + Math.round(n).toLocaleString('es-CO');
+
+        // ================= Portal público =================
+
+        // Menú en celular
+        const menu = $('#menu-btn'), nav = $('#nav-publica');
+        menu.addEventListener('click', () => {
+            const abierto = nav.classList.toggle('abierta');
+            menu.setAttribute('aria-expanded', String(abierto));
+        });
+        nav.addEventListener('click', (e) => { if (e.target.closest('a')) { nav.classList.remove('abierta'); menu.setAttribute('aria-expanded', 'false'); } });
+
+        // Entrada por rol: pestañas accesibles
+        const rolTabs = $$('.rol-tab');
+        function elegirRol(tab, enfocar) {
+            rolTabs.forEach((t) => {
+                const activo = t === tab;
+                t.setAttribute('aria-selected', String(activo));
+                t.tabIndex = activo ? 0 : -1;
+                document.getElementById(t.getAttribute('aria-controls')).hidden = !activo;
+            });
+            if (enfocar) tab.focus();
+        }
+        rolTabs.forEach((t, i) => {
+            t.addEventListener('click', () => elegirRol(t));
+            t.addEventListener('keydown', (e) => {
+                if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+                elegirRol(rolTabs[(i + (e.key === 'ArrowRight' ? 1 : rolTabs.length - 1)) % rolTabs.length], true);
+            });
+        });
+
+        // Biblioteca: filtros por tema y búsqueda
+        const recursos = $$('#lista-recursos .recurso');
+        const filtros = $$('.filtro');
+        let categoria = '';
+        filtros.forEach((f) => { $('small', f).textContent = f.dataset.cat ? recursos.filter((r) => r.dataset.cat === f.dataset.cat).length : recursos.length; });
+        function filtrarRecursos() {
+            const t = $('#buscar-recurso').value.trim().toLowerCase();
+            let visibles = 0;
+            recursos.forEach((r) => {
+                const ok = (!categoria || r.dataset.cat === categoria) && (!t || r.textContent.toLowerCase().includes(t));
+                r.hidden = !ok;
+                if (ok) visibles++;
+            });
+            $('#sin-recursos').hidden = visibles > 0;
+        }
+        function elegirCategoria(cat) {
+            categoria = cat;
+            filtros.forEach((f) => f.setAttribute('aria-pressed', String(f.dataset.cat === cat)));
+            filtrarRecursos();
+        }
+        filtros.forEach((f) => f.addEventListener('click', () => elegirCategoria(f.dataset.cat)));
+        $('#buscar-recurso').addEventListener('input', filtrarRecursos);
+        // «Sus plantillas» desde la ficha de una ruta
+        $$('[data-filtrar]').forEach((a) => a.addEventListener('click', () => {
+            const ruta = a.dataset.filtrar;
+            $('#buscar-recurso').value = '';
+            elegirCategoria(ruta === 'Ser' ? 'Ser' : '');
+            if (ruta === 'HACER') recursos.forEach((r) => { r.hidden = r.dataset.ruta !== 'HACER'; });
+        }));
+
+        // Calculadora de punto de equilibrio
+        function calcular() {
+            const fijos = Number(soloDigitos($('#pe-fijos').value));
+            const precio = Number(soloDigitos($('#pe-precio').value));
+            const costo = Number(soloDigitos($('#pe-costo').value));
+            const r = $('#pe-resultado');
+            if (!fijos || !precio) { r.textContent = 'Escribe tus costos fijos y tu precio de venta.'; return; }
+            if (precio <= costo) { r.textContent = 'Tu precio no cubre lo que te cuesta producir: revisa el precio o el costo por unidad.'; return; }
+            const unidades = Math.ceil(fijos / (precio - costo));
+            r.innerHTML = `<b>${unidades.toLocaleString('es-CO')} unidades al mes</b>Cada venta te deja ${esc(pesos(precio - costo))} para cubrir los costos fijos. Vendiendo ${unidades.toLocaleString('es-CO')} unidades (${esc(pesos(unidades * precio))}) no ganas ni pierdes.`;
+        }
+        $$('#calculadora input').forEach((i) => i.addEventListener('input', () => { i.value = soloDigitos(i.value); calcular(); }));
+        $('#calculadora').addEventListener('submit', (e) => e.preventDefault());
+        calcular();
+
+        // Verificación de constancias (se activa cuando el campus empiece a emitirlas)
+        $('#form-verificar').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const r = $('#verificar-resultado');
+            const codigo = $('#codigo-constancia').value.trim().toUpperCase();
+            r.className = 'mensaje ' + (codigo ? 'ok' : 'error');
+            r.textContent = codigo
+                ? `Aún no se han emitido constancias del primer ciclo, así que el código ${codigo} no se puede verificar todavía. Cuando se emitan, aquí verás su validez.`
+                : 'Escribe el código que aparece en la constancia.';
+            r.hidden = false;
+        });
+
+        // Apariciones suaves al desplazarse
+        const obs = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
+        $$('.aparece').forEach((el) => (obs ? obs.observe(el) : el.classList.add('visible')));
+
+        // ================= Ingreso, campus y gestión =================
         const CFG = window.CIC_CONFIG || {};
         const DEMO = !(CFG.supabaseUrl && CFG.supabaseAnonKey);
         const CLAVE_SESION = 'cic-sesion';
@@ -600,56 +1277,20 @@
             emprendedora: { nombre: 'Emprendedora',       texto: 'Aquí están tus rutas de formación y el seguimiento de tu acompañamiento.' },
         };
         const CURSOS = {
-            gestion: {
-                titulo: 'Gestión del CIC', color: 'bg-agua', meta: '≈ 2 horas · 5 módulos · virtual',
-                para: 'Curso obligatorio para dinamizadoras y Secretaría Técnica.',
-                modulos: [
-                    ['Introducción a la gestión de centros de innovación', '20 min · Qué hace diferente a un CIC para la autonomía económica de la mujer.'],
-                    ['El ecosistema emprendedor y el papel del CIC', '25 min · Los seis dominios del ecosistema y un mapa rápido de actores de tu territorio.'],
-                    ['Cómo opera el centro', '25 min · Secretaría Técnica, satélites, flujo semanal de reportes y gobernanza con la Red.'],
-                    ['La información del centro', '15 min · Ficha de la unidad productiva, evidencias, listas de chequeo y bitácoras.'],
-                    ['Los pilares en acción', '35 min · Acompañamiento, financiamiento y mercados, con un caso de referencia.'],
-                ],
-            },
-            hacer: {
-                titulo: 'Ruta HACER', color: 'bg-durazno', meta: '12 horas · 6 semanas · 2 h por semana',
-                para: 'Acompañamiento individual, en tu propio negocio, para ordenar costos, precios y ventas.',
-                modulos: [
-                    ['Semana 1 · Radiografía del negocio y registro diario', 'Partes de lo que ya sabes y empiezas a anotar lo que entra y lo que sale.'],
-                    ['Semana 2 · Canvas de la Esquina y nueva fuente de ingreso', 'Describes tu negocio en una hoja y defines un cambio pequeño para probar.'],
-                    ['Semana 3 · Lectura de tendencias', 'Miras el mercado más allá de tu cuadra y ajustas lo que ofreces.'],
-                    ['Semana 4 · Nuevo precio y punto de equilibrio', 'Separas los dos bolsillos, calculas costos y fijas un precio que sí cubre lo que gastas.'],
-                    ['Semana 5 · Plan comercial y Mi CRM', 'Plan de una página, meta de ventas y al menos cinco clientes potenciales.'],
-                    ['Semana 6 · Plan de inversión', 'Con tu flujo de caja y estado de resultados formulas tu plan de inversión.'],
-                ],
-            },
-            ser: {
-                titulo: 'Ruta SER', color: 'bg-lavanda', meta: '16 horas · 4 talleres de 4 horas',
-                para: 'Talleres grupales para fortalecer a la persona que sostiene el negocio.',
-                modulos: [
-                    ['SER 1 · Confianza para presentar mi negocio', 'Presencial · Árbol de vida, mapa de sueños y tarjeta de «gerenta».'],
-                    ['SER 2 · Decidir sin miedo', 'Virtual · Una decisión analizada con su primer paso.'],
-                    ['SER 3 · Liderazgo y derechos', 'Presencial · Rutas de atención, espacios de participación y compromiso de liderazgo.'],
-                    ['SER 4 · Ahorrar y crecer juntas', 'Virtual · Resolución de conflictos y acuerdos de corresponsabilidad del grupo.'],
-                ],
-            },
+            gestion: { titulo: 'Gestión del CIC', color: 'bg-agua', meta: '≈ 2 horas · 5 módulos · virtual', para: 'Curso obligatorio para dinamizadoras y Secretaría Técnica.', insignia: 'Gestión del CIC',
+                modulos: [['Introducción a la gestión de centros de innovación', '20 min · Qué hace diferente a un CIC para la autonomía económica de la mujer.'], ['El ecosistema emprendedor y el papel del CIC', '25 min · Los seis dominios del ecosistema y un mapa de actores de tu territorio.'], ['Cómo opera el centro', '25 min · Secretaría Técnica, satélites, reportes semanales y gobernanza con la Red.'], ['La información del centro', '15 min · Ficha de la unidad productiva, evidencias, listas de chequeo y bitácoras.'], ['Los pilares en acción', '35 min · Acompañamiento, financiamiento y mercados, con un caso de referencia.']] },
+            hacer: { titulo: 'Ruta HACER', color: 'bg-durazno', meta: '12 horas · 6 semanas · 2 h por semana', para: 'Acompañamiento individual, en tu propio negocio, para ordenar costos, precios y ventas.', insignia: 'Ruta HACER',
+                modulos: [['Semana 1 · Radiografía del negocio y registro diario', 'Partes de lo que ya sabes y empiezas a anotar lo que entra y lo que sale.'], ['Semana 2 · Canvas de la Esquina', 'Describes tu negocio en una hoja y defines un cambio pequeño para probar.'], ['Semana 3 · Lectura de tendencias', 'Miras el mercado más allá de tu cuadra y ajustas lo que ofreces.'], ['Semana 4 · Nuevo precio y punto de equilibrio', 'Separas los dos bolsillos y fijas un precio que sí cubre lo que gastas.'], ['Semana 5 · Plan comercial y Mi CRM', 'Meta de ventas y al menos cinco clientes potenciales.'], ['Semana 6 · Plan de inversión', 'Con tu flujo de caja y estado de resultados formulas tu plan de inversión.']] },
+            ser: { titulo: 'Ruta SER', color: 'bg-lavanda', meta: '16 horas · 4 talleres de 4 horas', para: 'Talleres grupales para fortalecer a la persona que sostiene el negocio.', insignia: 'Ruta SER',
+                modulos: [['SER 1 · Confianza para presentar mi negocio', 'Presencial · Árbol de vida, mapa de sueños y tarjeta de «gerenta».'], ['SER 2 · Decidir sin miedo', 'Virtual · Una decisión analizada con su primer paso.'], ['SER 3 · Liderazgo y derechos', 'Presencial · Rutas de atención, participación y compromiso de liderazgo.'], ['SER 4 · Ahorrar y crecer juntas', 'Virtual · Resolución de conflictos y acuerdos del grupo.']] },
         };
         const CURSOS_POR_ROL = { emprendedora: ['hacer', 'ser'], dinamizadora: ['gestion', 'hacer', 'ser'], secretaria: ['gestion', 'hacer', 'ser'] };
         const ETAPAS = ['Vinculación y diagnóstico', 'Ruta HACER', 'Ruta SER', 'Conexión y financiamiento'];
         const DEPARTAMENTOS = ['Atlántico', 'Bolívar', 'Cesar', 'Córdoba', 'La Guajira', 'Magdalena', 'Sucre'];
 
-        const $ = (s, r = document) => r.querySelector(s);
-        const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-        const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-        const soloDigitos = (v) => String(v ?? '').replace(/\D/g, '');
-        const primerNombre = (n) => String(n || '').trim().split(/\s+/)[0] || '';
-        const guardar = (almacen, k, v) => { try { v == null ? almacen.removeItem(k) : almacen.setItem(k, JSON.stringify(v)); } catch (e) { /* sin almacenamiento */ } };
-        const leer = (almacen, k) => { try { return JSON.parse(almacen.getItem(k)); } catch (e) { return null; } };
-
         let sb = null;
         let perfil = null;
 
-        // ---------- Conexión con Supabase ----------
         async function conectar() {
             if (DEMO || sb) return sb;
             await new Promise((ok, mal) => {
@@ -688,15 +1329,14 @@
             return j;
         }
 
-        // ---------- Ingreso y registro ----------
+        // ---------- Diálogo de ingreso y registro ----------
         const dialogo = $('#acceso');
         const msj = $('#acceso-mensaje');
         const rolElegido = () => ($('input[name="perfil"]:checked') || {}).value || 'emprendedora';
-
         function mensaje(texto, tipo = 'error') {
-            if (!texto) { msj.className = 'hidden'; msj.textContent = ''; return; }
-            msj.textContent = texto;
-            msj.className = `mt-4 rounded-2xl px-4 py-3 text-sm font-semibold ${tipo === 'error' ? 'bg-coral/30 text-bosque border border-coral' : 'bg-menta/40 text-bosque border border-menta'}`;
+            msj.hidden = !texto;
+            msj.textContent = texto || '';
+            msj.className = 'mensaje ' + (tipo === 'error' ? 'error' : 'ok');
         }
         function modo(m) {
             const esRegistro = m === 'registro' && rolElegido() === 'emprendedora';
@@ -714,20 +1354,21 @@
             if (esEquipo) modo('ingresar');
             mensaje('');
         }
-        function abrir(m) {
-            if (m === 'registro') $('input[name="perfil"][value="emprendedora"]').checked = true;
+        function abrir(m, rol) {
+            const elegido = $(`input[name="perfil"][value="${m === 'registro' ? 'emprendedora' : (rol || rolElegido())}"]`);
+            if (elegido) elegido.checked = true;
             actualizarPerfil();
             modo(m);
             if (!dialogo.open) dialogo.showModal();
             setTimeout(() => (m === 'registro' ? $('#re-nombre') : $('#in-cedula')).focus(), 50);
         }
-        $$('[data-abrir]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.abrir)));
+        $$('[data-abrir]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.abrir, b.dataset.perfil)));
         $('#acceso-cerrar').addEventListener('click', () => dialogo.close());
-        dialogo.addEventListener('click', (e) => { if (e.target === dialogo) dialogo.close(); });
+        dialogo.addEventListener('click', (e) => { if (e.target === dialogo || e.target.closest('[data-cerrar]')) dialogo.close(); });
         $$('input[name="perfil"]').forEach((r) => r.addEventListener('change', actualizarPerfil));
         $('#pestana-ingresar').addEventListener('click', () => modo('ingresar'));
         $('#pestana-registro').addEventListener('click', () => modo('registro'));
-        $$('.ver-clave').forEach((b) => b.addEventListener('click', () => {
+        $$('.ver').forEach((b) => b.addEventListener('click', () => {
             const campo = document.getElementById(b.getAttribute('aria-controls'));
             const ver = campo.type === 'password';
             campo.type = ver ? 'text' : 'password';
@@ -738,7 +1379,7 @@
         $('#olvide').addEventListener('click', () => {
             mensaje(rolElegido() === 'emprendedora'
                 ? 'Pídele a tu dinamizadora o a la Secretaría Técnica que restablezca tu contraseña. Volverá a ser tu número de cédula y te llegará un correo de aviso.'
-                : 'Pídele a la Secretaría Técnica que restablezca tu contraseña. Volverá a ser tu número de cédula y te llegará un correo de aviso.', 'info');
+                : 'Pídele a la Secretaría Técnica que restablezca tu contraseña. Volverá a ser tu número de cédula y te llegará un correo de aviso.', 'ok');
         });
 
         async function ocupado(form, fn) {
@@ -807,7 +1448,7 @@
             });
         });
 
-        // ---------- Cambio entre la parte pública y la plataforma ----------
+        // ---------- Cambio entre el portal y la plataforma ----------
         function entrar(p) {
             perfil = p;
             if (DEMO) guardar(sessionStorage, 'cic-demo', p);
@@ -818,13 +1459,13 @@
         function mostrarPlataforma() {
             $('#publico').hidden = true;
             $('#plataforma').hidden = false;
-            $('#nav-publica').style.display = 'none';
+            nav.hidden = true; menu.hidden = true;
             $('#btn-ingresar').hidden = true;
-            $('#chip-usuaria').classList.replace('hidden', 'flex');
+            $('#usuaria').classList.add('activa');
             $('#logo').setAttribute('href', '#plataforma');
-            $('#chip-nombre').textContent = perfil.nombre;
-            $('#chip-rol').textContent = ROL[perfil.rol].nombre;
-            $('#chip-inicial').textContent = primerNombre(perfil.nombre).charAt(0).toUpperCase();
+            $('#usuaria-nombre').textContent = perfil.nombre;
+            $('#usuaria-rol').textContent = ROL[perfil.rol].nombre;
+            $('#usuaria-inicial').textContent = primerNombre(perfil.nombre).charAt(0).toUpperCase();
             $('#aviso-demo').hidden = !DEMO;
             $('#bienvenida-rol').textContent = [ROL[perfil.rol].nombre, perfil.departamento].filter(Boolean).join(' · ');
             $('#bienvenida-titulo').textContent = `Hola, ${primerNombre(perfil.nombre)}`;
@@ -842,9 +1483,9 @@
             guardar(sessionStorage, 'cic-demo', null);
             $('#plataforma').hidden = true;
             $('#publico').hidden = false;
-            $('#nav-publica').style.display = '';
+            nav.hidden = false; menu.hidden = false;
             $('#btn-ingresar').hidden = false;
-            $('#chip-usuaria').classList.replace('flex', 'hidden');
+            $('#usuaria').classList.remove('activa');
             $('#logo').setAttribute('href', '#inicio');
             window.scrollTo(0, 0);
         }
@@ -867,7 +1508,7 @@
         }
         $$('[data-vista]').forEach((b) => b.addEventListener('click', () => ir(b.dataset.vista)));
         $('#pestanas-plataforma').addEventListener('keydown', (e) => {
-            if (!['ArrowRight', 'ArrowLeft'].includes(e.key)) return;
+            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
             const i = VISTAS.findIndex((v) => !$(`#vista-${v}`).hidden);
             ir(VISTAS[(i + (e.key === 'ArrowRight' ? 1 : 2)) % 3]);
         });
@@ -878,44 +1519,59 @@
             if (b.dataset.ir === 'cuenta') setTimeout(() => { const c = $('#cc-actual'); if (c) c.focus(); }, 30);
         });
 
-        // ---------- Cursos ----------
+        // ---------- Mis rutas: avance, «Continuar» y logros ----------
         const claveAvance = () => `cic-avance-${perfil.cedula}`;
+        function siguientePaso(avance) {
+            for (const id of CURSOS_POR_ROL[perfil.rol]) {
+                const hechos = new Set(avance[id] || []);
+                const i = CURSOS[id].modulos.findIndex((_, k) => !hechos.has(k));
+                if (i >= 0) return { id, i };
+            }
+            return null;
+        }
         function pintarCursos() {
             const avance = leer(localStorage, claveAvance()) || {};
             const ids = CURSOS_POR_ROL[perfil.rol];
+            const sig = siguientePaso(avance);
+            const cont = $('#continuar');
+            cont.hidden = false;
+            cont.innerHTML = sig
+                ? `<div><small>Tu siguiente paso</small><b>${esc(CURSOS[sig.id].titulo)} · ${esc(CURSOS[sig.id].modulos[sig.i][0])}</b></div><button type="button" class="btn btn-claro btn-pequeno" id="btn-continuar">Continuar <span aria-hidden="true">▶</span></button>`
+                : `<div><small>¡Lo lograste!</small><b>Completaste todas tus rutas. Tu constancia se emitirá al cerrar el ciclo.</b></div>`;
             const intro = perfil.rol === 'emprendedora'
-                ? 'Tus rutas de formación. Marca cada tema cuando lo termines con tu dinamizadora.'
+                ? 'Marca cada tema cuando lo termines con tu dinamizadora.'
                 : 'Tu curso de gestión y las rutas que acompañas en territorio.';
             $('#vista-cursos').innerHTML = `
-                <h2 class="font-titulo font-bold text-2xl sm:text-3xl">Cursos</h2>
-                <p class="text-musgo mt-1 mb-6">${esc(intro)} <span class="text-sm">Tu avance se guarda en este dispositivo.</span></p>
-                <div class="grid grid-cols-1 ${ids.length === 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-6 items-start">
+                <h2>Mis rutas</h2>
+                <p class="vista-intro">${esc(intro)} Tu avance se guarda en este dispositivo.</p>
+                <div class="rejilla ${ids.length === 3 ? 'r3' : 'r2'}" style="align-items:start">
                 ${ids.map((id) => {
                     const c = CURSOS[id];
                     const hechos = new Set(avance[id] || []);
                     const pct = Math.round((hechos.size / c.modulos.length) * 100);
                     const acompanas = perfil.rol !== 'emprendedora' && id !== 'gestion';
-                    return `<article class="bg-white rounded-3xl border border-bosque/10 overflow-hidden flex flex-col">
-                        <div class="${c.color} px-6 pt-6 pb-5">
-                            <p class="text-xs font-bold uppercase tracking-[.14em]">${acompanas ? 'Ruta que acompañas' : 'Tu curso'}</p>
-                            <h3 class="font-titulo font-bold text-2xl mt-1">${esc(c.titulo)}</h3>
-                            <p class="text-sm mt-1">${esc(c.meta)}</p>
+                    return `<article class="curso" id="curso-${id}">
+                        <div class="curso-cab ${c.color}">
+                            <span class="eyebrow" style="color:var(--bosque)">${acompanas ? 'Ruta que acompañas' : 'Tu ruta'}</span>
+                            <h3>${esc(c.titulo)}</h3>
+                            <p style="font-size:.9rem;margin-top:.2rem">${esc(c.meta)}</p>
                         </div>
-                        <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-musgo">${esc(c.para)}</p>
-                            <div class="mt-4 flex items-center gap-3">
-                                <div class="flex-1 h-2.5 rounded-full bg-crema-2 overflow-hidden" role="progressbar" aria-label="Avance en ${esc(c.titulo)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><div class="h-full bg-bosque rounded-full transition-all" style="width:${pct}%"></div></div>
-                                <span class="text-sm font-bold">${hechos.size}/${c.modulos.length}</span>
-                            </div>
-                            <ol class="mt-5 space-y-1">
+                        <div class="curso-cuerpo">
+                            <p class="texto-suave" style="font-size:.92rem">${esc(c.para)}</p>
+                            <div class="barra"><span class="barra-fondo" role="progressbar" aria-label="Avance en ${esc(c.titulo)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><span style="width:${pct}%"></span></span>${pct} %</div>
+                            <ol class="modulos">
                             ${c.modulos.map(([t, d], i) => `
-                                <li><label class="flex gap-3 items-start p-3 rounded-2xl hover:bg-crema cursor-pointer">
-                                    <input type="checkbox" class="mt-1 w-5 h-5 accent-[#2E4A3E] shrink-0" data-curso="${id}" data-i="${i}" ${hechos.has(i) ? 'checked' : ''}>
-                                    <span><span class="font-bold text-sm block">${esc(t)}</span><span class="text-sm text-musgo">${esc(d)}</span></span>
-                                </label></li>`).join('')}
+                                <li><label class="${sig && sig.id === id && sig.i === i ? 'siguiente' : ''}"><input type="checkbox" data-curso="${id}" data-i="${i}" ${hechos.has(i) ? 'checked' : ''}><span><b>${esc(t)}</b><span>${esc(d)}</span></span></label></li>`).join('')}
                             </ol>
                         </div>
                     </article>`;
+                }).join('')}
+                </div>
+                <h3 style="font-size:1.3rem;margin-top:2.5rem">Mis logros</h3>
+                <div class="logros">
+                ${ids.map((id) => {
+                    const completo = (avance[id] || []).length === CURSOS[id].modulos.length;
+                    return `<span class="logro ${completo ? '' : 'pendiente'}"><svg aria-hidden="true"><use href="#isotipo"/></svg>${esc(CURSOS[id].insignia)} · ${completo ? 'completada' : 'en curso'}</span>`;
                 }).join('')}
                 </div>`;
             $$('#vista-cursos input[data-curso]').forEach((ch) => ch.addEventListener('change', () => {
@@ -928,6 +1584,12 @@
                 pintarCursos();
                 const n = $(foco); if (n) n.focus();
             }));
+            const bc = $('#btn-continuar');
+            if (bc) bc.addEventListener('click', () => {
+                ir('cursos', false);
+                const n = $(`input[data-curso="${sig.id}"][data-i="${sig.i}"]`);
+                if (n) { n.closest('label').scrollIntoView({ behavior: 'smooth', block: 'center' }); n.focus({ preventScroll: true }); }
+            });
         }
 
         // ---------- Seguimiento ----------
@@ -952,93 +1614,82 @@
             const v = $('#vista-seguimiento');
             if (perfil.rol === 'emprendedora') {
                 v.innerHTML = `
-                    <h2 class="font-titulo font-bold text-2xl sm:text-3xl">Tu acompañamiento</h2>
-                    <p class="text-musgo mt-1 mb-6">Así avanza tu proceso en el CIC. Tu dinamizadora de ${esc(perfil.departamento || 'tu departamento')} te contactará por WhatsApp para agendar tu diagnóstico.</p>
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <ol class="lg:col-span-2 bg-white rounded-3xl border border-bosque/10 p-4 sm:p-6 space-y-1">
-                        ${ETAPAS.map((e, i) => `
-                            <li class="flex gap-4 items-start p-3">
-                                <span class="w-10 h-10 rounded-full grid place-items-center font-titulo font-bold shrink-0 ${i === 0 ? 'bg-coralp text-white' : 'bg-crema-2 text-musgo'}">${i + 1}</span>
-                                <span><span class="font-bold block">${esc(e)}</span><span class="text-sm ${i === 0 ? 'text-coralp font-bold' : 'text-musgo'}">${i === 0 ? 'En curso' : 'Próximamente'}</span></span>
-                            </li>`).join('')}
+                    <h2>Tu acompañamiento</h2>
+                    <p class="vista-intro">Así avanza tu proceso. Tu dinamizadora de ${esc(perfil.departamento || 'tu departamento')} te contactará por WhatsApp para agendar tu diagnóstico.</p>
+                    <div class="rejilla" style="grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))">
+                        <ol class="tarjeta" style="list-style:none;margin:0;display:grid;gap:.4rem">
+                        ${ETAPAS.map((e, i) => `<li style="display:flex;gap:.9rem;align-items:center;padding:.4rem 0"><span class="numero ${i === 0 ? 'etapa-actual' : 'etapa-pendiente'}">${i + 1}</span><span><b style="display:block">${esc(e)}</b><span style="font-size:.88rem;${i === 0 ? 'color:var(--coralp);font-weight:700' : 'color:var(--musgo)'}">${i === 0 ? 'En curso' : 'Próximamente'}</span></span></li>`).join('')}
                         </ol>
-                        <aside class="bg-bosque text-white rounded-3xl p-6 relative overflow-hidden">
-                            <div class="absolute inset-0 patron-hojas opacity-[.12]" aria-hidden="true"></div>
-                            <div class="relative space-y-3">
-                                <svg class="w-10 h-10" aria-hidden="true"><use href="#isotipo-neg"/></svg>
-                                <h3 class="font-titulo font-bold text-xl">Tu negocio</h3>
-                                <p class="text-white/90 text-sm">${esc(perfil.negocio || 'Aún no has escrito el nombre de tu negocio.')}</p>
-                                <p class="text-white/90 text-sm">${esc([perfil.municipio, perfil.departamento].filter(Boolean).join(', '))}</p>
-                                <button type="button" data-ir="cuenta" class="mt-2 bg-white text-bosque font-bold text-sm px-5 py-2.5 rounded-full">Revisar mis datos</button>
+                        <aside class="lado-bosque">
+                            <div class="patron-hojas" aria-hidden="true"></div>
+                            <div>
+                                <svg width="40" height="40" aria-hidden="true"><use href="#isotipo-neg"/></svg>
+                                <h3 style="font-size:1.3rem">Tu negocio</h3>
+                                <p style="opacity:.9">${esc(perfil.negocio || 'Aún no has escrito el nombre de tu negocio.')}</p>
+                                <p style="opacity:.9">${esc([perfil.municipio, perfil.departamento].filter(Boolean).join(', '))}</p>
+                                <button type="button" class="btn btn-claro btn-pequeno" data-ir="cuenta" style="justify-self:start">Revisar mis datos</button>
                             </div>
                         </aside>
                     </div>`;
                 return;
             }
-            v.innerHTML = `<p class="text-musgo py-10" role="status">Cargando…</p>`;
+            v.innerHTML = '<p class="vista-intro" role="status">Cargando…</p>';
             let lista;
-            try { lista = await traerPerfiles(); } catch (e) { v.innerHTML = `<p class="py-10 text-coralp font-bold">${esc(e.message)}</p>`; return; }
+            try { lista = await traerPerfiles(); } catch (e) { v.innerHTML = `<p class="mensaje error">${esc(e.message)}</p>`; return; }
             if (perfil.rol === 'dinamizadora') pintarDinamizadora(v, lista);
             else pintarSecretaria(v, lista);
         }
 
         function filaPersona(p, conAccion) {
             const wa = whatsapp(p.celular);
-            return `<tr class="border-t border-bosque/10 align-top">
-                <td class="py-3 pl-5 pr-4"><span class="font-bold block">${esc(p.nombre)}</span><span class="text-sm text-musgo">${esc(p.negocio || p.cargo || '')}</span></td>
-                <td class="py-3 pr-4 text-sm whitespace-nowrap">${esc(ROL[p.rol] ? ROL[p.rol].nombre : p.rol)}</td>
-                <td class="py-3 pr-4 text-sm">${esc([p.municipio, p.departamento].filter(Boolean).join(', '))}</td>
-                <td class="py-3 pr-4 text-sm whitespace-nowrap">${wa ? `<a class="font-bold text-coralp hover:underline" href="${wa}" target="_blank" rel="noopener">WhatsApp</a>` : esc(p.celular || '')}</td>
-                <td class="py-3 pr-4 text-sm whitespace-nowrap">${esc(fecha(p.creado_en))}</td>
-                ${conAccion ? `<td class="py-3 pr-5 text-sm whitespace-nowrap">${p.cedula !== perfil.cedula ? `<button type="button" class="font-bold text-bosque underline underline-offset-4" data-restablecer="${esc(p.cedula)}" data-nombre="${esc(p.nombre)}">Restablecer contraseña</button>` : ''}</td>` : ''}
+            return `<tr>
+                <td><b>${esc(p.nombre)}</b><small>${esc(p.negocio || p.cargo || '')}</small></td>
+                <td style="white-space:nowrap">${esc(ROL[p.rol] ? ROL[p.rol].nombre : p.rol)}</td>
+                <td>${esc([p.municipio, p.departamento].filter(Boolean).join(', '))}</td>
+                <td style="white-space:nowrap">${wa ? `<a class="enlace" href="${wa}" target="_blank" rel="noopener">WhatsApp</a>` : esc(p.celular || '')}</td>
+                <td style="white-space:nowrap">${esc(fecha(p.creado_en))}</td>
+                ${conAccion ? `<td style="white-space:nowrap">${p.cedula !== perfil.cedula ? `<button type="button" class="boton-texto" data-restablecer="${esc(p.cedula)}" data-nombre="${esc(p.nombre)}">Restablecer contraseña</button>` : ''}</td>` : ''}
             </tr>`;
         }
         function tabla(lista, conAccion) {
-            if (!lista.length) return `<p class="bg-white rounded-3xl border border-bosque/10 p-8 text-musgo text-center">Todavía no hay personas en esta lista.</p>`;
-            return `<div class="bg-white rounded-3xl border border-bosque/10 overflow-x-auto"><table class="w-full text-left min-w-[44rem]">
-                <thead><tr class="text-xs uppercase tracking-[.12em] text-musgo"><th class="py-4 pl-5 pr-4 font-bold" scope="col">Nombre</th><th class="py-4 pr-4 font-bold" scope="col">Perfil</th><th class="py-4 pr-4 font-bold" scope="col">Lugar</th><th class="py-4 pr-4 font-bold" scope="col">Contacto</th><th class="py-4 pr-4 font-bold" scope="col">Desde</th>${conAccion ? '<th class="py-4 pr-5 font-bold" scope="col"><span class="sr-only">Acciones</span></th>' : ''}</tr></thead>
+            if (!lista.length) return '<p class="tarjeta vacio">Todavía no hay personas en esta lista.</p>';
+            return `<div class="tabla-caja"><table>
+                <thead><tr><th scope="col">Nombre</th><th scope="col">Perfil</th><th scope="col">Lugar</th><th scope="col">Contacto</th><th scope="col">Desde</th>${conAccion ? '<th scope="col"><span class="sr-only">Acciones</span></th>' : ''}</tr></thead>
                 <tbody>${lista.map((p) => filaPersona(p, conAccion)).join('')}</tbody></table></div>`;
         }
-
         function pintarDinamizadora(v, lista) {
             v.innerHTML = `
-                <h2 class="font-titulo font-bold text-2xl sm:text-3xl">Emprendedoras de ${esc(perfil.departamento || 'tu departamento')}</h2>
-                <p class="text-musgo mt-1 mb-6">Las emprendedoras registradas en tu departamento. Escríbeles por WhatsApp para agendar su diagnóstico.</p>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-5"><span class="font-titulo font-bold text-3xl block">${lista.length}</span><span class="text-sm text-musgo">registradas</span></div>
-                </div>
-                <label class="etiqueta" for="buscar-d">Buscar por nombre, municipio o negocio</label>
-                <input id="buscar-d" class="campo max-w-md mb-5" type="search">
+                <h2>Emprendedoras de ${esc(perfil.departamento || 'tu departamento')}</h2>
+                <p class="vista-intro">Las emprendedoras registradas en tu departamento. Escríbeles por WhatsApp para agendar su diagnóstico.</p>
+                <div class="rejilla r4 movil-2"><div class="tarjeta kpi"><b>${lista.length}</b><span>registradas</span></div></div>
+                <div class="controles"><div><label class="etiqueta" for="buscar-d">Buscar por nombre, municipio o negocio</label><input id="buscar-d" class="campo" type="search"></div></div>
                 <div id="tabla-d">${tabla(lista, false)}</div>`;
             $('#buscar-d').addEventListener('input', (e) => {
                 const t = e.target.value.toLowerCase();
                 $('#tabla-d').innerHTML = tabla(lista.filter((p) => [p.nombre, p.municipio, p.negocio].join(' ').toLowerCase().includes(t)), false);
             });
         }
-
         function pintarSecretaria(v, lista) {
             const emp = lista.filter((p) => p.rol === 'emprendedora');
             const din = lista.filter((p) => p.rol === 'dinamizadora');
             const porDepto = DEPARTAMENTOS.map((d) => [d, emp.filter((p) => p.departamento === d).length]);
             const max = Math.max(1, ...porDepto.map(([, n]) => n));
             v.innerHTML = `
-                <h2 class="font-titulo font-bold text-2xl sm:text-3xl">Seguimiento del centro</h2>
-                <p class="text-musgo mt-1 mb-6">Cuentas activas en la plataforma. Las personas del equipo aparecen aquí cuando ingresan por primera vez.</p>
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-5"><span class="font-titulo font-bold text-3xl block">${emp.length}</span><span class="text-sm text-musgo">emprendedoras registradas</span></div>
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-5"><span class="font-titulo font-bold text-3xl block">${din.length}<span class="text-lg text-musgo">/24</span></span><span class="text-sm text-musgo">dinamizadoras que ya ingresaron</span></div>
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-5"><span class="font-titulo font-bold text-3xl block">${porDepto.filter(([, n]) => n).length}<span class="text-lg text-musgo">/7</span></span><span class="text-sm text-musgo">departamentos con emprendedoras</span></div>
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-5"><span class="font-titulo font-bold text-3xl block">${lista.filter((p) => p.debe_cambiar_clave).length}</span><span class="text-sm text-musgo">cuentas con la cédula como contraseña</span></div>
+                <h2>Seguimiento del centro</h2>
+                <p class="vista-intro">Cuentas activas en la plataforma. Las personas del equipo aparecen aquí cuando ingresan por primera vez.</p>
+                <div class="rejilla r4 movil-2">
+                    <div class="tarjeta kpi"><b>${emp.length}</b><span>emprendedoras registradas</span></div>
+                    <div class="tarjeta kpi"><b>${din.length}<small style="font-size:1rem" class="texto-suave">/24</small></b><span>dinamizadoras que ya ingresaron</span></div>
+                    <div class="tarjeta kpi"><b>${porDepto.filter(([, n]) => n).length}<small style="font-size:1rem" class="texto-suave">/7</small></b><span>departamentos con emprendedoras</span></div>
+                    <div class="tarjeta kpi"><b>${lista.filter((p) => p.debe_cambiar_clave).length}</b><span>cuentas con la cédula como contraseña</span></div>
                 </div>
-                <div class="bg-white rounded-3xl border border-bosque/10 p-6 mb-8">
-                    <h3 class="font-titulo font-bold text-lg mb-4">Emprendedoras por departamento</h3>
-                    <ul class="space-y-2.5">${porDepto.map(([d, n]) => `
-                        <li class="grid grid-cols-[6.5rem_1fr_2rem] gap-3 items-center text-sm"><span>${d}</span><span class="h-3 rounded-full bg-crema-2 overflow-hidden"><span class="block h-full bg-menta rounded-full" style="width:${(n / max) * 100}%"></span></span><span class="font-bold text-right">${n}</span></li>`).join('')}
-                    </ul>
+                <div class="tarjeta" style="margin-top:1.5rem">
+                    <h3 style="font-size:1.15rem;margin-bottom:1rem">Emprendedoras por departamento</h3>
+                    <ul class="barras">${porDepto.map(([d, n]) => `<li><span>${d}</span><span class="barra-fondo"><span style="width:${(n / max) * 100}%"></span></span><b>${n}</b></li>`).join('')}</ul>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-3 sm:items-end mb-5">
-                    <div class="flex-1 max-w-md"><label class="etiqueta" for="buscar-s">Buscar</label><input id="buscar-s" class="campo" type="search" placeholder="Nombre, cédula, municipio…"></div>
-                    <div><label class="etiqueta" for="filtro-rol">Perfil</label><select id="filtro-rol" class="campo"><option value="">Todos</option><option value="emprendedora">Emprendedoras</option><option value="dinamizadora">Dinamizadoras</option><option value="secretaria">Secretaría Técnica</option></select></div>
+                <div class="controles">
+                    <div><label class="etiqueta" for="buscar-s">Buscar</label><input id="buscar-s" class="campo" type="search" placeholder="Nombre, cédula, municipio…"></div>
+                    <div style="flex:0 1 14rem"><label class="etiqueta" for="filtro-rol">Perfil</label><select id="filtro-rol" class="campo"><option value="">Todos</option><option value="emprendedora">Emprendedoras</option><option value="dinamizadora">Dinamizadoras</option><option value="secretaria">Secretaría Técnica</option></select></div>
                 </div>
                 <div id="tabla-s">${tabla(lista, true)}</div>`;
             const filtrar = () => {
@@ -1063,34 +1714,34 @@
 
         // ---------- Mi cuenta ----------
         function pintarCuenta() {
-            const dato = (k, v) => v ? `<div class="py-3 border-t border-bosque/10 grid grid-cols-[7.5rem_1fr] gap-3"><dt class="text-sm text-musgo">${k}</dt><dd class="font-semibold break-words">${esc(v)}</dd></div>` : '';
+            const dato = (k, v) => v ? `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>` : '';
             $('#vista-cuenta').innerHTML = `
-                <h2 class="font-titulo font-bold text-2xl sm:text-3xl mb-6">Mi cuenta</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                    <div class="bg-white rounded-3xl border border-bosque/10 p-6">
-                        <h3 class="font-titulo font-bold text-xl mb-2">Mis datos</h3>
-                        <dl>${dato('Nombre', perfil.nombre)}${dato('Cédula', perfil.cedula)}${dato('Perfil', ROL[perfil.rol].nombre)}${dato('Cargo', perfil.cargo)}${dato('Departamento', perfil.departamento)}${dato('Municipio', perfil.municipio)}${dato('Negocio', perfil.negocio)}</dl>
-                        <form id="form-contacto" class="mt-2" novalidate>
+                <h2 style="margin-bottom:1.5rem">Mi cuenta</h2>
+                <div class="rejilla r2" style="align-items:start">
+                    <div class="tarjeta">
+                        <h3 style="font-size:1.25rem;margin-bottom:.6rem">Mis datos</h3>
+                        <dl class="datos">${dato('Nombre', perfil.nombre)}${dato('Cédula', perfil.cedula)}${dato('Perfil', ROL[perfil.rol].nombre)}${dato('Cargo', perfil.cargo)}${dato('Departamento', perfil.departamento)}${dato('Municipio', perfil.municipio)}${dato('Negocio', perfil.negocio)}</dl>
+                        <form id="form-contacto" novalidate>
                             <label class="etiqueta" for="cc-correo">Correo electrónico</label>
                             <input class="campo" id="cc-correo" name="correo" type="email" autocomplete="email" value="${esc(perfil.correo || '')}" aria-describedby="cc-correo-ayuda">
-                            <small id="cc-correo-ayuda" class="text-xs text-musgo">Aquí llegan los avisos cuando cambia tu contraseña.</small>
+                            <small id="cc-correo-ayuda" class="ayuda-campo">Aquí llegan los avisos cuando cambia tu contraseña.</small>
                             <label class="etiqueta" for="cc-celular">Celular o WhatsApp</label>
                             <input class="campo" id="cc-celular" name="celular" type="tel" autocomplete="tel" value="${esc(perfil.celular || '')}">
-                            <button type="submit" class="mt-5 border border-bosque/25 hover:bg-crema font-bold px-6 py-3 rounded-full">Guardar datos de contacto</button>
+                            <button type="submit" class="btn btn-borde btn-pequeno" style="margin-top:1rem">Guardar datos de contacto</button>
                         </form>
                     </div>
-                    <form id="form-clave" class="bg-white rounded-3xl border border-bosque/10 p-6" novalidate>
-                        <h3 class="font-titulo font-bold text-xl">Cambiar contraseña</h3>
-                        <p class="text-sm text-musgo mt-1">Cuando la cambies te enviaremos un correo de confirmación${perfil.correo ? ` a <strong class="text-bosque">${esc(perfil.correo)}</strong>` : ''}.</p>
+                    <form id="form-clave" class="tarjeta" novalidate>
+                        <h3 style="font-size:1.25rem">Cambiar contraseña</h3>
+                        <p class="texto-suave" style="font-size:.92rem;margin-top:.3rem">Cuando la cambies te enviaremos un correo de confirmación${perfil.correo ? ` a <strong style="color:var(--bosque)">${esc(perfil.correo)}</strong>` : ''}.</p>
                         <label class="etiqueta" for="cc-actual">Contraseña actual</label>
                         <input class="campo" id="cc-actual" name="actual" type="password" autocomplete="current-password" required>
                         <label class="etiqueta" for="cc-nueva">Nueva contraseña</label>
                         <input class="campo" id="cc-nueva" name="nueva" type="password" autocomplete="new-password" minlength="8" required aria-describedby="cc-nueva-ayuda">
-                        <small id="cc-nueva-ayuda" class="text-xs text-musgo">Mínimo 8 caracteres y distinta de tu cédula.</small>
+                        <small id="cc-nueva-ayuda" class="ayuda-campo">Mínimo 8 caracteres y distinta de tu cédula.</small>
                         <label class="etiqueta" for="cc-nueva2">Repite la nueva contraseña</label>
                         <input class="campo" id="cc-nueva2" name="nueva2" type="password" autocomplete="new-password" minlength="8" required>
-                        <p id="cc-mensaje" role="alert" class="hidden"></p>
-                        <button type="submit" class="mt-5 bg-coralp hover:bg-coralp-osc text-white font-bold px-6 py-3 rounded-full disabled:opacity-60">Cambiar contraseña</button>
+                        <p id="cc-mensaje" class="mensaje" role="alert" hidden></p>
+                        <button type="submit" class="btn btn-primario btn-pequeno" style="margin-top:1.1rem">Cambiar contraseña</button>
                     </form>
                 </div>`;
 
@@ -1116,7 +1767,7 @@
                 ev.preventDefault();
                 const f = ev.currentTarget;
                 const m = $('#cc-mensaje');
-                const decir = (t, ok) => { m.textContent = t; m.className = `mt-4 rounded-2xl px-4 py-3 text-sm font-semibold ${ok ? 'bg-menta/40 border border-menta' : 'bg-coral/30 border border-coral'}`; };
+                const decir = (t, ok) => { m.textContent = t; m.className = 'mensaje ' + (ok ? 'ok' : 'error'); m.hidden = false; };
                 const actual = f.actual.value, nueva = f.nueva.value;
                 if (!actual) return decir('Escribe tu contraseña actual.');
                 if (nueva.length < 8) return decir('La nueva contraseña debe tener al menos 8 caracteres.');
@@ -1137,17 +1788,15 @@
             });
         }
 
-        // ---------- Utilidades de interfaz ----------
+        // ---------- Avisos ----------
         let temporizador;
         function aviso(t) {
             const a = $('#aviso');
             a.textContent = t;
-            a.classList.remove('hidden');
+            a.hidden = false;
             clearTimeout(temporizador);
-            temporizador = setTimeout(() => a.classList.add('hidden'), 5000);
+            temporizador = setTimeout(() => { a.hidden = true; }, 5000);
         }
-        const obs = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
-        $$('.aparece').forEach((el) => (obs ? obs.observe(el) : el.classList.add('visible')));
 
         // ---------- Sesión guardada ----------
         (async () => {
@@ -1162,7 +1811,7 @@
                 const { data: p, error } = await sb.from('perfiles').select('id, cedula, nombre, rol, cargo, correo, celular, departamento, municipio, negocio, debe_cambiar_clave').eq('id', data.session.user.id).single();
                 if (error || !p) { await sb.auth.signOut(); return; }
                 entrar(p);
-            } catch (e) { /* se queda en la parte pública */ }
+            } catch (e) { /* se queda en el portal público */ }
         })();
     })();
     </script>
