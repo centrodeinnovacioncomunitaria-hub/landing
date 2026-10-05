@@ -80,7 +80,16 @@
                         <li><a class="todas" href="../../#rutas">Ver todas las rutas</a></li>
                     </ul>
                 </div>
-                <a href="../../#recursos">Recursos</a>
+                <div class="submenu">
+                    <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-recursos">Recursos <svg aria-hidden="true"><use href="#flecha"/></svg></button>
+                    <ul id="sub-recursos" class="submenu-lista" hidden>
+                        <li><a href="../../recursos/"><span class="punto bg-mantequilla"></span><span><b>Biblioteca completa</b><small>13 plantillas gratuitas</small></span></a></li>
+                        <li><a href="../../recursos/#tema-finanzas"><span class="punto bg-menta"></span><span><b>Finanzas</b><small>Costos, precio y flujo de caja</small></span></a></li>
+                        <li><a href="../../recursos/#tema-ventas"><span class="punto bg-durazno"></span><span><b>Ventas</b><small>Clientes, tendencias y plan comercial</small></span></a></li>
+                        <li><a href="../../recursos/#punto-equilibrio"><span class="punto bg-coral"></span><span><b>Calculadora de punto de equilibrio</b><small>Cuánto necesitas vender al mes</small></span></a></li>
+                    </ul>
+                </div>
+
                 <div class="submenu">
                     <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-cic">Sobre el CIC <svg aria-hidden="true"><use href="#flecha"/></svg></button>
                     <ul id="sub-cic" class="submenu-lista" hidden>
@@ -118,7 +127,8 @@
 
         <div class="contenedor">
             <section class="ruta-heroe bg-durazno" aria-labelledby="titulo-ruta">
-                <div class="patron-hojas" aria-hidden="true"></div>
+                <div class="patron-hojas animado" aria-hidden="true"></div>
+                <div class="hojas-flotantes" data-hojas="7" data-color="rgba(255,255,255,.75)" aria-hidden="true"></div>
                 <div class="ruta-heroe-grid">
                     <div>
                         <span class="chip" style="background:rgba(255,255,255,.6)">Emprendedoras · 12 horas</span>
@@ -144,7 +154,8 @@
             </section>
         </div>
 
-        <section class="bloque" aria-labelledby="titulo-obtienes">
+        <section class="bloque con-decor" aria-labelledby="titulo-obtienes">
+            <div class="patron-puntos decor decor-derecha" aria-hidden="true"></div>
             <div class="contenedor">
                 <p class="eyebrow">Qué obtienes</p>
                 <h2 id="titulo-obtienes" style="margin-top:.4rem">Tu negocio, más claro en números.</h2>
@@ -181,7 +192,8 @@
             </div>
         </section>
 
-        <section id="temario" class="bloque" aria-labelledby="titulo-temario">
+        <section id="temario" class="bloque con-decor" aria-labelledby="titulo-temario">
+            <div class="patron-ondas animado decor decor-izquierda" aria-hidden="true"></div>
             <div class="contenedor">
                 <p class="eyebrow">Temario</p>
                 <h2 id="titulo-temario" style="margin-top:.4rem">Seis semanas, paso a paso.</h2>
@@ -194,7 +206,7 @@
                             <h3>Radiografía del negocio y registro diario</h3>
                             <p>Partes de lo que ya sabes de tu negocio, lo miras sin juzgarlo y empiezas a anotar cada día lo que entra y lo que sale.</p>
                             <p class="logra"><b>Al terminar:</b> tienes tu registro diario empezado y sabes qué te preocupa de los números.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Diario de empatía financiera</a><a href="../../#recursos">Registro diario de ventas y gastos</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#diario-empatia-financiera">Diario de empatía financiera</a><a href="../../recursos/#registro-diario">Registro diario de ventas y gastos</a></div>
                         </div>
                     </li>
                     <li id="semana-2" class="paso-ruta aparece">
@@ -204,7 +216,7 @@
                             <h3>Canvas de la Esquina y nueva fuente de ingreso</h3>
                             <p>Describes tu negocio en una sola hoja: quién te compra, qué ofreces y cuánto te cuesta. Defines un cambio pequeño para probar durante la semana.</p>
                             <p class="logra"><b>Al terminar:</b> tu negocio cabe en una hoja y tienes una nueva fuente de ingreso para probar.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Canvas de la Esquina</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#canvas-esquina">Canvas de la Esquina</a></div>
                         </div>
                     </li>
                     <li id="semana-3" class="paso-ruta aparece">
@@ -214,7 +226,7 @@
                             <h3>Lectura de tendencias</h3>
                             <p>Miras el mercado más allá de tu cuadra: qué se vende más, qué cambia en precios y gustos, y quiénes son tus nuevos competidores.</p>
                             <p class="logra"><b>Al terminar:</b> sabes qué ajustar en lo que ofreces según lo que pide tu mercado.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Matriz de tendencias</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#matriz-tendencias">Matriz de tendencias</a></div>
                         </div>
                     </li>
                     <li id="semana-4" class="paso-ruta aparece">
@@ -224,7 +236,7 @@
                             <h3>Nuevo precio y punto de equilibrio</h3>
                             <p>Separas los dos bolsillos, el del hogar y el del negocio, calculas tus costos y fijas un precio que sí cubre lo que gastas.</p>
                             <p class="logra"><b>Al terminar:</b> conoces tu precio justo y cuántas unidades necesitas vender al mes.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Ejercicio de los dos bolsillos</a><a href="../../#punto-equilibrio">Calculadora de punto de equilibrio</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#dos-bolsillos">Ejercicio de los dos bolsillos</a><a href="../../recursos/#punto-equilibrio">Calculadora de punto de equilibrio</a></div>
                         </div>
                     </li>
                     <li id="semana-5" class="paso-ruta aparece">
@@ -234,7 +246,7 @@
                             <h3>Plan comercial y Mi CRM</h3>
                             <p>Armas un plan comercial de una página con tu meta de ventas y una lista de al menos cinco clientes potenciales fuera de tu círculo cercano.</p>
                             <p class="logra"><b>Al terminar:</b> tienes una meta de ventas, tres acciones con fecha y clientes nuevos a quienes contactar.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Plan comercial de una página</a><a href="../../#recursos">Mi CRM: lista de clientes</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#plan-comercial">Plan comercial de una página</a><a href="../../recursos/#mi-crm">Mi CRM: lista de clientes</a></div>
                         </div>
                     </li>
                     <li id="semana-6" class="paso-ruta aparece">
@@ -244,7 +256,7 @@
                             <h3>Plan de inversión</h3>
                             <p>Con tus resultados, el flujo de caja y el estado de resultados, defines qué necesita tu negocio para crecer, cuánto cuesta y cómo lo vas a financiar.</p>
                             <p class="logra"><b>Al terminar:</b> tienes un plan de inversión con números para presentar a un grupo de ahorro u otra fuente de financiamiento.</p>
-                            <div class="llevas"><span>Te llevas:</span><a href="../../#recursos">Plan de inversión simplificado</a><a href="../../#recursos">Flujo de caja y estado de resultados</a></div>
+                            <div class="llevas"><span>Te llevas:</span><a href="../../recursos/#plan-inversion">Plan de inversión simplificado</a><a href="../../recursos/#flujo-caja">Flujo de caja y estado de resultados</a></div>
                         </div>
                     </li>
                 </ol>
@@ -284,7 +296,8 @@
                 </div>
 
                 <div class="cta-banda">
-                    <div class="patron-hojas" aria-hidden="true"></div>
+                    <div class="patron-hojas animado" aria-hidden="true"></div>
+                    <div class="hojas-flotantes" data-hojas="6" aria-hidden="true"></div>
                     <div>
                         <h2>Empieza tu ruta HACER</h2>
                         <p>Crea tu cuenta con tu cédula y tu dinamizadora te contactará para la primera semana.</p>
@@ -307,7 +320,7 @@
                 </div>
                 <div>
                     <h2>Aprende</h2>
-                    <ul><li><a href="../../#rutas">Rutas de aprendizaje</a></li><li><a href="../hacer/">Ruta HACER</a></li><li><a href="../ser/">Ruta SER</a></li><li><a href="../gestion-cic/">Gestión del CIC</a></li><li><a href="../../#recursos">Biblioteca de recursos</a></li></ul>
+                    <ul><li><a href="../../#rutas">Rutas de aprendizaje</a></li><li><a href="../hacer/">Ruta HACER</a></li><li><a href="../ser/">Ruta SER</a></li><li><a href="../gestion-cic/">Gestión del CIC</a></li><li><a href="../../recursos/">Biblioteca de recursos</a></li></ul>
                 </div>
                 <div>
                     <h2>El CIC</h2>

@@ -78,7 +78,16 @@
                         <li><a class="todas" href="../../#rutas">Ver todas las rutas</a></li>
                     </ul>
                 </div>
-                <a href="../../#recursos">Recursos</a>
+                <div class="submenu">
+                    <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-recursos">Recursos <svg aria-hidden="true"><use href="#flecha"/></svg></button>
+                    <ul id="sub-recursos" class="submenu-lista" hidden>
+                        <li><a href="../../recursos/"><span class="punto bg-mantequilla"></span><span><b>Biblioteca completa</b><small>13 plantillas gratuitas</small></span></a></li>
+                        <li><a href="../../recursos/#tema-finanzas"><span class="punto bg-menta"></span><span><b>Finanzas</b><small>Costos, precio y flujo de caja</small></span></a></li>
+                        <li><a href="../../recursos/#tema-ventas"><span class="punto bg-durazno"></span><span><b>Ventas</b><small>Clientes, tendencias y plan comercial</small></span></a></li>
+                        <li><a href="../../recursos/#punto-equilibrio"><span class="punto bg-coral"></span><span><b>Calculadora de punto de equilibrio</b><small>Cuánto necesitas vender al mes</small></span></a></li>
+                    </ul>
+                </div>
+
                 <div class="submenu">
                     <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-cic">Sobre el CIC <svg aria-hidden="true"><use href="#flecha"/></svg></button>
                     <ul id="sub-cic" class="submenu-lista" hidden>
@@ -116,7 +125,8 @@
 
         <div class="contenedor">
             <section class="ruta-heroe bg-lavanda" aria-labelledby="titulo-ruta">
-                <div class="patron-hojas" aria-hidden="true"></div>
+                <div class="patron-hojas animado" aria-hidden="true"></div>
+                <div class="hojas-flotantes" data-hojas="7" data-color="rgba(255,255,255,.75)" aria-hidden="true"></div>
                 <div class="ruta-heroe-grid">
                     <div>
                         <span class="chip" style="background:rgba(255,255,255,.6)">Emprendedoras en grupo · 16 horas</span>
@@ -142,7 +152,8 @@
             </section>
         </div>
 
-        <section class="bloque" aria-labelledby="titulo-obtienes">
+        <section class="bloque con-decor" aria-labelledby="titulo-obtienes">
+            <div class="patron-puntos decor decor-derecha" aria-hidden="true"></div>
             <div class="contenedor">
                 <p class="eyebrow">Qué obtienes</p>
                 <h2 id="titulo-obtienes" style="margin-top:.4rem">Crecer tú también es hacer crecer tu negocio.</h2>
@@ -179,7 +190,8 @@
             </div>
         </section>
 
-        <section id="temario" class="bloque" aria-labelledby="titulo-temario">
+        <section id="temario" class="bloque con-decor" aria-labelledby="titulo-temario">
+            <div class="patron-ondas animado decor decor-izquierda" aria-hidden="true"></div>
             <div class="contenedor">
                 <p class="eyebrow">Temario</p>
                 <h2 id="titulo-temario" style="margin-top:.4rem">Cuatro talleres de cuatro horas.</h2>
@@ -192,7 +204,7 @@
                             <h3>Confianza para presentar mi negocio</h3>
                             <p>Reconoces tus raíces y tus fortalezas, sueñas hacia dónde quieres llevar tu vida y tu negocio, y te presentas como gerenta.</p>
                             <p class="logra"><b>Te llevas:</b> tu árbol de vida, tu mapa de sueños y tu tarjeta de «gerenta».</p>
-                            <div class="llevas"><span>Plantilla:</span><a href="../../#recursos">Árbol de vida y mapa de sueños</a></div>
+                            <div class="llevas"><span>Plantilla:</span><a href="../../recursos/#arbol-de-vida">Árbol de vida y mapa de sueños</a></div>
                         </div>
                     </li>
                     <li id="taller-2" class="paso-ruta aparece">
@@ -259,7 +271,8 @@
                 </div>
 
                 <div class="cta-banda">
-                    <div class="patron-hojas" aria-hidden="true"></div>
+                    <div class="patron-hojas animado" aria-hidden="true"></div>
+                    <div class="hojas-flotantes" data-hojas="6" aria-hidden="true"></div>
                     <div>
                         <h2>Súmate a la ruta SER</h2>
                         <p>Crea tu cuenta con tu cédula y tu dinamizadora te contará cuándo es el primer taller.</p>
@@ -282,7 +295,7 @@
                 </div>
                 <div>
                     <h2>Aprende</h2>
-                    <ul><li><a href="../../#rutas">Rutas de aprendizaje</a></li><li><a href="../hacer/">Ruta HACER</a></li><li><a href="../ser/">Ruta SER</a></li><li><a href="../gestion-cic/">Gestión del CIC</a></li><li><a href="../../#recursos">Biblioteca de recursos</a></li></ul>
+                    <ul><li><a href="../../#rutas">Rutas de aprendizaje</a></li><li><a href="../hacer/">Ruta HACER</a></li><li><a href="../ser/">Ruta SER</a></li><li><a href="../gestion-cic/">Gestión del CIC</a></li><li><a href="../../recursos/">Biblioteca de recursos</a></li></ul>
                 </div>
                 <div>
                     <h2>El CIC</h2>

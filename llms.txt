@@ -8,6 +8,6 @@
 - [Gestión del CIC](https://centrodeinnovacioncomunitaria-hub.github.io/landing/rutas/gestion-cic/): curso virtual de 5 módulos (≈ 2 h) para dinamizadoras y Secretaría Técnica.
 
 ## Otras páginas
-- [Biblioteca de recursos](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#recursos): plantillas gratuitas de finanzas, ventas, formalización y marketing digital.
+- [Biblioteca de recursos](https://centrodeinnovacioncomunitaria-hub.github.io/landing/recursos/): plantillas gratuitas de finanzas, ventas, formalización y marketing digital.
 - [Sobre el CIC](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#sobre-cic): modelo en cascada y cinco pilares.
 - [Centro de ayuda](https://centrodeinnovacioncomunitaria-hub.github.io/landing/#ayuda): ingreso, constancias y contacto.

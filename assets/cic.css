@@ -459,3 +459,101 @@ td small { color: var(--musgo); }
     .paso-ruta .numero { width: 2.6rem; height: 2.6rem; font-size: .85rem; }
     .linea::before { left: 1.3rem; }
 }
+
+/* ===== Movimiento, patrones y clic ===== */
+/* Fotos que respiran: un acercamiento lento y continuo */
+@keyframes respirar { from { transform: scale(1.03) translate(0, 0); } to { transform: scale(1.1) translate(-1.6%, -1.2%); } }
+.foto-duo { animation: respirar 18s ease-in-out infinite alternate; transform-origin: 60% 40%; will-change: transform; }
+/* La hoja cambia de forma al pasar el cursor */
+.hoja, .hoja-inv { transition: border-radius .9s cubic-bezier(.3, .7, .2, 1), transform .6s ease; }
+.hoja:hover { border-radius: 1.5rem 46% 1.5rem 46% / 1.5rem 46% 1.5rem 46%; }
+.hoja-inv:hover { border-radius: 46% 1.5rem 46% 1.5rem / 46% 1.5rem 46% 1.5rem; }
+/* Desplazamiento leve de las fotos al bajar (lo calcula sitio.js) */
+.paralaje { transform: translate3d(0, var(--desfase, 0px), 0); }
+
+/* Hojas flotantes decorativas (sitio.js las crea dentro de [data-hojas]) */
+.hojas-flotantes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.hojas-flotantes span { position: absolute; width: var(--t); height: calc(var(--t) * 1.55); background: var(--c); border-radius: 0 100% 0 100%; opacity: .5; transform: rotate(var(--g)); animation: flotar var(--d) ease-in-out var(--r) infinite; }
+@keyframes flotar {
+    0%, 100% { transform: translate(0, 0) rotate(var(--g)); }
+    50% { transform: translate(12px, -20px) rotate(calc(var(--g) + 22deg)); }
+}
+
+/* Patrones de fondo para algunas secciones */
+.con-decor { position: relative; overflow: hidden; }
+.con-decor > .contenedor { position: relative; z-index: 1; }
+.decor { position: absolute; pointer-events: none; z-index: 0; }
+.decor-derecha { top: 0; right: 0; width: 42%; height: 60%; -webkit-mask-image: radial-gradient(circle at 100% 0, #000 20%, transparent 70%); mask-image: radial-gradient(circle at 100% 0, #000 20%, transparent 70%); }
+.decor-izquierda { bottom: 0; left: 0; width: 45%; height: 65%; -webkit-mask-image: radial-gradient(circle at 0 100%, #000 20%, transparent 70%); mask-image: radial-gradient(circle at 0 100%, #000 20%, transparent 70%); }
+.decor-completo { inset: 0; -webkit-mask-image: linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(180deg, transparent, #000 25%, #000 75%, transparent); }
+.patron-puntos { background-image: radial-gradient(rgba(46, 74, 62, .16) 1.5px, transparent 1.8px); background-size: 22px 22px; }
+.patron-ondas { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='44' viewBox='0 0 160 44'%3E%3Cpath d='M0 22 Q 20 8 40 22 T 80 22 T 120 22 T 160 22' fill='none' stroke='%239ED0B7' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); background-size: 160px 44px; opacity: .7; }
+.patron-durazno { background-image: radial-gradient(rgba(242, 181, 146, .55) 2px, transparent 2.4px); background-size: 26px 26px; }
+@keyframes deriva { to { background-position: 144px 72px; } }
+@keyframes deriva-ondas { to { background-position: 160px 0; } }
+.patron-hojas.animado { animation: deriva 60s linear infinite; }
+.patron-ondas.animado { animation: deriva-ondas 22s linear infinite; }
+
+/* El trazo firme se dibuja al aparecer */
+.js .trazo { clip-path: inset(0 100% 0 0); transition: clip-path 1.2s cubic-bezier(.6, .1, .2, 1) .25s; }
+.js .trazo.visible { clip-path: inset(0 0 0 0); }
+
+/* Apariciones escalonadas */
+.js .aparece { transition-delay: calc(var(--i, 0) * 90ms); }
+
+/* Botones: se hunden un poco al tocarlos */
+.btn:active { transform: translateY(1px) scale(.97); }
+.btn-primario:active { background: var(--bosque); }
+.btn-borde:active, .btn-claro:active { background: var(--menta); }
+
+/* Chispa del clic: un aro y pétalos de un color distinto al del botón */
+.chispa { position: fixed; z-index: 95; pointer-events: none; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; border: 2.5px solid var(--c); animation: chispa .6s ease-out forwards; }
+@keyframes chispa { from { transform: scale(.4); opacity: 1; } to { transform: scale(4.6); opacity: 0; } }
+.petalo { position: fixed; z-index: 95; pointer-events: none; width: 7px; height: 11px; margin: -5px 0 0 -3px; background: var(--c); border-radius: 0 100% 0 100%; animation: petalo .75s cubic-bezier(.2, .7, .3, 1) forwards; }
+@keyframes petalo { from { transform: translate(0, 0) rotate(var(--g)) scale(1); opacity: 1; } to { transform: translate(var(--x), var(--y)) rotate(calc(var(--g) + 120deg)) scale(.5); opacity: 0; } }
+
+/* ===== Biblioteca de recursos (página interna y adelanto en el inicio) ===== */
+.temas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.tema { display: flex; align-items: center; gap: 1rem; padding: 1.1rem 1.2rem; background: #fff; border: 1px solid var(--linea); border-radius: 1.3rem; text-decoration: none; transition: transform .25s, box-shadow .25s; }
+.tema:hover { transform: translateY(-3px); box-shadow: var(--sombra); }
+.tema b { display: block; font: 700 1.1rem var(--titulo); }
+.tema small { color: var(--musgo); font-weight: 600; }
+.tema .icono { flex-shrink: 0; }
+@media (max-width: 860px) { .temas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .temas { grid-template-columns: 1fr; } }
+.calc-destacada { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: center; margin-top: 1.5rem; padding: 1.6rem 1.8rem; border-radius: 1.6rem; background: var(--mantequilla); position: relative; overflow: hidden; }
+.calc-destacada > * { position: relative; }
+.calc-destacada h3 { font-size: 1.4rem; }
+.calc-destacada p { margin-top: .3rem; }
+@media (max-width: 680px) { .calc-destacada { grid-template-columns: 1fr; } }
+.biblio-heroe { position: relative; overflow: hidden; margin-top: 1rem; border-radius: 2rem; padding: 2.5rem; background: var(--crema-2); }
+.biblio-heroe > .contenido { position: relative; z-index: 1; max-width: 46rem; }
+.biblio-heroe h1 { font-size: clamp(2.3rem, 5.5vw, 3.6rem); margin-top: .8rem; }
+.biblio-heroe .lead { font-size: 1.12rem; margin-top: 1rem; color: var(--musgo); }
+.biblio-cifras { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; margin-top: 1.4rem; font-weight: 700; }
+.biblio-cifras b { font: 700 1.6rem var(--titulo); margin-right: .3rem; }
+.biblio-buscar { margin-top: 1.6rem; max-width: 30rem; position: relative; }
+.biblio-buscar .campo { padding-left: 2.8rem; min-height: 3.2rem; border-radius: 999px; }
+.biblio-buscar svg { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 1.2rem; height: 1.2rem; color: var(--musgo); }
+@media (max-width: 680px) { .biblio-heroe { padding: 1.6rem; border-radius: 1.5rem; } }
+.recurso { scroll-margin-top: 6rem; transition: transform .25s, box-shadow .25s; }
+.recurso:hover { transform: translateY(-3px); box-shadow: var(--sombra); }
+.recurso:target { box-shadow: 0 0 0 3px var(--coralp); }
+.recurso .para { font-size: .9rem; color: var(--bosque); }
+.calculadora-grande { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; scroll-margin-top: 6rem; }
+.calculadora-grande .calculadora { margin-top: 0; background: #fff; padding: 1.4rem; }
+.formula { margin-top: 1rem; background: #fff; border-radius: 1rem; padding: 1rem 1.2rem; font: 700 1.05rem var(--titulo); text-align: center; }
+@media (max-width: 860px) { .calculadora-grande { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .foto-duo, .hojas-flotantes span, .patron-hojas.animado, .patron-ondas.animado { animation: none; }
+    .paralaje { transform: none; }
+    .js .trazo { clip-path: none; transition: none; }
+    .chispa, .petalo { display: none; }
+    .hoja, .hoja-inv, .tema, .recurso { transition: none; }
+}
+.js .recurso.aparece.visible:hover, .js .tema.aparece.visible:hover, .js .otra-ruta.aparece.visible:hover { transform: translateY(-3px); }
+@media (prefers-reduced-motion: reduce) { .js .recurso.aparece.visible:hover, .js .tema.aparece.visible:hover, .js .otra-ruta.aparece.visible:hover { transform: none; } }
+/* El contenido siempre por encima de las hojas y los patrones decorativos */
+.heroe > .contenedor, .territorio > .contenedor, .ruta-heroe-grid, .cta-banda > div:not(.hojas-flotantes):not(.patron-hojas), .cta-banda > a, .calc-destacada > div:not(.hojas-flotantes), .calc-destacada > a { position: relative; z-index: 1; }
+.hojas-flotantes span { opacity: .42; }

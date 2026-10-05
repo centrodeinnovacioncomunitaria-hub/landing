@@ -107,7 +107,16 @@
                         <li><a class="todas" href="#rutas">Ver todas las rutas</a></li>
                     </ul>
                 </div>
-                <a href="#recursos">Recursos</a>
+                <div class="submenu">
+                    <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-recursos">Recursos <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <ul id="sub-recursos" class="submenu-lista" hidden>
+                        <li><a href="recursos/"><span class="punto bg-mantequilla"></span><span><b>Biblioteca completa</b><small>13 plantillas gratuitas</small></span></a></li>
+                        <li><a href="recursos/#tema-finanzas"><span class="punto bg-menta"></span><span><b>Finanzas</b><small>Costos, precio y flujo de caja</small></span></a></li>
+                        <li><a href="recursos/#tema-ventas"><span class="punto bg-durazno"></span><span><b>Ventas</b><small>Clientes, tendencias y plan comercial</small></span></a></li>
+                        <li><a href="recursos/#punto-equilibrio"><span class="punto bg-coral"></span><span><b>Calculadora de punto de equilibrio</b><small>Cuánto necesitas vender al mes</small></span></a></li>
+                    </ul>
+                </div>
+
                 <div class="submenu">
                     <button type="button" class="submenu-btn" aria-expanded="false" aria-controls="sub-cic">Sobre el CIC <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                     <ul id="sub-cic" class="submenu-lista" hidden>
@@ -147,7 +156,8 @@
 
         <!-- Héroe: propuesta + entrada por rol (patrones P2 y P3 del benchmarking) -->
         <section id="inicio" class="heroe" aria-labelledby="titulo-inicio">
-            <div class="heroe-patron patron-hojas" aria-hidden="true"></div>
+            <div class="heroe-patron patron-hojas animado" aria-hidden="true"></div>
+            <div class="hojas-flotantes" data-hojas="9" aria-hidden="true"></div>
             <div class="contenedor">
                 <div>
                     <p class="eyebrow">Emprender es florecer</p>
@@ -209,16 +219,17 @@
                              alt="Mujeres de la Red de Mujeres del Caribe reunidas en un taller">
                     </div>
                     <div class="heroe-dato">
-                        <div><b>200</b><small>emprendedoras</small></div><i aria-hidden="true"></i>
-                        <div><b style="color:var(--coralp)">8</b><small>satélites</small></div><i aria-hidden="true"></i>
-                        <div><b>7</b><small>departamentos</small></div>
+                        <div><b data-contar="200">200</b><small>emprendedoras</small></div><i aria-hidden="true"></i>
+                        <div><b style="color:var(--coralp)" data-contar="8">8</b><small>satélites</small></div><i aria-hidden="true"></i>
+                        <div><b data-contar="7">7</b><small>departamentos</small></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Catálogo de rutas: cada ruta con su ficha (qué, para quién, duración, qué obtienes) -->
-        <section id="rutas" class="seccion seccion-blanca" aria-labelledby="titulo-rutas">
+        <section id="rutas" class="seccion seccion-blanca con-decor" aria-labelledby="titulo-rutas">
+            <div class="patron-puntos decor decor-derecha" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="cabeza aparece">
                     <p class="eyebrow">Rutas de aprendizaje</p>
@@ -348,136 +359,41 @@
         </section>
 
         <!-- Biblioteca de recursos: caja de herramientas pública, con filtros y búsqueda -->
-        <section id="recursos" class="seccion" aria-labelledby="titulo-recursos">
+        <section id="recursos" class="seccion con-decor" aria-labelledby="titulo-recursos">
+            <div class="patron-hojas animado decor decor-derecha" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="cabeza aparece">
                     <p class="eyebrow">Biblioteca de recursos</p>
                     <h2 id="titulo-recursos">Plantillas para tu negocio.</h2>
                     <svg class="trazo" aria-hidden="true"><use href="#trazo"/></svg>
-                    <p>Las herramientas de las rutas, gratuitas y explicadas paso a paso. Filtra por tema o busca lo que necesitas.</p>
+                    <p>13 herramientas de las rutas, gratuitas y explicadas paso a paso. Elige un tema o explora la biblioteca completa.</p>
                 </div>
-
-                <div class="filtros" role="group" aria-label="Filtrar plantillas por tema">
-                    <button type="button" class="filtro" data-cat="" aria-pressed="true">Todos <small></small></button>
-                    <button type="button" class="filtro" data-cat="Finanzas" aria-pressed="false">Finanzas <small></small></button>
-                    <button type="button" class="filtro" data-cat="Ventas" aria-pressed="false">Ventas <small></small></button>
-                    <button type="button" class="filtro" data-cat="Administración" aria-pressed="false">Administración <small></small></button>
-                    <button type="button" class="filtro" data-cat="Formalización" aria-pressed="false">Formalización <small></small></button>
-                    <button type="button" class="filtro" data-cat="Marketing digital" aria-pressed="false">Marketing digital <small></small></button>
-                    <button type="button" class="filtro" data-cat="Ser" aria-pressed="false">Ser <small></small></button>
+                <div class="temas">
+                    <a class="tema aparece" href="recursos/#tema-finanzas"><span class="icono bg-menta"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span><span><b>Finanzas</b><small>5 plantillas</small></span></a>
+                    <a class="tema aparece" href="recursos/#tema-ventas"><span class="icono bg-durazno"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></span><span><b>Ventas</b><small>4 plantillas</small></span></a>
+                    <a class="tema aparece" href="recursos/#tema-administracion"><span class="icono bg-agua"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></span><span><b>Administración</b><small>1 plantilla</small></span></a>
+                    <a class="tema aparece" href="recursos/#tema-formalizacion"><span class="icono bg-mantequilla"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></span><span><b>Formalización</b><small>1 guía</small></span></a>
+                    <a class="tema aparece" href="recursos/#tema-marketing"><span class="icono bg-coral"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></span><span><b>Marketing digital</b><small>1 guía</small></span></a>
+                    <a class="tema aparece" href="recursos/#tema-ser"><span class="icono bg-lavanda"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></span><span><b>Ser</b><small>1 plantilla</small></span></a>
                 </div>
-                <div class="buscador">
-                    <label class="sr-only" for="buscar-recurso">Buscar una plantilla</label>
-                    <input id="buscar-recurso" class="campo" type="search" placeholder="Buscar: precio, ventas, RUT…">
+                <div class="calc-destacada aparece">
+                    <div class="hojas-flotantes" data-hojas="5" data-color="rgba(255,255,255,.7)" aria-hidden="true"></div>
+                    <div>
+                        <p class="eyebrow" style="color:var(--bosque)">Herramienta interactiva</p>
+                        <h3>¿Cuánto necesitas vender al mes?</h3>
+                        <p>Calcula tu punto de equilibrio en segundos con la calculadora de la biblioteca.</p>
+                    </div>
+                    <a class="btn btn-bosque" href="recursos/#punto-equilibrio">Abrir la calculadora</a>
                 </div>
-
-                <div id="lista-recursos" class="rejilla r3">
-                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
-                        <span class="chip bg-menta">Finanzas</span>
-                        <h3>Diario de empatía financiera y productiva</h3>
-                        <p>Para mirar tu negocio sin juzgarlo: cómo vendes, cómo gastas y qué te preocupa de los números.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Responde las preguntas con tu dinamizadora, en tu lugar de trabajo.</li><li>Anota lo que vendes en un día normal y lo que gastas para producirlo.</li><li>Marca lo que más te preocupa: será el punto de partida de la ruta.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-1">Ruta HACER · Semana 1</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Administración" data-ruta="HACER">
-                        <span class="chip bg-agua">Administración</span>
-                        <h3>Registro diario de ventas y gastos</h3>
-                        <p>Anota cada día lo que entra y lo que sale de tu negocio para saber cuánto vendes y cuánto gastas de verdad.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Cada noche, escribe las ventas del día y los gastos del negocio.</li><li>No mezcles gastos de la casa: esos van en el otro bolsillo.</li><li>Al final de la semana, suma y compara con la semana anterior.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-1">Ruta HACER · Semana 1</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
-                        <span class="chip bg-durazno">Ventas</span>
-                        <h3>Canvas de la Esquina</h3>
-                        <p>Describe tu negocio en una sola hoja y encuentra nuevas fuentes de ingreso.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Escribe quiénes te compran y por qué te eligen.</li><li>Anota qué ofreces, cómo lo vendes y cuánto te cuesta.</li><li>Plantea una nueva fuente de ingreso y un cambio pequeño para probar esta semana.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-2">Ruta HACER · Semana 2</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
-                        <span class="chip bg-durazno">Ventas</span>
-                        <h3>Matriz de tendencias</h3>
-                        <p>Lee lo que está pasando en tu mercado más allá de tu cuadra para ajustar lo que ofreces.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Observa qué se vende más en tu zona y en redes.</li><li>Anota qué cambia: precios, gustos, nuevos competidores.</li><li>Decide qué ajustas en tu producto a partir de lo que viste.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-3">Ruta HACER · Semana 3</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
-                        <span class="chip bg-menta">Finanzas</span>
-                        <h3>Ejercicio de los dos bolsillos</h3>
-                        <p>Separa el dinero del hogar y el del negocio para saber si tu negocio realmente gana.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Haz la lista de lo que el negocio le presta a la casa sin registrarlo.</li><li>Asígnate un pago fijo por tu trabajo.</li><li>Desde hoy, cada peso va a su bolsillo: hogar o negocio.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-4">Ruta HACER · Semana 4</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" id="punto-equilibrio" data-cat="Finanzas" data-ruta="HACER">
-                        <span class="chip bg-mantequilla">Finanzas · interactiva</span>
-                        <h3>Calculadora de punto de equilibrio</h3>
-                        <p>Calcula cuántas unidades necesitas vender al mes para cubrir tus costos.</p>
-                        <form class="calculadora" id="calculadora" novalidate>
-                            <label for="pe-fijos">Costos fijos del mes ($)</label>
-                            <input class="campo" id="pe-fijos" inputmode="numeric" value="400000">
-                            <label for="pe-precio">Precio de venta por unidad ($)</label>
-                            <input class="campo" id="pe-precio" inputmode="numeric" value="5000">
-                            <label for="pe-costo">Costo de producir una unidad ($)</label>
-                            <input class="campo" id="pe-costo" inputmode="numeric" value="3000">
-                            <p class="resultado" id="pe-resultado" aria-live="polite"></p>
-                        </form>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-4">Ruta HACER · Semana 4</a></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
-                        <span class="chip bg-durazno">Ventas</span>
-                        <h3>Plan comercial de una página</h3>
-                        <p>Tu meta de ventas y las acciones para lograrla, en una sola hoja.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Define tu meta de ventas del mes.</li><li>Escribe tres acciones concretas para llegar a clientes nuevos.</li><li>Pon fecha a cada acción y revisa el avance con tu dinamizadora.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-5">Ruta HACER · Semana 5</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Ventas" data-ruta="HACER">
-                        <span class="chip bg-durazno">Ventas</span>
-                        <h3>Mi CRM: lista de clientes</h3>
-                        <p>Una lista sencilla de clientes potenciales para vender más allá de tu círculo cercano.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Anota al menos cinco clientes potenciales fuera de tu círculo.</li><li>Registra cuándo los contactas y qué te respondieron.</li><li>Programa el siguiente contacto con cada uno.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-5">Ruta HACER · Semana 5</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
-                        <span class="chip bg-menta">Finanzas</span>
-                        <h3>Plan de inversión simplificado</h3>
-                        <p>Qué necesita tu negocio para crecer, cuánto cuesta y cómo lo vas a financiar.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Lista lo que necesitas comprar o mejorar.</li><li>Estima cuánto cuesta y cuánto más venderías con eso.</li><li>Define de dónde saldrá el dinero: ahorro, grupo solidario u otra fuente.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-6">Ruta HACER · Semana 6</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Finanzas" data-ruta="HACER">
-                        <span class="chip bg-menta">Finanzas</span>
-                        <h3>Flujo de caja y estado de resultados</h3>
-                        <p>Para profundizar la gestión financiera más allá del punto de equilibrio.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Registra entradas y salidas de dinero mes a mes.</li><li>Arma tu estado de pérdidas y ganancias.</li><li>Mira cuánto queda después de cada tipo de costo.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/hacer/#semana-6">Ruta HACER · Semana 6</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Marketing digital">
-                        <span class="chip bg-coral">Marketing digital</span>
-                        <h3>Guía de marketing digital básico</h3>
-                        <p>WhatsApp Business, catálogo digital y redes sociales para vender más.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Configura tu perfil de WhatsApp Business con horario y ubicación.</li><li>Arma un catálogo con fotos claras y precios.</li><li>Publica con constancia y responde rápido.</li></ol></details>
-                        <div class="recurso-pie"><span>Caja de herramientas</span><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Formalización">
-                        <span class="chip bg-agua">Formalización</span>
-                        <h3>Guía de formalización paso a paso</h3>
-                        <p>RUT, registro mercantil, facturación y requisitos sanitarios, en el orden en que te conviene.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Empieza por el RUT: es gratuito.</li><li>Evalúa cuándo te conviene el registro mercantil.</li><li>Revisa los requisitos de facturación y sanitarios de tu actividad.</li></ol></details>
-                        <div class="recurso-pie"><span>Caja de herramientas</span><span class="pronto">PDF en preparación</span></div>
-                    </article>
-                    <article class="tarjeta recurso" data-cat="Ser" data-ruta="SER">
-                        <span class="chip bg-lavanda">Ser</span>
-                        <h3>Árbol de vida y mapa de sueños</h3>
-                        <p>Para reconocer tus raíces, tus fortalezas y hacia dónde quieres llevar tu vida y tu negocio.</p>
-                        <details class="desplegable"><summary>Cómo se usa</summary><ol><li>Dibuja tus raíces: de dónde vienes y qué te sostiene.</li><li>En el tronco, escribe tus fortalezas.</li><li>En las ramas, lo que sueñas para ti y tu negocio en un año.</li></ol></details>
-                        <div class="recurso-pie"><a href="rutas/ser/#taller-1">Ruta SER · Taller 1</a><span class="pronto">PDF en preparación</span></div>
-                    </article>
+                <div class="botones" style="justify-content:center;margin-top:2rem">
+                    <a class="btn btn-primario" href="recursos/">Ver la biblioteca completa</a>
                 </div>
-                <p id="sin-recursos" class="vacio" hidden>No encontramos plantillas con esa búsqueda. Prueba con otra palabra o elige «Todos».</p>
             </div>
         </section>
 
         <!-- Sobre el CIC: modelo, proceso en cascada, video, pilares e historias -->
-        <section id="sobre-cic" class="seccion seccion-blanca" aria-labelledby="titulo-sobre">
+        <section id="sobre-cic" class="seccion seccion-blanca con-decor" aria-labelledby="titulo-sobre">
+            <div class="patron-ondas animado decor decor-izquierda" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="sobre">
                     <div class="aparece">
@@ -504,11 +420,11 @@
 
                 <h3 class="subtitulo aparece">El proceso: formación en cascada</h3>
                 <div class="cascada" style="margin-top:0">
-                    <div class="tarjeta aparece"><b>5</b><h3>Secretaría Técnica</h3><p>Recibe el modelo completo y lo traduce a la realidad de cada satélite.</p></div>
+                    <div class="tarjeta aparece"><b data-contar="5">5</b><h3>Secretaría Técnica</h3><p>Recibe el modelo completo y lo traduce a la realidad de cada satélite.</p></div>
                     <span class="flecha" aria-hidden="true">→</span>
-                    <div class="tarjeta aparece"><b style="color:var(--coralp)">24</b><h3>Dinamizadoras en 8 satélites</h3><p>Hacen el curso de gestión y acompañan a cada emprendedora en su territorio.</p></div>
+                    <div class="tarjeta aparece"><b style="color:var(--coralp)" data-contar="24">24</b><h3>Dinamizadoras en 8 satélites</h3><p>Hacen el curso de gestión y acompañan a cada emprendedora en su territorio.</p></div>
                     <span class="flecha" aria-hidden="true">→</span>
-                    <div class="tarjeta aparece"><b>200</b><h3>Emprendedoras</h3><p>Viven la ruta HACER-SER: 28 horas de acompañamiento individual y talleres.</p></div>
+                    <div class="tarjeta aparece"><b data-contar="200">200</b><h3>Emprendedoras</h3><p>Viven la ruta HACER-SER: 28 horas de acompañamiento individual y talleres.</p></div>
                 </div>
 
                 <h3 class="subtitulo aparece">Cómo acompañamos a cada emprendedora</h3>
@@ -567,7 +483,8 @@
 
         <!-- Impacto y territorio -->
         <section id="territorio" class="seccion territorio" aria-labelledby="titulo-territorio">
-            <div class="patron-hojas" aria-hidden="true"></div>
+            <div class="patron-hojas animado" aria-hidden="true"></div>
+            <div class="hojas-flotantes" data-hojas="7" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="cabeza aparece">
                     <p class="eyebrow">Impacto y territorio</p>
@@ -575,10 +492,10 @@
                     <p>De La Guajira a Córdoba, cada satélite tiene tres dinamizadoras y se articula con un nodo departamental de la Red. El territorio real del CIC es la esquina, la sede comunitaria y el mercado.</p>
                 </div>
                 <div class="rejilla r4 movil-2">
-                    <div class="cifra aparece"><b style="color:var(--coral)">200</b><span>emprendedoras en la ruta HACER-SER</span></div>
-                    <div class="cifra aparece"><b style="color:var(--durazno)">24</b><span>dinamizadoras territoriales</span></div>
-                    <div class="cifra aparece"><b style="color:var(--menta)">8</b><span>satélites en red</span></div>
-                    <div class="cifra aparece"><b style="color:var(--mantequilla)">13</b><span>municipios en 7 departamentos</span></div>
+                    <div class="cifra aparece"><b style="color:var(--coral)" data-contar="200">200</b><span>emprendedoras en la ruta HACER-SER</span></div>
+                    <div class="cifra aparece"><b style="color:var(--durazno)" data-contar="24">24</b><span>dinamizadoras territoriales</span></div>
+                    <div class="cifra aparece"><b style="color:var(--menta)" data-contar="8">8</b><span>satélites en red</span></div>
+                    <div class="cifra aparece"><b style="color:var(--mantequilla)" data-contar="13">13</b><span>municipios en 7 departamentos</span></div>
                 </div>
                 <h3 class="sr-only">Satélites del CIC</h3>
                 <ul class="rejilla r4 movil-2 satelites" style="list-style:none;padding:0">
@@ -595,7 +512,8 @@
         </section>
 
         <!-- Aliados -->
-        <section id="aliados" class="seccion seccion-crema2" aria-labelledby="titulo-aliados">
+        <section id="aliados" class="seccion seccion-crema2 con-decor" aria-labelledby="titulo-aliados">
+            <div class="patron-durazno decor decor-derecha" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="cabeza aparece">
                     <p class="eyebrow">Aliados</p>
@@ -613,7 +531,8 @@
         </section>
 
         <!-- Centro de ayuda: preguntas, ingreso, verificación y contacto, sin necesidad de sesión -->
-        <section id="ayuda" class="seccion" aria-labelledby="titulo-ayuda">
+        <section id="ayuda" class="seccion con-decor" aria-labelledby="titulo-ayuda">
+            <div class="patron-puntos decor decor-izquierda" aria-hidden="true"></div>
             <div class="contenedor">
                 <div class="cabeza aparece">
                     <p class="eyebrow">Centro de ayuda</p>
@@ -723,7 +642,7 @@
                 </div>
                 <div>
                     <h2>Aprende</h2>
-                    <ul><li><a href="#rutas">Rutas de aprendizaje</a></li><li><a href="rutas/hacer/">Ruta HACER</a></li><li><a href="rutas/ser/">Ruta SER</a></li><li><a href="rutas/gestion-cic/">Gestión del CIC</a></li><li><a href="#recursos">Biblioteca de recursos</a></li></ul>
+                    <ul><li><a href="#rutas">Rutas de aprendizaje</a></li><li><a href="rutas/hacer/">Ruta HACER</a></li><li><a href="rutas/ser/">Ruta SER</a></li><li><a href="rutas/gestion-cic/">Gestión del CIC</a></li><li><a href="recursos/">Biblioteca de recursos</a></li></ul>
                 </div>
                 <div>
                     <h2>El CIC</h2>
@@ -853,44 +772,6 @@
                 elegirRol(rolTabs[(i + (e.key === 'ArrowRight' ? 1 : rolTabs.length - 1)) % rolTabs.length], true);
             });
         });
-
-        // Biblioteca: filtros por tema y búsqueda
-        const recursos = $$('#lista-recursos .recurso');
-        const filtros = $$('.filtro');
-        let categoria = '';
-        filtros.forEach((f) => { $('small', f).textContent = f.dataset.cat ? recursos.filter((r) => r.dataset.cat === f.dataset.cat).length : recursos.length; });
-        function filtrarRecursos() {
-            const t = $('#buscar-recurso').value.trim().toLowerCase();
-            let visibles = 0;
-            recursos.forEach((r) => {
-                const ok = (!categoria || r.dataset.cat === categoria) && (!t || r.textContent.toLowerCase().includes(t));
-                r.hidden = !ok;
-                if (ok) visibles++;
-            });
-            $('#sin-recursos').hidden = visibles > 0;
-        }
-        function elegirCategoria(cat) {
-            categoria = cat;
-            filtros.forEach((f) => f.setAttribute('aria-pressed', String(f.dataset.cat === cat)));
-            filtrarRecursos();
-        }
-        filtros.forEach((f) => f.addEventListener('click', () => elegirCategoria(f.dataset.cat)));
-        $('#buscar-recurso').addEventListener('input', filtrarRecursos);
-
-        // Calculadora de punto de equilibrio
-        function calcular() {
-            const fijos = Number(soloDigitos($('#pe-fijos').value));
-            const precio = Number(soloDigitos($('#pe-precio').value));
-            const costo = Number(soloDigitos($('#pe-costo').value));
-            const r = $('#pe-resultado');
-            if (!fijos || !precio) { r.textContent = 'Escribe tus costos fijos y tu precio de venta.'; return; }
-            if (precio <= costo) { r.textContent = 'Tu precio no cubre lo que te cuesta producir: revisa el precio o el costo por unidad.'; return; }
-            const unidades = Math.ceil(fijos / (precio - costo));
-            r.innerHTML = `<b>${unidades.toLocaleString('es-CO')} unidades al mes</b>Cada venta te deja ${esc(pesos(precio - costo))} para cubrir los costos fijos. Vendiendo ${unidades.toLocaleString('es-CO')} unidades (${esc(pesos(unidades * precio))}) no ganas ni pierdes.`;
-        }
-        $$('#calculadora input').forEach((i) => i.addEventListener('input', () => { i.value = soloDigitos(i.value); calcular(); }));
-        $('#calculadora').addEventListener('submit', (e) => e.preventDefault());
-        calcular();
 
         // Verificación de constancias (se activa cuando el campus empiece a emitirlas)
         $('#form-verificar').addEventListener('submit', (e) => {
